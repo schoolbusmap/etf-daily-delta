@@ -463,67 +463,18 @@ def _iter_string_values(obj: Any) -> Iterable[str]:
 
 
 def _dimensional_dfac_urls_from_json(body: bytes, base_url: str) -> list[str]:
-    """Extract DFAC Daily Holdings URLs from Dimensional document-grid JSON.
+    """Extract DFAC holdings URLs from Dimensional document-grid JSON.
 
-    v8 stops guessing legacy ticker filenames. Instead it uses structural proximity
-    inside the actual document-grid JSON: URL-like leaves are ranked by how close
-    their JSON paths are to leaves identifying DFAC / US Core Equity 2 and to leaves
-    identifying the Daily Holdings document type. Bounded diagnostics expose the
-    exact JSON paths when the schema changes again.
+    v9 fixes the v8 proximity bug: list items under ``linkDrawers`` are separate
+    fund records, so a Daily Holdings URL from drawer 122 must never be paired with
+    the DFAC identity in drawer 109. We first identify the exact DFAC drawer, then
+    inspect only links inside that same record. Diagnostics print the bounded set of
+    link names/URLs from the matching record so schema changes are actionable.
     """
     try:
         obj = json.loads(body.decode("utf-8", errors="strict"))
     except Exception:
         return []
-
-    Leaf = tuple[tuple[Any, ...], str]
-    leaves: list[Leaf] = []
-
-    def walk(node: Any, path: tuple[Any, ...] = ()) -> None:
-        if isinstance(node, dict):
-            for k, v in node.items():
-                walk(v, path + (str(k),))
-        elif isinstance(node, list):
-            for i, v in enumerate(node):
-                walk(v, path + (i,))
-        elif isinstance(node, (str, int, float, bool)) and node is not None:
-            leaves.append((path, str(node)))
-
-    walk(obj)
-
-    def path_str(path: tuple[Any, ...]) -> str:
-        return "/".join(str(x) for x in path)
-
-    def is_fund_value(value: str) -> bool:
-        text = value.lower()
-        return any(token in text for token in (
-            "dfac",
-            "us core equity 2 etf",
-            "u.s. core equity 2 etf",
-            "us core equity 2",
-            "u.s. core equity 2",
-            "s000070903",
-            "c000225167",
-        ))
-
-    def is_daily_value(value: str) -> bool:
-        text = value.lower()
-        return "daily holdings" in text or ("daily" in text and "holding" in text)
-
-    def common_prefix_len(a: tuple[Any, ...], b: tuple[Any, ...]) -> int:
-        n = 0
-        for x, y in zip(a, b):
-            if x != y:
-                break
-            n += 1
-        return n
-
-    def path_distance(a: tuple[Any, ...], b: tuple[Any, ...]) -> int:
-        cp = common_prefix_len(a, b)
-        return (len(a) - cp) + (len(b) - cp)
-
-    fund_leaves = [(p, v) for p, v in leaves if is_fund_value(v)]
-    daily_leaves = [(p, v) for p, v in leaves if is_daily_value(v)]
 
     analytics_hosts = (
         "googlead", "doubleclick", "nr-data.net", "newrelic", "facebook.com",
@@ -534,7 +485,6 @@ def _dimensional_dfac_urls_from_json(body: bytes, base_url: str) -> list[str]:
         raw = raw.replace("\\/", "/").replace("&amp;", "&").strip()
         if not raw:
             return None
-        # Absolute or site-relative route. Also accept bare machine-readable filenames.
         if raw.startswith(("http://", "https://", "/")):
             url = urljoin(base_url, raw)
         elif re.search(r"\.(csv|xlsx|xls)(?:$|[?#])", raw, flags=re.I):
@@ -544,87 +494,130 @@ def _dimensional_dfac_urls_from_json(body: bytes, base_url: str) -> list[str]:
         ul = url.lower()
         if any(host in ul for host in analytics_hosts):
             return None
-        if ul.endswith(".pdf") or ".pdf?" in ul:
-            return None
         return url
 
-    url_leaves: list[tuple[tuple[Any, ...], str]] = []
-    for pth, raw in leaves:
-        url = normalize_url(raw)
-        if url:
-            url_leaves.append((pth, url))
+    # Find every list named linkDrawers, regardless of wrapper objects.
+    drawer_lists: list[list[Any]] = []
 
-    ranked: list[tuple[int, int, int, str, str]] = []
-    for upath, url in url_leaves:
-        if not fund_leaves or not daily_leaves:
-            continue
-        fund_dist = min(path_distance(upath, fp) for fp, _ in fund_leaves)
-        daily_dist = min(path_distance(upath, dp) for dp, _ in daily_leaves)
-        ul = url.lower()
-        lexical = 0
-        if "dfac" in ul:
-            lexical += 80
-        if any(t in ul for t in ("us-core-equity-2", "us_core_equity_2", "core-equity-2")):
-            lexical += 50
-        if "daily" in ul:
-            lexical += 30
-        if "holding" in ul:
-            lexical += 35
-        if re.search(r"\.(csv|xlsx|xls)(?:$|[?#])", ul):
-            lexical += 45
-        if "download" in ul:
-            lexical += 15
+    def find_drawer_lists(node: Any) -> None:
+        if isinstance(node, dict):
+            for k, v in node.items():
+                if str(k).lower() == "linkdrawers" and isinstance(v, list):
+                    drawer_lists.append(v)
+                find_drawer_lists(v)
+        elif isinstance(node, list):
+            for v in node:
+                find_drawer_lists(v)
 
-        # Strongly prefer URLs living in the same JSON record / list item as both
-        # the fund identity and the Daily Holdings label.
-        structural = max(0, 160 - 10 * (fund_dist + daily_dist))
-        ranked.append((structural + lexical, fund_dist, daily_dist, url, path_str(upath)))
+    find_drawer_lists(obj)
 
-    # Deduplicate while keeping best score for each URL.
-    best: dict[str, tuple[int, int, int, str]] = {}
-    for score, fd, dd, url, pth in ranked:
-        old = best.get(url)
-        if old is None or score > old[0]:
-            best[url] = (score, fd, dd, pth)
+    def strings_in(node: Any) -> list[str]:
+        out: list[str] = []
+        if isinstance(node, str):
+            out.append(node)
+        elif isinstance(node, dict):
+            for v in node.values():
+                out.extend(strings_in(v))
+        elif isinstance(node, list):
+            for v in node:
+                out.extend(strings_in(v))
+        return out
 
-    ordered = sorted(
-        ((score, fd, dd, url, pth) for url, (score, fd, dd, pth) in best.items()),
-        key=lambda x: x[0],
-        reverse=True,
-    )
+    def drawer_is_dfac(drawer: dict[str, Any]) -> bool:
+        title = str(drawer.get("title", ""))
+        subtitle = str(drawer.get("subtitle", ""))
+        identity = f"{title} {subtitle}".lower()
+        if re.search(r"\bdfac\b", identity):
+            return True
+        if "us core equity 2 etf" in identity or "u.s. core equity 2 etf" in identity:
+            return True
+        # 25434V708 is the current CUSIP shown by Dimensional/SEC records for DFAC.
+        # It also appears in Broadridge document links in the document-grid record.
+        for text in strings_in(drawer):
+            tl = text.lower()
+            if "25434v708" in tl or "q1_soi_dfac_" in tl:
+                return True
+        return False
 
-    # Only keep structurally plausible candidates. A generous threshold still
-    # permits nested records but prevents another 1,079-URL global scan.
-    plausible = [row for row in ordered if row[1] <= 10 and row[2] <= 10]
+    matching: list[tuple[int, dict[str, Any]]] = []
+    for drawers in drawer_lists:
+        for idx, drawer in enumerate(drawers):
+            if isinstance(drawer, dict) and drawer_is_dfac(drawer):
+                matching.append((idx, drawer))
 
-    # Bounded diagnostics: enough to identify schema/record relationships without
-    # flooding GitHub Actions logs.
-    fund_sample = " | ".join(
-        f"{path_str(p)}={v[:160]}" for p, v in fund_leaves[:6]
-    )
-    daily_sample = " | ".join(
-        f"{path_str(p)}={v[:160]}" for p, v in daily_leaves[:6]
-    )
-    LOG.info(
-        "DFAC document-grid diagnostics: fund_leaves=%d daily_leaves=%d url_leaves=%d fund_sample=%s daily_sample=%s",
-        len(fund_leaves), len(daily_leaves), len(url_leaves), fund_sample[:1400], daily_sample[:1400],
-    )
+    if not matching:
+        LOG.info("DFAC exact drawer diagnostics: no matching linkDrawer found")
+        return []
 
-    for score, fd, dd, url, pth in plausible[:12]:
+    candidates: list[tuple[int, str, str, int]] = []
+    for idx, drawer in matching:
+        title = str(drawer.get("title", ""))
+        subtitle = str(drawer.get("subtitle", ""))
+        links = drawer.get("links", [])
+        if not isinstance(links, list):
+            links = []
+
+        rendered_links: list[str] = []
+        for li, link in enumerate(links):
+            if not isinstance(link, dict):
+                continue
+            name = str(link.get("name", link.get("title", link.get("label", ""))))
+            raw_url = str(link.get("url", link.get("href", link.get("link", ""))))
+            url = normalize_url(raw_url) if raw_url else None
+            if raw_url:
+                rendered_links.append(f"{li}:{name[:90]}=>{raw_url[:320]}")
+            if not url:
+                continue
+
+            nl = name.lower()
+            ul = url.lower()
+            score = 0
+            if "daily holdings" in nl:
+                score += 300
+            elif "holding" in nl:
+                score += 220
+            elif "portfolio" in nl or "position" in nl:
+                score += 90
+            if "holding" in ul:
+                score += 180
+            if "portfolio" in ul or "position" in ul:
+                score += 60
+            if re.search(r"\.(csv|xlsx|xls)(?:$|[?#])", ul):
+                score += 200
+            if "download" in ul:
+                score += 25
+            if ul.endswith(".pdf") or ".pdf?" in ul:
+                score -= 250
+            if "prospectus-express" in ul:
+                score -= 120
+
+            if score > 0:
+                candidates.append((score, url, name, idx))
+
         LOG.info(
-            "DFAC document-grid top candidate score=%d fund_dist=%d daily_dist=%d path=%s url=%s",
-            score, fd, dd, pth[:300], url,
+            "DFAC exact drawer index=%s title=%s subtitle=%s link_count=%d links=%s",
+            idx, title[:180], subtitle[:120], len(links), " | ".join(rendered_links)[:6000],
         )
 
+    # Highest-confidence holdings/file links from the exact DFAC record only.
+    candidates.sort(key=lambda row: row[0], reverse=True)
     out: list[str] = []
     seen: set[str] = set()
-    for _, _, _, url, _ in plausible:
-        if url not in seen:
-            seen.add(url)
-            out.append(url)
+    for score, url, name, idx in candidates:
+        if url in seen:
+            continue
+        seen.add(url)
+        out.append(url)
+        LOG.info(
+            "DFAC exact drawer candidate score=%d drawer=%d name=%s url=%s",
+            score, idx, name[:160], url,
+        )
 
-    LOG.info("DFAC document-grid discovered %d structurally targeted URL candidate(s)", len(out))
-    return out[:30]
+    if not out:
+        LOG.info("DFAC exact drawer has no holdings/file candidate")
+    else:
+        LOG.info("DFAC exact drawer discovered %d holdings/file candidate(s)", len(out))
+    return out[:12]
 
 def _playwright_click_dfac_daily_holdings(page: Any) -> bool:
     """Click Daily Holdings only inside the DFAC / US Core Equity 2 result card/row.
@@ -931,6 +924,111 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
                 if _playwright_fill_search(page, "US Core Equity 2 ETF"):
                     dfac_clicked = click_dfac_and_capture_download()
             LOG.info("DFAC targeted Daily Holdings interaction: %s", "clicked" if dfac_clicked else "not found")
+
+            # v9 second path: the Document Center currently exposes the DFAC drawer but
+            # may omit a Daily Holdings link. Visit the dedicated DFAC fund page and let
+            # the same response listener capture holdings/portfolio XHRs. Because this
+            # page is fund-specific, generic Holdings controls are safe to click here.
+            if not dfac_clicked:
+                try:
+                    LOG.info("DFAC product-page fallback: %s", source.landing_url)
+                    page.goto(source.landing_url, wait_until="domcontentloaded", timeout=60_000)
+                    page.wait_for_timeout(2600)
+                    for common in (
+                        "United States", "Accept & Continue", "Accept All",
+                        "Accept Cookies", "I Accept", "Agree",
+                    ):
+                        _playwright_click_if_present(page, common, timeout_ms=1400)
+
+                    try:
+                        page.evaluate("window.scrollTo(0, document.body.scrollHeight * 0.6)")
+                        page.wait_for_timeout(900)
+                    except Exception:
+                        pass
+
+                    interaction = "none"
+                    for text in (
+                        "Daily Holdings", "View Holdings", "Full Holdings",
+                        "Portfolio Holdings", "Holdings", "Portfolio",
+                    ):
+                        locator = None
+                        for factory in (
+                            lambda t=text: page.get_by_role("link", name=re.compile(re.escape(t), re.I)).first,
+                            lambda t=text: page.get_by_role("button", name=re.compile(re.escape(t), re.I)).first,
+                            lambda t=text: page.get_by_text(re.compile(re.escape(t), re.I), exact=False).first,
+                        ):
+                            try:
+                                cand = factory()
+                                if cand.is_visible(timeout=1200):
+                                    locator = cand
+                                    break
+                            except Exception:
+                                pass
+                        if locator is None:
+                            continue
+                        try:
+                            locator.scroll_into_view_if_needed(timeout=1800)
+                        except Exception:
+                            pass
+                        clicked = False
+                        try:
+                            with page.expect_download(timeout=4500) as download_info:
+                                locator.click(timeout=3500)
+                                clicked = True
+                            download = download_info.value
+                            tmp_path = Path(download.path())
+                            docs.append(
+                                DownloadedDocument(
+                                    data=tmp_path.read_bytes(),
+                                    source_url=download.url or page.url,
+                                    filename=download.suggested_filename or "dfac-product-holdings",
+                                    content_type="application/octet-stream",
+                                )
+                            )
+                            interaction = f"download:{text}"
+                            LOG.info("DFAC product-page captured download via %s: %s", text, download.suggested_filename)
+                            break
+                        except PlaywrightTimeoutError:
+                            # Click still matters: it may reveal a panel or fire an XHR,
+                            # which add_response_doc() captures asynchronously.
+                            if not clicked:
+                                try:
+                                    locator.click(timeout=2500)
+                                    clicked = True
+                                except Exception:
+                                    pass
+                            if clicked:
+                                interaction = f"clicked:{text}"
+                                page.wait_for_timeout(1800)
+                                LOG.info("DFAC product-page clicked control: %s", text)
+                                # Continue so a second control such as Full Holdings can
+                                # appear after opening a Holdings tab.
+                        except Exception as exc:
+                            LOG.debug("DFAC product-page control %r failed: %s", text, exc)
+
+                    try:
+                        anchors = page.locator("a[href]")
+                        logged = 0
+                        for i in range(min(anchors.count(), 500)):
+                            a = anchors.nth(i)
+                            href = a.get_attribute("href") or ""
+                            try:
+                                txt = a.inner_text(timeout=400)
+                            except Exception:
+                                txt = ""
+                            absolute = urljoin(page.url, href)
+                            sig = f"{txt} {absolute}".lower()
+                            if any(k in sig for k in ("holding", "portfolio", ".csv", ".xlsx", ".xls")):
+                                network_urls.append(absolute)
+                                if logged < 12:
+                                    LOG.info("DFAC product-page candidate link text=%s url=%s", txt[:120], absolute)
+                                    logged += 1
+                    except Exception:
+                        pass
+
+                    LOG.info("DFAC product-page interaction result: %s current_url=%s", interaction, page.url)
+                except Exception as exc:
+                    LOG.info("DFAC product-page fallback failed: %s", exc)
 
         for text in source.browser_pre_click:
             _playwright_click_if_present(page, text)
