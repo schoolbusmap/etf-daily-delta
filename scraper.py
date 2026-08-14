@@ -94,14 +94,9 @@ SOURCES: dict[str, ETFSource] = {
         provider="Dimensional Fund Advisors",
         fund_name="Dimensional U.S. Core Equity 2 ETF",
         landing_url="https://www.dimensional.com/us-en/funds/dfac/us-core-equity-2-etf",
-        # DFAC was created in 2021 by reorganizing the T.A. U.S. Core Equity 2
-        # Portfolio into the ETF. The predecessor's Institutional Class ticker was
-        # DFTCX. Dimensional's daily-holdings blob can retain legacy portfolio keys,
-        # so try the current ETF ticker first and the exact predecessor ticker second.
-        direct_urls=(
-            "https://dimensionaltools.blob.core.windows.net/etf/daily-holdings/DFAC.csv",
-            "https://dimensionaltools.blob.core.windows.net/etf/daily-holdings/DFTCX.csv",
-        ),
+        # No guessed direct blob filename: v7 proved DFAC.csv and DFTCX.csv both 404.
+        # Resolve the current official Daily Holdings route from Dimensional document-grid.
+        direct_urls=(),
         browser_url="https://www.dimensional.com/us-en/document-center",
         browser_search_term="DFAC",
         browser_pre_click=(),
@@ -468,216 +463,168 @@ def _iter_string_values(obj: Any) -> Iterable[str]:
 
 
 def _dimensional_dfac_urls_from_json(body: bytes, base_url: str) -> list[str]:
-    """Extract DFAC Daily Holdings download URLs from Dimensional document-grid JSON.
+    """Extract DFAC Daily Holdings URLs from Dimensional document-grid JSON.
 
-    The API schema is allowed to vary.  We use three complementary strategies:
-      1) smallest nested subtree containing both the DFAC fund identity and Daily Holdings;
-      2) relational matching via ID-like fields between a DFAC fund record and a
-         Daily Holdings document record;
-      3) bounded diagnostics when the API contains DFAC/Daily Holdings but no URL
-         can yet be recovered.
-
-    This deliberately excludes PDFs because the daily ETF holdings needed for delta
-    calculations must be machine-readable tabular data.
+    v8 stops guessing legacy ticker filenames. Instead it uses structural proximity
+    inside the actual document-grid JSON: URL-like leaves are ranked by how close
+    their JSON paths are to leaves identifying DFAC / US Core Equity 2 and to leaves
+    identifying the Daily Holdings document type. Bounded diagnostics expose the
+    exact JSON paths when the schema changes again.
     """
     try:
         obj = json.loads(body.decode("utf-8", errors="strict"))
     except Exception:
         return []
 
-    def all_strings(node: Any) -> list[str]:
-        return [s for s in _iter_string_values(node) if isinstance(s, str)]
+    Leaf = tuple[tuple[Any, ...], str]
+    leaves: list[Leaf] = []
 
-    def scalar_text(node: dict[str, Any]) -> str:
-        return " ".join(
-            str(v) for v in node.values()
-            if isinstance(v, (str, int, float, bool)) and v is not None
-        ).lower()
+    def walk(node: Any, path: tuple[Any, ...] = ()) -> None:
+        if isinstance(node, dict):
+            for k, v in node.items():
+                walk(v, path + (str(k),))
+        elif isinstance(node, list):
+            for i, v in enumerate(node):
+                walk(v, path + (i,))
+        elif isinstance(node, (str, int, float, bool)) and node is not None:
+            leaves.append((path, str(node)))
 
-    def subtree_text(node: Any) -> str:
-        return " ".join(all_strings(node)).lower()
+    walk(obj)
 
-    def is_fund_text(text: str) -> bool:
-        return any(
-            token in text
-            for token in (
-                "dfac",
-                "us core equity 2 etf",
-                "u.s. core equity 2 etf",
-                "us core equity 2",
-                "u.s. core equity 2",
-                "dftcx",
-                "s000070903",  # current DFAC ETF series
-                "c000225167",  # current DFAC ETF class/contract
-                "s000016732",  # predecessor T.A. U.S. Core Equity 2 Portfolio series
-                "c000046748",  # predecessor Institutional Class
-            )
-        )
+    def path_str(path: tuple[Any, ...]) -> str:
+        return "/".join(str(x) for x in path)
 
-    def is_daily_text(text: str) -> bool:
+    def is_fund_value(value: str) -> bool:
+        text = value.lower()
+        return any(token in text for token in (
+            "dfac",
+            "us core equity 2 etf",
+            "u.s. core equity 2 etf",
+            "us core equity 2",
+            "u.s. core equity 2",
+            "s000070903",
+            "c000225167",
+        ))
+
+    def is_daily_value(value: str) -> bool:
+        text = value.lower()
         return "daily holdings" in text or ("daily" in text and "holding" in text)
 
-    def iter_dicts(node: Any) -> Iterable[dict[str, Any]]:
-        if isinstance(node, dict):
-            yield node
-            for value in node.values():
-                yield from iter_dicts(value)
-        elif isinstance(node, list):
-            for value in node:
-                yield from iter_dicts(value)
+    def common_prefix_len(a: tuple[Any, ...], b: tuple[Any, ...]) -> int:
+        n = 0
+        for x, y in zip(a, b):
+            if x != y:
+                break
+            n += 1
+        return n
 
-    def url_candidates_from(node: Any) -> list[str]:
-        urls: list[str] = []
-        for raw in all_strings(node):
-            raw = raw.replace("\\/", "/").replace("&amp;", "&").strip()
-            if not raw:
-                continue
-            if raw.startswith(("http://", "https://", "/")):
-                url = urljoin(base_url, raw)
-            elif re.search(r"\.(csv|xlsx|xls)(?:$|[?#])", raw, flags=re.I):
-                url = urljoin(base_url, raw)
-            else:
-                continue
-            ul = url.lower()
-            if ul.endswith(".pdf") or ".pdf?" in ul:
-                continue
-            urls.append(url)
-        return urls
+    def path_distance(a: tuple[Any, ...], b: tuple[Any, ...]) -> int:
+        cp = common_prefix_len(a, b)
+        return (len(a) - cp) + (len(b) - cp)
 
-    scored: list[tuple[int, str]] = []
+    fund_leaves = [(p, v) for p, v in leaves if is_fund_value(v)]
+    daily_leaves = [(p, v) for p, v in leaves if is_daily_value(v)]
 
-    def score_url(url: str, contextual: bool = False) -> int:
-        ul = url.lower()
-        score = 5 if contextual else 0
-        if "dfac" in ul:
-            score += 45
-        # Exact predecessor ticker for the T.A. U.S. Core Equity 2 Portfolio
-        # that was reorganized into DFAC in 2021. Give it a very large boost so it
-        # cannot be buried behind hundreds of unrelated Dimensional CSVs.
-        if re.search(r"(?:^|/)dftcx\.csv(?:$|[?#])", ul):
-            score += 300
-        elif "dftcx" in ul:
-            score += 160
-        if any(token in ul for token in ("us-core-equity-2", "us_core_equity_2", "core-equity-2")):
-            score += 35
-        if "daily" in ul:
-            score += 25
-        if "holding" in ul:
-            score += 25
-        if re.search(r"\.(csv|xlsx|xls)(?:$|[?#])", ul):
-            score += 40
-        if "download" in ul:
-            score += 10
-        return score
+    analytics_hosts = (
+        "googlead", "doubleclick", "nr-data.net", "newrelic", "facebook.com",
+        "linkedin.com", "adobe", "smetrics", "hubspot",
+    )
 
-    # Strategy 1: smallest nested subtree containing both fund and document signals.
-    minimal_matches: list[Any] = []
-
-    def find_minimal(node: Any) -> None:
-        if not isinstance(node, (dict, list)):
-            return
-        txt = subtree_text(node)
-        if not (is_fund_text(txt) and is_daily_text(txt)):
-            return
-
-        children = (
-            [v for v in node.values() if isinstance(v, (dict, list))]
-            if isinstance(node, dict)
-            else [v for v in node if isinstance(v, (dict, list))]
-        )
-        matching_children = []
-        for child in children:
-            ctext = subtree_text(child)
-            if is_fund_text(ctext) and is_daily_text(ctext):
-                matching_children.append(child)
-
-        if matching_children:
-            for child in matching_children:
-                find_minimal(child)
+    def normalize_url(raw: str) -> str | None:
+        raw = raw.replace("\\/", "/").replace("&amp;", "&").strip()
+        if not raw:
+            return None
+        # Absolute or site-relative route. Also accept bare machine-readable filenames.
+        if raw.startswith(("http://", "https://", "/")):
+            url = urljoin(base_url, raw)
+        elif re.search(r"\.(csv|xlsx|xls)(?:$|[?#])", raw, flags=re.I):
+            url = urljoin(base_url, raw)
         else:
-            minimal_matches.append(node)
+            return None
+        ul = url.lower()
+        if any(host in ul for host in analytics_hosts):
+            return None
+        if ul.endswith(".pdf") or ".pdf?" in ul:
+            return None
+        return url
 
-    find_minimal(obj)
-    for node in minimal_matches:
-        for url in url_candidates_from(node):
-            scored.append((score_url(url, contextual=True), url))
+    url_leaves: list[tuple[tuple[Any, ...], str]] = []
+    for pth, raw in leaves:
+        url = normalize_url(raw)
+        if url:
+            url_leaves.append((pth, url))
 
-    # Strategy 2: link separate fund/document records through ID-like scalar fields.
-    dicts = list(iter_dicts(obj))
-    fund_records = [d for d in dicts if is_fund_text(scalar_text(d))]
-    daily_records = [d for d in dicts if is_daily_text(scalar_text(d))]
+    ranked: list[tuple[int, int, int, str, str]] = []
+    for upath, url in url_leaves:
+        if not fund_leaves or not daily_leaves:
+            continue
+        fund_dist = min(path_distance(upath, fp) for fp, _ in fund_leaves)
+        daily_dist = min(path_distance(upath, dp) for dp, _ in daily_leaves)
+        ul = url.lower()
+        lexical = 0
+        if "dfac" in ul:
+            lexical += 80
+        if any(t in ul for t in ("us-core-equity-2", "us_core_equity_2", "core-equity-2")):
+            lexical += 50
+        if "daily" in ul:
+            lexical += 30
+        if "holding" in ul:
+            lexical += 35
+        if re.search(r"\.(csv|xlsx|xls)(?:$|[?#])", ul):
+            lexical += 45
+        if "download" in ul:
+            lexical += 15
 
-    link_values: set[str] = {"dfac"}
-    for record in fund_records:
-        for key, value in record.items():
-            if not isinstance(value, (str, int, float)) or value is None:
-                continue
-            key_l = str(key).lower()
-            if not any(
-                token in key_l
-                for token in (
-                    "id", "ticker", "symbol", "code", "slug",
-                    "fund", "investment", "portfolio", "product", "vehicle",
-                )
-            ):
-                continue
-            sv = str(value).strip().lower()
-            if len(sv) >= 3 and sv not in {"true", "false", "none", "null"}:
-                link_values.add(sv)
+        # Strongly prefer URLs living in the same JSON record / list item as both
+        # the fund identity and the Daily Holdings label.
+        structural = max(0, 160 - 10 * (fund_dist + daily_dist))
+        ranked.append((structural + lexical, fund_dist, daily_dist, url, path_str(upath)))
 
-    linked_daily_records: list[dict[str, Any]] = []
-    for record in daily_records:
-        values = {
-            str(v).strip().lower()
-            for v in record.values()
-            if isinstance(v, (str, int, float)) and v is not None
-        }
-        txt = scalar_text(record)
-        if is_fund_text(txt) or any(v in values for v in link_values):
-            linked_daily_records.append(record)
+    # Deduplicate while keeping best score for each URL.
+    best: dict[str, tuple[int, int, int, str]] = {}
+    for score, fd, dd, url, pth in ranked:
+        old = best.get(url)
+        if old is None or score > old[0]:
+            best[url] = (score, fd, dd, pth)
 
-    for record in linked_daily_records:
-        for url in url_candidates_from(record):
-            scored.append((score_url(url, contextual=True) + 20, url))
+    ordered = sorted(
+        ((score, fd, dd, url, pth) for url, (score, fd, dd, pth) in best.items()),
+        key=lambda x: x[0],
+        reverse=True,
+    )
 
-    # If the daily record contains nested link objects, inspect a small enclosing
-    # dict that carries the same fund identifier.
-    if not linked_daily_records and fund_records and daily_records:
-        fund_ids = {
-            v for v in link_values
-            if len(v) >= 4 and v not in {"dfac"}
-        }
-        for record in dicts:
-            txt = subtree_text(record)
-            if not is_daily_text(txt):
-                continue
-            if "dfac" in txt or any(fid in txt for fid in fund_ids):
-                for url in url_candidates_from(record):
-                    scored.append((score_url(url, contextual=True) + 10, url))
+    # Only keep structurally plausible candidates. A generous threshold still
+    # permits nested records but prevents another 1,079-URL global scan.
+    plausible = [row for row in ordered if row[1] <= 10 and row[2] <= 10]
 
-    seen: set[str] = set()
+    # Bounded diagnostics: enough to identify schema/record relationships without
+    # flooding GitHub Actions logs.
+    fund_sample = " | ".join(
+        f"{path_str(p)}={v[:160]}" for p, v in fund_leaves[:6]
+    )
+    daily_sample = " | ".join(
+        f"{path_str(p)}={v[:160]}" for p, v in daily_leaves[:6]
+    )
+    LOG.info(
+        "DFAC document-grid diagnostics: fund_leaves=%d daily_leaves=%d url_leaves=%d fund_sample=%s daily_sample=%s",
+        len(fund_leaves), len(daily_leaves), len(url_leaves), fund_sample[:1400], daily_sample[:1400],
+    )
+
+    for score, fd, dd, url, pth in plausible[:12]:
+        LOG.info(
+            "DFAC document-grid top candidate score=%d fund_dist=%d daily_dist=%d path=%s url=%s",
+            score, fd, dd, pth[:300], url,
+        )
+
     out: list[str] = []
-    for _, url in sorted(scored, key=lambda x: x[0], reverse=True):
+    seen: set[str] = set()
+    for _, _, _, url, _ in plausible:
         if url not in seen:
             seen.add(url)
             out.append(url)
 
-    if out:
-        LOG.info("DFAC document-grid discovered %d targeted URL candidate(s)", len(out))
-    else:
-        # Diagnostics are intentionally bounded so the Actions log stays readable.
-        fund_sample = " | ".join(scalar_text(d) for d in fund_records[:3])[:900]
-        daily_sample = " | ".join(scalar_text(d) for d in daily_records[:3])[:900]
-        if fund_sample or daily_sample:
-            LOG.info(
-                "DFAC document-grid diagnostics: fund_records=%d daily_records=%d fund_sample=%s daily_sample=%s",
-                len(fund_records),
-                len(daily_records),
-                fund_sample,
-                daily_sample,
-            )
-
-    return out[:80]
+    LOG.info("DFAC document-grid discovered %d structurally targeted URL candidate(s)", len(out))
+    return out[:30]
 
 def _playwright_click_dfac_daily_holdings(page: Any) -> bool:
     """Click Daily Holdings only inside the DFAC / US Core Equity 2 result card/row.
@@ -845,6 +792,16 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
             # Pull only URLs tied to the DFAC Daily Holdings record instead of
             # scanning every fund document in the response.
             if source.ticker == "DFAC" and ("json" in ct or "document-grid" in url_l):
+                if "document-grid" in url_l:
+                    try:
+                        req = response.request
+                        post_data = req.post_data or ""
+                        LOG.info(
+                            "DFAC document-grid request method=%s url=%s post_data=%s",
+                            req.method, url, post_data[:1800].replace("\n", " "),
+                        )
+                    except Exception:
+                        pass
                 for candidate_url in _dimensional_dfac_urls_from_json(body, url):
                     network_urls.append(candidate_url)
 
