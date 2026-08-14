@@ -105,14 +105,25 @@ SOURCES: dict[str, ETFSource] = {
         browser_download_texts=("Daily Holdings", "Download Holdings"),
         min_rows=500,
         aliases={
-            "ticker": ("Ticker", "Symbol", "Trading Symbol"),
-            "company": ("Security Name", "Name", "Description", "Issuer Name"),
+            "ticker": (
+                "Ticker", "Symbol", "Trading Symbol", "Security Ticker",
+                "SecurityTicker", "Security Symbol", "SecuritySymbol",
+            ),
+            "company": (
+                "Security Name", "Name", "Description", "Issuer Name",
+                "SecurityName", "Security Description", "SecurityDescription",
+            ),
             "shares": (
                 "Shares", "Shares Held", "Quantity", "Share Quantity",
                 "Shares/Par", "Shares / Par", "Shares/Par Value",
                 "Shares/Principal", "Shares/Principal Amount",
+                "NumberOfShares", "SharesHeld", "QuantityHeld", "HoldingQuantity",
             ),
-            "weight": ("Weight", "Weight (%)", "% of Net Assets", "Percent of Net Assets"),
+            "weight": (
+                "Weight", "Weight (%)", "% of Net Assets", "Percent of Net Assets",
+                "PortfolioWeight", "WeightPercent", "MarketValuePercent",
+                "PercentageOfNetAssets",
+            ),
         },
     ),
     "CGGR": ETFSource(
@@ -660,6 +671,161 @@ def _dimensional_dfac_urls_from_json(body: bytes, base_url: str) -> list[str]:
         LOG.info("DFAC exact drawer discovered %d holdings/file candidate(s)", len(out))
     return out[:12]
 
+
+def _dimensional_dfac_api_diagnostics(body: bytes, endpoint_url: str) -> list[str]:
+    """Inspect Dimensional's public fund APIs without guessing endpoint schemas.
+
+    v10 exposed the official etf.dimensional.com/public/v2 APIs. v11 logs the exact
+    request payload plus compact JSON objects/keys tied to DFAC, holdings, securities,
+    or portfolio identifiers. It also returns any explicit holdings/file URLs found.
+    """
+    try:
+        obj = json.loads(body.decode("utf-8", errors="strict"))
+    except Exception:
+        return []
+
+    def short(v: Any, limit: int = 900) -> str:
+        try:
+            if isinstance(v, (dict, list)):
+                text = json.dumps(v, ensure_ascii=False, separators=(",", ":"))
+            else:
+                text = str(v)
+        except Exception:
+            text = repr(v)
+        text = re.sub(r"\s+", " ", text)
+        return text[:limit]
+
+    root_keys = list(obj.keys())[:60] if isinstance(obj, dict) else []
+    LOG.info(
+        "DFAC API diagnostics endpoint=%s root_type=%s root_keys=%s",
+        endpoint_url,
+        type(obj).__name__,
+        root_keys,
+    )
+
+    urls: list[str] = []
+    seen_urls: set[str] = set()
+    matched_objects = 0
+    holdings_keys = 0
+
+    def walk(node: Any, path: tuple[str, ...] = ()) -> None:
+        nonlocal matched_objects, holdings_keys
+        if matched_objects >= 24 and holdings_keys >= 30:
+            return
+
+        if isinstance(node, dict):
+            # Log compact objects that actually identify DFAC / US Core Equity 2.
+            try:
+                scalar_text = " ".join(
+                    f"{k}={v}" for k, v in node.items()
+                    if isinstance(v, (str, int, float, bool)) or v is None
+                ).lower()
+            except Exception:
+                scalar_text = ""
+            if (
+                matched_objects < 24
+                and ("dfac" in scalar_text or "us core equity 2" in scalar_text)
+            ):
+                scalar_fields = {
+                    str(k): v for k, v in node.items()
+                    if isinstance(v, (str, int, float, bool)) or v is None
+                }
+                LOG.info(
+                    "DFAC API matched object path=%s fields=%s",
+                    "/".join(path) or "<root>",
+                    short(scalar_fields, 1800),
+                )
+                matched_objects += 1
+
+            for k, v in node.items():
+                k_s = str(k)
+                k_l = k_s.lower()
+                p = path + (k_s,)
+                if (
+                    holdings_keys < 30
+                    and any(tok in k_l for tok in (
+                        "holding", "position", "constituent", "security", "share",
+                        "weight", "portfolioid", "portfolio_id", "portfolio-code",
+                        "portfoliocode", "fundid", "fund_id", "ticker", "symbol",
+                    ))
+                ):
+                    LOG.info(
+                        "DFAC API key path=%s type=%s value_sample=%s",
+                        "/".join(p), type(v).__name__, short(v, 1200),
+                    )
+                    holdings_keys += 1
+                walk(v, p)
+
+        elif isinstance(node, list):
+            for i, item in enumerate(node[:5000]):
+                walk(item, path + (str(i),))
+                if matched_objects >= 24 and holdings_keys >= 30:
+                    break
+        elif isinstance(node, str):
+            u = node.strip()
+            u_l = u.lower()
+            if (
+                (u.startswith("http://") or u.startswith("https://") or u.startswith("/"))
+                and (
+                    "holding" in u_l or "position" in u_l
+                    or re.search(r"\.(csv|xlsx|xls)(?:$|[?#])", u_l)
+                )
+            ):
+                absolute = urljoin(endpoint_url, u)
+                if absolute not in seen_urls:
+                    seen_urls.add(absolute)
+                    urls.append(absolute)
+                    if len(urls) <= 20:
+                        LOG.info("DFAC API explicit file/holdings URL path=%s url=%s", "/".join(path), absolute)
+
+    walk(obj)
+    LOG.info(
+        "DFAC API diagnostics summary endpoint=%s matched_objects=%d holdings_keys=%d explicit_urls=%d",
+        endpoint_url, matched_objects, holdings_keys, len(urls),
+    )
+    return urls
+
+
+def _playwright_log_dfac_controls(page: Any) -> None:
+    """Log the exact visible fund-page controls that could reveal holdings."""
+    try:
+        items = page.locator("a,button,[role=tab],[role=button]")
+        logged = 0
+        seen: set[tuple[str, str]] = set()
+        for i in range(min(items.count(), 700)):
+            el = items.nth(i)
+            try:
+                if not el.is_visible(timeout=250):
+                    continue
+                txt = re.sub(r"\s+", " ", el.inner_text(timeout=350)).strip()
+            except Exception:
+                continue
+            if not txt:
+                continue
+            sig_l = txt.lower()
+            if not any(k in sig_l for k in (
+                "holding", "portfolio", "composition", "characteristic", "security", "download"
+            )):
+                continue
+            href = ""
+            try:
+                href = el.get_attribute("href") or ""
+            except Exception:
+                pass
+            key = (txt[:180], href[:500])
+            if key in seen:
+                continue
+            seen.add(key)
+            LOG.info("DFAC visible control candidate text=%s href=%s", txt[:180], href[:500])
+            logged += 1
+            if logged >= 30:
+                break
+        if logged == 0:
+            LOG.info("DFAC visible control candidate: none")
+    except Exception as exc:
+        LOG.info("DFAC visible control diagnostics failed: %s", exc)
+
+
 def _playwright_click_dfac_daily_holdings(page: Any) -> bool:
     """Click Daily Holdings only inside the DFAC / US Core Equity 2 result card/row.
 
@@ -807,9 +973,16 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
                     status = response.status
                 except Exception:
                     status = "?"
+                try:
+                    req = response.request
+                    req_method = req.method
+                    req_post = (req.post_data or "")[:1800].replace("\n", " ")
+                except Exception:
+                    req_method = "?"
+                    req_post = ""
                 LOG.info(
-                    "DFAC network response status=%s type=%s ct=%s url=%s",
-                    status, resource_type, ct[:100], url,
+                    "DFAC network response status=%s type=%s method=%s ct=%s url=%s post_data=%s",
+                    status, resource_type, req_method, ct[:100], url, req_post,
                 )
 
             fileish_ct = any(
@@ -843,6 +1016,18 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
             body = response.body()
             if not body or len(body) > 25_000_000:
                 return
+
+            if (
+                source.ticker == "DFAC"
+                and "json" in ct
+                and (
+                    "etf.dimensional.com/public/v2/" in url_l
+                    or "investment-api/portfolio-details" in url_l
+                    or "investment-api/portfolio-disclosures" in url_l
+                )
+            ):
+                for candidate_url in _dimensional_dfac_api_diagnostics(body, url):
+                    network_urls.append(candidate_url)
 
             # Dimensional Document Center returns metadata through document-grid.
             # Pull only URLs tied to the DFAC Daily Holdings record instead of
@@ -944,6 +1129,14 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
         if source.browser_search_term:
             _playwright_fill_search(page, source.browser_search_term)
 
+        if source.ticker == "DFAC":
+            try:
+                body_sample0 = re.sub(r"\s+", " ", page.locator("body").inner_text(timeout=3000))[:5000]
+            except Exception:
+                body_sample0 = ""
+            LOG.info("DFAC initial fund-page state current_url=%s title=%s body_sample=%s", page.url, page.title()[:220], body_sample0)
+            _playwright_log_dfac_controls(page)
+
         # On Dimensional, click Daily Holdings inside the DFAC result only.
         # IMPORTANT: a Daily Holdings control may directly start a browser download.
         # Earlier versions clicked it outside expect_download(), which meant the file
@@ -1020,6 +1213,7 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
                         "DFAC product-page state after role selection current_url=%s title=%s role_clicks=%s body_sample=%s",
                         page.url, title[:220], role_clicks, body_sample,
                     )
+                    _playwright_log_dfac_controls(page)
 
                     # If the role selector or client router dropped us back on the generic
                     # fund directory, navigate to DFAC again now that the role cookies are set.
@@ -1043,6 +1237,7 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
                             "DFAC product-page state after retry current_url=%s title=%s body_sample=%s",
                             page.url, title[:220], body_sample,
                         )
+                        _playwright_log_dfac_controls(page)
 
                     try:
                         page.evaluate("window.scrollTo(0, document.body.scrollHeight * 0.6)")
@@ -1054,6 +1249,8 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
                     for text in (
                         "Daily Holdings", "View Holdings", "Full Holdings",
                         "Portfolio Holdings", "Holdings", "Portfolio",
+                        "Portfolio Characteristics", "Portfolio Composition",
+                        "Fund Holdings", "Download",
                     ):
                         locator = None
                         for factory in (
