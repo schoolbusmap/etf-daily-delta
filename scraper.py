@@ -12,7 +12,8 @@ import re
 import sys
 import time
 from dataclasses import dataclass, field
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any, Iterable
 from urllib.parse import unquote_to_bytes, urljoin, urlparse
@@ -93,10 +94,17 @@ SOURCES: dict[str, ETFSource] = {
         provider="Dimensional Fund Advisors",
         fund_name="Dimensional U.S. Core Equity 2 ETF",
         landing_url="https://www.dimensional.com/us-en/funds/dfac/us-core-equity-2-etf",
+        # DFAC was created from the U.S. Core Equity 2 Portfolio. Dimensional's
+        # document service keys some converted-fund holding files by the legacy
+        # portfolio ticker (DFQTX) rather than the exchange ticker (DFAC).
+        direct_urls=(
+            "https://dimensionaltools.blob.core.windows.net/etf/daily-holdings/DFQTX.csv",
+        ),
         browser_url="https://www.dimensional.com/us-en/document-center",
         browser_search_term="DFAC",
         browser_pre_click=(),
         browser_download_texts=("Daily Holdings", "Download Holdings"),
+        min_rows=500,
         aliases={
             "ticker": ("Ticker", "Symbol", "Trading Symbol"),
             "company": ("Security Name", "Name", "Description", "Issuer Name"),
@@ -264,6 +272,7 @@ class DownloadedDocument:
     source_url: str
     filename: str
     content_type: str = ""
+    last_modified: str = ""
 
 
 @dataclass
@@ -321,6 +330,7 @@ def download_url(session: requests.Session, url: str) -> DownloadedDocument:
         source_url=response.url,
         filename=filename_from_response(response.url, dict(response.headers)),
         content_type=response.headers.get("content-type", ""),
+        last_modified=response.headers.get("last-modified", ""),
     )
 
 
@@ -494,6 +504,7 @@ def _dimensional_dfac_urls_from_json(body: bytes, base_url: str) -> list[str]:
                 "u.s. core equity 2 etf",
                 "us core equity 2",
                 "u.s. core equity 2",
+                "dfqtx",
             )
         )
 
@@ -534,6 +545,13 @@ def _dimensional_dfac_urls_from_json(body: bytes, base_url: str) -> list[str]:
         score = 5 if contextual else 0
         if "dfac" in ul:
             score += 45
+        # Legacy portfolio ticker for U.S. Core Equity 2 Portfolio. Exact match
+        # gets a very large boost so it cannot be buried behind hundreds of
+        # unrelated Dimensional daily-holdings CSVs.
+        if re.search(r"(?:^|/)dfqtx\.csv(?:$|[?#])", ul):
+            score += 250
+        elif "dfqtx" in ul:
+            score += 120
         if any(token in ul for token in ("us-core-equity-2", "us_core_equity_2", "core-equity-2")):
             score += 35
         if "daily" in ul:
@@ -653,7 +671,7 @@ def _dimensional_dfac_urls_from_json(body: bytes, base_url: str) -> list[str]:
                 daily_sample,
             )
 
-    return out[:30]
+    return out[:80]
 
 def _playwright_click_dfac_daily_holdings(page: Any) -> bool:
     """Click Daily Holdings only inside the DFAC / US Core Equity 2 result card/row.
@@ -869,6 +887,7 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
                     source_url=url,
                     filename=filename_from_response(url, headers),
                     content_type=ct,
+                    last_modified=headers.get("last-modified", ""),
                 )
             )
             network_urls.append(url)
@@ -1340,6 +1359,110 @@ def parse_date_string(value: str) -> date | None:
     return None
 
 
+
+def _observed_fixed_holiday(year: int, month: int, day: int) -> date:
+    d = date(year, month, day)
+    if d.weekday() == 5:  # Saturday -> Friday
+        return d - timedelta(days=1)
+    if d.weekday() == 6:  # Sunday -> Monday
+        return d + timedelta(days=1)
+    return d
+
+
+def _nth_weekday(year: int, month: int, weekday: int, n: int) -> date:
+    d = date(year, month, 1)
+    shift = (weekday - d.weekday()) % 7
+    return d + timedelta(days=shift + 7 * (n - 1))
+
+
+def _last_weekday(year: int, month: int, weekday: int) -> date:
+    if month == 12:
+        d = date(year + 1, 1, 1) - timedelta(days=1)
+    else:
+        d = date(year, month + 1, 1) - timedelta(days=1)
+    return d - timedelta(days=(d.weekday() - weekday) % 7)
+
+
+def _easter_sunday(year: int) -> date:
+    # Gregorian computus (Meeus/Jones/Butcher), used only to derive Good Friday.
+    a = year % 19
+    b = year // 100
+    c = year % 100
+    d = b // 4
+    e = b % 4
+    f = (b + 8) // 25
+    g = (b - f + 1) // 3
+    h = (19 * a + b - d - g + 15) % 30
+    i = c // 4
+    k = c % 4
+    l = (32 + 2 * e + 2 * i - h - k) % 7
+    m = (a + 11 * h + 22 * l) // 451
+    month = (h + l - 7 * m + 114) // 31
+    day = ((h + l - 7 * m + 114) % 31) + 1
+    return date(year, month, day)
+
+
+def _is_regular_nyse_holiday(d: date) -> bool:
+    """Regular modern NYSE full-day holidays; enough for daily snapshot dating.
+
+    This intentionally does not try to encode exceptional one-off closures. If a
+    future exceptional closure occurs and Dimensional's file lacks an embedded date,
+    strict mode will still avoid duplicate snapshots because the official blob's
+    Last-Modified timestamp does not change until a new file is published.
+    """
+    y = d.year
+    holidays = {
+        _observed_fixed_holiday(y, 1, 1),                 # New Year's Day
+        _nth_weekday(y, 1, 0, 3),                        # MLK Day
+        _nth_weekday(y, 2, 0, 3),                        # Presidents Day
+        _easter_sunday(y) - timedelta(days=2),           # Good Friday
+        _last_weekday(y, 5, 0),                          # Memorial Day
+        _observed_fixed_holiday(y, 7, 4),                # Independence Day
+        _nth_weekday(y, 9, 0, 1),                        # Labor Day
+        _nth_weekday(y, 11, 3, 4),                       # Thanksgiving
+        _observed_fixed_holiday(y, 12, 25),              # Christmas
+    }
+    if y >= 2022:
+        holidays.add(_observed_fixed_holiday(y, 6, 19))  # Juneteenth
+    # New Year's observed date may fall in the prior calendar year.
+    holidays.add(_observed_fixed_holiday(y + 1, 1, 1))
+    return d in holidays
+
+
+def _previous_nyse_session(before_date: date) -> date:
+    d = before_date - timedelta(days=1)
+    while d.weekday() >= 5 or _is_regular_nyse_holiday(d):
+        d -= timedelta(days=1)
+    return d
+
+
+def _dimensional_last_modified_as_of(document: DownloadedDocument) -> date | None:
+    """Infer holdings as-of date from the official Dimensional blob publication time.
+
+    Dimensional's daily-holdings CSVs can omit an embedded date. Their Azure Blob
+    Last-Modified timestamp identifies when a new daily file was published; the
+    holdings are disclosed with a one-session lag, so the relevant as-of date is
+    the prior NYSE session. This fallback is limited to the official Dimensional
+    daily-holdings blob path and is never used for other providers.
+    """
+    url_l = document.source_url.lower()
+    if not (
+        "dimensionaltools.blob.core.windows.net" in url_l
+        and "/etf/daily-holdings/" in url_l
+        and document.last_modified
+    ):
+        return None
+    try:
+        modified = parsedate_to_datetime(document.last_modified)
+        if modified.tzinfo is None:
+            modified = modified.replace(tzinfo=ZoneInfo("UTC"))
+        ny_date = modified.astimezone(NY_TZ).date()
+        return _previous_nyse_session(ny_date)
+    except Exception as exc:
+        LOG.debug("Could not parse Dimensional Last-Modified %r: %s", document.last_modified, exc)
+        return None
+
+
 def extract_as_of_date(metadata_text: str, fallback_filename: str) -> date | None:
     for pattern in DATE_PATTERNS:
         for match in pattern.finditer(metadata_text):
@@ -1464,6 +1587,14 @@ def parse_document(document: DownloadedDocument, source: ETFSource) -> ParsedHol
                     f"only {len(normalized)} normalized rows; expected at least {source.min_rows}"
                 )
             as_of = extract_as_of_date(meta, document.filename)
+            if as_of is None and source.ticker == "DFAC":
+                as_of = _dimensional_last_modified_as_of(document)
+                if as_of is not None:
+                    LOG.info(
+                        "DFAC inferred as-of %s from official blob Last-Modified %s",
+                        as_of.isoformat(),
+                        document.last_modified,
+                    )
             if as_of is None:
                 # Do NOT silently use fetch date: that can turn a stale website file into
                 # a false "new day" and generate fake deltas.
