@@ -675,7 +675,7 @@ def _dimensional_dfac_urls_from_json(body: bytes, base_url: str) -> list[str]:
 def _dimensional_dfac_api_diagnostics(body: bytes, endpoint_url: str) -> list[str]:
     """Inspect Dimensional's public fund APIs without guessing endpoint schemas.
 
-    v10 exposed the official etf.dimensional.com/public/v2 APIs. v11 logs the exact
+    v10 exposed the official etf.dimensional.com/public/v2 APIs. v12 logs the exact
     request payload plus compact JSON objects/keys tied to DFAC, holdings, securities,
     or portfolio identifiers. It also returns any explicit holdings/file URLs found.
     """
@@ -710,21 +710,27 @@ def _dimensional_dfac_api_diagnostics(body: bytes, endpoint_url: str) -> list[st
 
     def walk(node: Any, path: tuple[str, ...] = ()) -> None:
         nonlocal matched_objects, holdings_keys
-        if matched_objects >= 24 and holdings_keys >= 30:
+        if matched_objects >= 80 and holdings_keys >= 80:
             return
 
         if isinstance(node, dict):
             # Log compact objects that actually identify DFAC / US Core Equity 2.
+            # IMPORTANT: inspect scalar VALUES only. v11 included key names in the
+            # text and therefore falsely matched every object containing the key
+            # ``dfaCurrencyCode`` because its key name begins with "dfac".
             try:
-                scalar_text = " ".join(
-                    f"{k}={v}" for k, v in node.items()
+                scalar_values_text = " ".join(
+                    str(v) for v in node.values()
                     if isinstance(v, (str, int, float, bool)) or v is None
                 ).lower()
             except Exception:
-                scalar_text = ""
+                scalar_values_text = ""
             if (
-                matched_objects < 24
-                and ("dfac" in scalar_text or "us core equity 2" in scalar_text)
+                matched_objects < 80
+                and (
+                    re.search(r"(?:^|[^a-z0-9])dfac(?:[^a-z0-9]|$)", scalar_values_text)
+                    or "us core equity 2" in scalar_values_text
+                )
             ):
                 scalar_fields = {
                     str(k): v for k, v in node.items()
@@ -733,20 +739,79 @@ def _dimensional_dfac_api_diagnostics(body: bytes, endpoint_url: str) -> list[st
                 LOG.info(
                     "DFAC API matched object path=%s fields=%s",
                     "/".join(path) or "<root>",
-                    short(scalar_fields, 1800),
+                    short(scalar_fields, 2400),
                 )
                 matched_objects += 1
+
+            # The fundcenter response groups each fund under data/portfolios/N.
+            # When the current dictionary is the exact DFAC portfolio object, log
+            # its complete (bounded) shape and all identifier-like scalar fields.
+            # This should expose the internal portfolio ID/code needed by funddetail.
+            try:
+                meta = node.get("meta") if isinstance(node.get("meta"), dict) else None
+                exact_dfac = False
+                if meta is not None:
+                    marketing = str(meta.get("marketingName") or meta.get("name") or "").strip().lower()
+                    ticker_values = []
+                    for ident in meta.get("identifiers") or []:
+                        if isinstance(ident, dict):
+                            slug = str(ident.get("slug") or "").lower()
+                            name = str(ident.get("name") or "").lower()
+                            value = str(ident.get("value") or "").strip()
+                            if "ticker" in slug or "ticker" in name:
+                                ticker_values.append(value.upper())
+                    primary = meta.get("primaryIdentifier")
+                    if isinstance(primary, dict):
+                        if "ticker" in str(primary.get("slug") or "").lower() or "ticker" in str(primary.get("name") or "").lower():
+                            ticker_values.append(str(primary.get("value") or "").upper())
+                    exact_dfac = (
+                        "DFAC" in ticker_values
+                        or ("us core equity 2 etf" in marketing and "world ex" not in marketing)
+                    )
+                if exact_dfac:
+                    LOG.info(
+                        "DFAC API exact portfolio object path=%s keys=%s object=%s",
+                        "/".join(path) or "<root>",
+                        list(node.keys())[:120],
+                        short(node, 12000),
+                    )
+                    id_fields = []
+                    def collect_ids(x: Any, xp: tuple[str, ...] = ()) -> None:
+                        if isinstance(x, dict):
+                            for kk, vv in x.items():
+                                kp = xp + (str(kk),)
+                                kl = str(kk).lower()
+                                if isinstance(vv, (str, int, float, bool)) or vv is None:
+                                    if (
+                                        kl == "id" or kl.endswith("id") or "identifier" in kl
+                                        or "ticker" in kl or "symbol" in kl or "code" in kl
+                                        or "slug" in kl or "url" in kl or "href" in kl
+                                    ):
+                                        id_fields.append(("/".join(kp), vv))
+                                elif isinstance(vv, (dict, list)):
+                                    collect_ids(vv, kp)
+                        elif isinstance(x, list):
+                            for ii, vv in enumerate(x[:500]):
+                                collect_ids(vv, xp + (str(ii),))
+                    collect_ids(node)
+                    LOG.info(
+                        "DFAC API exact portfolio identifiers=%s",
+                        short(id_fields[:120], 9000),
+                    )
+            except Exception as exc:
+                LOG.debug("DFAC exact portfolio diagnostics failed: %s", exc)
 
             for k, v in node.items():
                 k_s = str(k)
                 k_l = k_s.lower()
                 p = path + (k_s,)
                 if (
-                    holdings_keys < 30
+                    holdings_keys < 80
                     and any(tok in k_l for tok in (
                         "holding", "position", "constituent", "security", "share",
                         "weight", "portfolioid", "portfolio_id", "portfolio-code",
                         "portfoliocode", "fundid", "fund_id", "ticker", "symbol",
+                        "identifier", "internalid", "internal_id", "shareclass",
                     ))
                 ):
                     LOG.info(
@@ -759,7 +824,7 @@ def _dimensional_dfac_api_diagnostics(body: bytes, endpoint_url: str) -> list[st
         elif isinstance(node, list):
             for i, item in enumerate(node[:5000]):
                 walk(item, path + (str(i),))
-                if matched_objects >= 24 and holdings_keys >= 30:
+                if matched_objects >= 80 and holdings_keys >= 80:
                     break
         elif isinstance(node, str):
             u = node.strip()
@@ -977,12 +1042,24 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
                     req = response.request
                     req_method = req.method
                     req_post = (req.post_data or "")[:1800].replace("\n", " ")
+                    raw_headers = req.headers or {}
+                    safe_headers = {}
+                    for hk, hv in raw_headers.items():
+                        hkl = str(hk).lower()
+                        # Never log cookies, authorization, or generic browser fingerprint headers.
+                        if hkl in {"referer", "origin", "content-type"} or (
+                            hkl.startswith("x-")
+                            and any(tok in hkl for tok in ("portfolio", "fund", "ticker", "identifier", "slug", "dfa"))
+                        ):
+                            safe_headers[str(hk)] = str(hv)[:1000]
+                    req_headers = json.dumps(safe_headers, ensure_ascii=False, separators=(",", ":"))[:2600]
                 except Exception:
                     req_method = "?"
                     req_post = ""
+                    req_headers = "{}"
                 LOG.info(
-                    "DFAC network response status=%s type=%s method=%s ct=%s url=%s post_data=%s",
-                    status, resource_type, req_method, ct[:100], url, req_post,
+                    "DFAC network response status=%s type=%s method=%s ct=%s url=%s post_data=%s request_headers=%s",
+                    status, resource_type, req_method, ct[:100], url, req_post, req_headers,
                 )
 
             fileish_ct = any(
