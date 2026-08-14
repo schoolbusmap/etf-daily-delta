@@ -97,8 +97,10 @@ SOURCES: dict[str, ETFSource] = {
         # No guessed direct blob filename: v7 proved DFAC.csv and DFTCX.csv both 404.
         # Resolve the current official Daily Holdings route from Dimensional document-grid.
         direct_urls=(),
-        browser_url="https://www.dimensional.com/us-en/document-center",
-        browser_search_term="DFAC",
+        # v10: go directly to the fund page. v9 proved the Document Center's
+        # exact DFAC drawer exposes quarterly Q1/Q3 holdings but no Daily Holdings link.
+        browser_url="https://www.dimensional.com/us-en/funds/dfac/us-core-equity-2-etf",
+        browser_search_term=None,
         browser_pre_click=(),
         browser_download_texts=("Daily Holdings", "Download Holdings"),
         min_rows=500,
@@ -358,6 +360,12 @@ def static_candidates(session: requests.Session, source: ETFSource) -> list[Down
     This catches providers where the download URL changes but is still present in an <a href>.
     """
     docs: list[DownloadedDocument] = []
+    # Dimensional's DFAC fund page is client-rendered and can hold a requests.get()
+    # connection open for ~45 seconds. v9 showed the static request timing out while
+    # Playwright could at least render the site, so skip this nonproductive path.
+    if source.ticker == "DFAC":
+        LOG.info("DFAC static landing page skipped; using browser-rendered fund page")
+        return docs
     try:
         page = session.get(source.landing_url, timeout=REQUEST_TIMEOUT)
         page.raise_for_status()
@@ -427,6 +435,39 @@ def _playwright_click_if_present(page: Any, text: str, timeout_ms: int = 3000) -
     return False
 
 
+def _playwright_dimensional_set_us_professional_role(page: Any) -> list[str]:
+    """Best-effort selection of Dimensional's public US financial-professional audience.
+
+    The fund detail route can render only the generic Explore Funds shell until the
+    audience/country selector is resolved. Keep the interaction permissive because
+    Dimensional has shipped several selector layouts with different button labels.
+    """
+    clicked: list[str] = []
+
+    # Open the combined audience/country selector when present.
+    for label in (
+        "FINANCIAL PROFESSIONAL | UNITED STATES",
+        "Financial Professional | United States",
+        "FINANCIAL PROFESSIONAL",
+    ):
+        if _playwright_click_if_present(page, label, timeout_ms=1800):
+            clicked.append(label)
+            break
+
+    # Choose the audience and country inside any dialog/drawer that opened.
+    for label in ("Financial Professional", "United States"):
+        if _playwright_click_if_present(page, label, timeout_ms=1800):
+            clicked.append(label)
+
+    # Different builds use different confirmation labels.
+    for label in ("Continue", "Confirm", "Apply", "Save", "Done", "Accept & Continue"):
+        if _playwright_click_if_present(page, label, timeout_ms=1400):
+            clicked.append(label)
+            break
+
+    return clicked
+
+
 def _playwright_fill_search(page: Any, term: str, timeout_ms: int = 2500) -> bool:
     """Fill the first plausible visible search/filter input."""
     locators = [
@@ -465,7 +506,7 @@ def _iter_string_values(obj: Any) -> Iterable[str]:
 def _dimensional_dfac_urls_from_json(body: bytes, base_url: str) -> list[str]:
     """Extract DFAC holdings URLs from Dimensional document-grid JSON.
 
-    v9 fixes the v8 proximity bug: list items under ``linkDrawers`` are separate
+    v10 retains the v9 exact-drawer fix: list items under ``linkDrawers`` are separate
     fund records, so a Daily Holdings URL from drawer 122 must never be paired with
     the DFAC identity in drawer 109. We first identify the exact DFAC drawer, then
     inspect only links inside that same record. Diagnostics print the bounded set of
@@ -739,15 +780,37 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
     seen_response_keys: set[str] = set()
     seen_urls: set[str] = set()
     browser_url = source.browser_url or source.landing_url
+    dfac_network_seen: set[str] = set()
+    dfac_network_log_count = 0
 
     def add_response_doc(response: Any) -> None:
         """Capture useful network response bodies while the browser session is alive."""
+        nonlocal dfac_network_log_count
         try:
             url = response.url
             url_l = url.lower()
             headers = response.headers
             ct = headers.get("content-type", "").lower()
             resource_type = response.request.resource_type
+
+            if (
+                source.ticker == "DFAC"
+                and resource_type in {"xhr", "fetch"}
+                and ("dimensional.com" in url_l or "dimensionaltools" in url_l)
+                and not any(x in url_l for x in ("google", "doubleclick", "nr-data", "newrelic", "hubspot"))
+                and url not in dfac_network_seen
+                and dfac_network_log_count < 60
+            ):
+                dfac_network_seen.add(url)
+                dfac_network_log_count += 1
+                try:
+                    status = response.status
+                except Exception:
+                    status = "?"
+                LOG.info(
+                    "DFAC network response status=%s type=%s ct=%s url=%s",
+                    status, resource_type, ct[:100], url,
+                )
 
             fileish_ct = any(
                 marker in ct
@@ -925,7 +988,7 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
                     dfac_clicked = click_dfac_and_capture_download()
             LOG.info("DFAC targeted Daily Holdings interaction: %s", "clicked" if dfac_clicked else "not found")
 
-            # v9 second path: the Document Center currently exposes the DFAC drawer but
+            # v10 product-page path: the Document Center currently exposes the DFAC drawer but
             # may omit a Daily Holdings link. Visit the dedicated DFAC fund page and let
             # the same response listener capture holdings/portfolio XHRs. Because this
             # page is fund-specific, generic Holdings controls are safe to click here.
@@ -933,12 +996,53 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
                 try:
                     LOG.info("DFAC product-page fallback: %s", source.landing_url)
                     page.goto(source.landing_url, wait_until="domcontentloaded", timeout=60_000)
-                    page.wait_for_timeout(2600)
-                    for common in (
-                        "United States", "Accept & Continue", "Accept All",
-                        "Accept Cookies", "I Accept", "Agree",
-                    ):
-                        _playwright_click_if_present(page, common, timeout_ms=1400)
+                    page.wait_for_timeout(3200)
+                    try:
+                        page.wait_for_load_state("networkidle", timeout=12_000)
+                    except Exception:
+                        pass
+
+                    # Resolve Dimensional's audience/country gate. The public product
+                    # page can otherwise show only the generic Explore Funds shell.
+                    role_clicks = _playwright_dimensional_set_us_professional_role(page)
+                    for common in ("Accept All", "Accept Cookies", "I Accept", "Agree"):
+                        _playwright_click_if_present(page, common, timeout_ms=1200)
+
+                    try:
+                        title = page.title()
+                    except Exception:
+                        title = ""
+                    try:
+                        body_sample = re.sub(r"\s+", " ", page.locator("body").inner_text(timeout=2500))[:1800]
+                    except Exception:
+                        body_sample = ""
+                    LOG.info(
+                        "DFAC product-page state after role selection current_url=%s title=%s role_clicks=%s body_sample=%s",
+                        page.url, title[:220], role_clicks, body_sample,
+                    )
+
+                    # If the role selector or client router dropped us back on the generic
+                    # fund directory, navigate to DFAC again now that the role cookies are set.
+                    if "/funds/dfac/" not in page.url.lower() or "us core equity 2" not in body_sample.lower():
+                        LOG.info("DFAC product-page retry after role selection")
+                        page.goto(source.landing_url, wait_until="domcontentloaded", timeout=60_000)
+                        page.wait_for_timeout(4200)
+                        try:
+                            page.wait_for_load_state("networkidle", timeout=12_000)
+                        except Exception:
+                            pass
+                        try:
+                            title = page.title()
+                        except Exception:
+                            title = ""
+                        try:
+                            body_sample = re.sub(r"\s+", " ", page.locator("body").inner_text(timeout=2500))[:1800]
+                        except Exception:
+                            body_sample = ""
+                        LOG.info(
+                            "DFAC product-page state after retry current_url=%s title=%s body_sample=%s",
+                            page.url, title[:220], body_sample,
+                        )
 
                     try:
                         page.evaluate("window.scrollTo(0, document.body.scrollHeight * 0.6)")
