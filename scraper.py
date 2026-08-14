@@ -94,11 +94,13 @@ SOURCES: dict[str, ETFSource] = {
         provider="Dimensional Fund Advisors",
         fund_name="Dimensional U.S. Core Equity 2 ETF",
         landing_url="https://www.dimensional.com/us-en/funds/dfac/us-core-equity-2-etf",
-        # DFAC was created from the U.S. Core Equity 2 Portfolio. Dimensional's
-        # document service keys some converted-fund holding files by the legacy
-        # portfolio ticker (DFQTX) rather than the exchange ticker (DFAC).
+        # DFAC was created in 2021 by reorganizing the T.A. U.S. Core Equity 2
+        # Portfolio into the ETF. The predecessor's Institutional Class ticker was
+        # DFTCX. Dimensional's daily-holdings blob can retain legacy portfolio keys,
+        # so try the current ETF ticker first and the exact predecessor ticker second.
         direct_urls=(
-            "https://dimensionaltools.blob.core.windows.net/etf/daily-holdings/DFQTX.csv",
+            "https://dimensionaltools.blob.core.windows.net/etf/daily-holdings/DFAC.csv",
+            "https://dimensionaltools.blob.core.windows.net/etf/daily-holdings/DFTCX.csv",
         ),
         browser_url="https://www.dimensional.com/us-en/document-center",
         browser_search_term="DFAC",
@@ -504,7 +506,11 @@ def _dimensional_dfac_urls_from_json(body: bytes, base_url: str) -> list[str]:
                 "u.s. core equity 2 etf",
                 "us core equity 2",
                 "u.s. core equity 2",
-                "dfqtx",
+                "dftcx",
+                "s000070903",  # current DFAC ETF series
+                "c000225167",  # current DFAC ETF class/contract
+                "s000016732",  # predecessor T.A. U.S. Core Equity 2 Portfolio series
+                "c000046748",  # predecessor Institutional Class
             )
         )
 
@@ -545,13 +551,13 @@ def _dimensional_dfac_urls_from_json(body: bytes, base_url: str) -> list[str]:
         score = 5 if contextual else 0
         if "dfac" in ul:
             score += 45
-        # Legacy portfolio ticker for U.S. Core Equity 2 Portfolio. Exact match
-        # gets a very large boost so it cannot be buried behind hundreds of
-        # unrelated Dimensional daily-holdings CSVs.
-        if re.search(r"(?:^|/)dfqtx\.csv(?:$|[?#])", ul):
-            score += 250
-        elif "dfqtx" in ul:
-            score += 120
+        # Exact predecessor ticker for the T.A. U.S. Core Equity 2 Portfolio
+        # that was reorganized into DFAC in 2021. Give it a very large boost so it
+        # cannot be buried behind hundreds of unrelated Dimensional CSVs.
+        if re.search(r"(?:^|/)dftcx\.csv(?:$|[?#])", ul):
+            score += 300
+        elif "dftcx" in ul:
+            score += 160
         if any(token in ul for token in ("us-core-equity-2", "us_core_equity_2", "core-equity-2")):
             score += 35
         if "daily" in ul:
@@ -1590,6 +1596,12 @@ def parse_document(document: DownloadedDocument, source: ETFSource) -> ParsedHol
             if as_of is None and source.ticker == "DFAC":
                 as_of = _dimensional_last_modified_as_of(document)
                 if as_of is not None:
+                    today_ny = datetime.now(NY_TZ).date()
+                    if (today_ny - as_of).days > 7:
+                        raise ValueError(
+                            f"Dimensional daily-holdings blob appears stale: inferred as-of {as_of.isoformat()} "
+                            f"from Last-Modified {document.last_modified}"
+                        )
                     LOG.info(
                         "DFAC inferred as-of %s from official blob Last-Modified %s",
                         as_of.isoformat(),
@@ -1642,7 +1654,9 @@ def fetch_source(source: ETFSource, session: requests.Session) -> tuple[Download
         try:
             direct_docs.append(download_url(session, url))
         except Exception as exc:
-            errors.append(f"direct {url}: {exc}")
+            message = f"direct {url}: {exc}"
+            errors.append(message)
+            LOG.warning("%s direct candidate failed: %s", source.ticker, message)
     result = try_docs(direct_docs)
     if result:
         return result
