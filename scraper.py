@@ -59,6 +59,8 @@ class ETFSource:
     fund_name: str
     landing_url: str
     direct_urls: tuple[str, ...] = ()
+    browser_url: str | None = None
+    browser_search_term: str | None = None
     browser_pre_click: tuple[str, ...] = ()
     browser_download_texts: tuple[str, ...] = ()
     allow_html_table: bool = False
@@ -90,7 +92,9 @@ SOURCES: dict[str, ETFSource] = {
         provider="Dimensional Fund Advisors",
         fund_name="Dimensional U.S. Core Equity 2 ETF",
         landing_url="https://www.dimensional.com/us-en/funds/dfac/us-core-equity-2-etf",
-        browser_pre_click=("Portfolio",),
+        browser_url="https://www.dimensional.com/us-en/document-center",
+        browser_search_term="DFAC",
+        browser_pre_click=(),
         browser_download_texts=("Daily Holdings", "Download Holdings", "Holdings"),
         aliases={
             "ticker": ("Ticker", "Symbol", "Trading Symbol"),
@@ -136,8 +140,8 @@ SOURCES: dict[str, ETFSource] = {
         aliases={
             "ticker": ("Ticker", "Symbol", "Trading Symbol"),
             "company": ("Security Name", "Company", "Name", "Description"),
-            "shares": ("Shares", "Shares Held", "Quantity", "Share Quantity"),
-            "weight": ("Weight", "Weight (%)", "% of Net Assets", "Market Value (%)"),
+            "shares": ("Shares", "Shares Held", "Quantity", "Share Quantity", "Units", "Position Quantity"),
+            "weight": ("Weight", "Weight (%)", "% of Net Assets", "Market Value (%)", "Percent Assets", "Percent of Portfolio", "Pct Assets"),
         },
     ),
     "BLOK": ETFSource(
@@ -215,6 +219,10 @@ DATE_PATTERNS = (
     re.compile(
         r"(?i)\bas\s+of(?:\s+date)?\s*[:\-]?\s*"
         r"(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|\d{4}-\d{1,2}-\d{1,2})"
+    ),
+    re.compile(
+        r"(?i)[\"']?(?:asOfDate|as_of_date|holdingsDate|holdings_date|portfolioDate|portfolio_date)[\"']?\s*[:=]\s*[\"']?"
+        r"(\d{4}-\d{1,2}-\d{1,2}|\d{1,2}[/-]\d{1,2}[/-]\d{2,4})"
     ),
     re.compile(
         r"(?i)\bdata\s+as\s+of\s*[:\-]?\s*"
@@ -366,30 +374,59 @@ def static_candidates(session: requests.Session, source: ETFSource) -> list[Down
     return docs
 
 
-def _playwright_click_if_present(page: Any, text: str, timeout_ms: int = 2500) -> bool:
-    """Click visible text/button if present. Failure is intentionally non-fatal."""
+def _playwright_click_if_present(page: Any, text: str, timeout_ms: int = 3000) -> bool:
+    """Click visible text/button/link if present. Failure is intentionally non-fatal."""
     patterns = [
         lambda: page.get_by_role("button", name=re.compile(re.escape(text), re.I)).first,
         lambda: page.get_by_role("link", name=re.compile(re.escape(text), re.I)).first,
-        lambda: page.get_by_text(text, exact=False).first,
+        lambda: page.get_by_text(re.compile(re.escape(text), re.I), exact=False).first,
     ]
     for factory in patterns:
         try:
             locator = factory()
             if locator.is_visible(timeout=timeout_ms):
+                try:
+                    locator.scroll_into_view_if_needed(timeout=timeout_ms)
+                except Exception:
+                    pass
                 locator.click(timeout=timeout_ms)
-                page.wait_for_timeout(500)
+                page.wait_for_timeout(900)
                 return True
         except Exception:
             pass
     return False
 
 
-def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
-    """Use Chromium only when direct/static discovery cannot parse a valid holdings file.
+def _playwright_fill_search(page: Any, term: str, timeout_ms: int = 2500) -> bool:
+    """Fill the first plausible visible search/filter input."""
+    locators = [
+        page.get_by_role("searchbox").first,
+        page.locator('input[type="search"]').first,
+        page.locator('input[placeholder*="Search" i]').first,
+        page.locator('input[aria-label*="Search" i]').first,
+        page.locator('input[placeholder*="Filter" i]').first,
+    ]
+    for locator in locators:
+        try:
+            if locator.is_visible(timeout=timeout_ms):
+                locator.fill(term, timeout=timeout_ms)
+                try:
+                    locator.press("Enter", timeout=1000)
+                except Exception:
+                    pass
+                page.wait_for_timeout(1800)
+                return True
+        except Exception:
+            pass
+    return False
 
-    The browser path is deliberately generic: it handles cookie/location gates, captures likely
-    download/API network responses, follows holdings links, and saves a real browser download.
+def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
+    """Use Chromium when direct/static discovery cannot parse a valid holdings file.
+
+    Version 2 captures the *actual response bodies* of XHR/fetch requests instead of
+    reissuing every candidate as a GET. This matters for sites whose holdings APIs use
+    POST/GraphQL, signed URLs, cookies, or request bodies (notably dynamic fund pages).
+    It also supports a source-specific browser URL such as Dimensional's Document Center.
     """
     if not BROWSER_FALLBACK:
         return []
@@ -404,7 +441,103 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
         ) from exc
 
     docs: list[DownloadedDocument] = []
+    captured_responses: list[DownloadedDocument] = []
+    network_urls: list[str] = []
+    seen_response_keys: set[str] = set()
     seen_urls: set[str] = set()
+    browser_url = source.browser_url or source.landing_url
+
+    def add_response_doc(response: Any) -> None:
+        """Capture useful network response bodies while the browser session is alive."""
+        try:
+            url = response.url
+            url_l = url.lower()
+            headers = response.headers
+            ct = headers.get("content-type", "").lower()
+            resource_type = response.request.resource_type
+
+            fileish_ct = any(
+                marker in ct
+                for marker in (
+                    "text/csv",
+                    "spreadsheet",
+                    "excel",
+                    "octet-stream",
+                    "application/json",
+                    "text/json",
+                )
+            )
+            fileish_url = bool(re.search(r"\.(csv|xlsx|xls)(?:$|[?#])", url_l))
+            xhrish = resource_type in {"xhr", "fetch"}
+            likely_url = any(
+                token in url_l
+                for token in (
+                    source.ticker.lower(),
+                    "holding",
+                    "portfolio",
+                    "position",
+                    "document",
+                    "fund",
+                )
+            )
+            # Capture all JSON XHR/fetch responses (bounded below), plus obvious file responses.
+            if not ((xhrish and "json" in ct) or fileish_ct or fileish_url or likely_url):
+                return
+
+            body = response.body()
+            if not body or len(body) > 25_000_000:
+                return
+
+            # Dynamic document centers often return metadata JSON containing the real
+            # CSV/XLSX download URL rather than the holdings rows themselves. Discover
+            # those URLs while the response body is available.
+            try:
+                body_text_for_urls = body[:1_000_000].decode("utf-8", errors="ignore").replace("\\/", "/")
+                for found in re.findall(r"https?://[^\"'<>\s]+|/[^\"'<>\s]+", body_text_for_urls, flags=re.I):
+                    candidate_url = urljoin(url, found.replace("&amp;", "&"))
+                    candidate_l = candidate_url.lower()
+                    if (
+                        "holding" in candidate_l
+                        or "portfolio" in candidate_l
+                        or re.search(r"\.(csv|xlsx|xls)(?:$|[?#])", candidate_l)
+                    ):
+                        network_urls.append(candidate_url)
+            except Exception:
+                pass
+
+            # Avoid filling memory with analytics/config JSON unrelated to holdings.
+            if (xhrish and "json" in ct) and not likely_url:
+                sample = body[:250_000].decode("utf-8", errors="ignore").lower()
+                body_signal = any(
+                    token in sample
+                    for token in (
+                        source.ticker.lower(),
+                        '"shares"',
+                        '"quantity"',
+                        '"ticker"',
+                        '"symbol"',
+                        "holding",
+                        "portfolio",
+                    )
+                )
+                if not body_signal:
+                    return
+
+            key = f"{url}|{len(body)}|{hashlib.sha1(body).hexdigest()}"
+            if key in seen_response_keys:
+                return
+            seen_response_keys.add(key)
+            captured_responses.append(
+                DownloadedDocument(
+                    data=body,
+                    source_url=url,
+                    filename=filename_from_response(url, headers),
+                    content_type=ct,
+                )
+            )
+            network_urls.append(url)
+        except Exception:
+            pass
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -414,67 +547,70 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
             locale="en-US",
         )
         page = context.new_page()
-        network_urls: list[str] = []
+        page.on("response", add_response_doc)
 
-        def on_response(response: Any) -> None:
-            try:
-                url_l = response.url.lower()
-                ct = response.headers.get("content-type", "").lower()
-                likely = (
-                    source.ticker.lower() in url_l
-                    or "holding" in url_l
-                    or "portfolio" in url_l
-                )
-                fileish = any(
-                    marker in ct
-                    for marker in (
-                        "csv",
-                        "spreadsheet",
-                        "excel",
-                        "octet-stream",
-                        "json",
-                    )
-                ) or re.search(r"\.(csv|xlsx|xls)(?:$|[?#])", url_l)
-                if likely and fileish:
-                    network_urls.append(response.url)
-            except Exception:
-                pass
+        LOG.info("%s browser fallback: %s", source.ticker, browser_url)
+        page.goto(browser_url, wait_until="domcontentloaded", timeout=60_000)
+        page.wait_for_timeout(2200)
 
-        page.on("response", on_response)
-        LOG.info("%s browser fallback: %s", source.ticker, source.landing_url)
-        page.goto(source.landing_url, wait_until="domcontentloaded", timeout=60_000)
-        page.wait_for_timeout(1500)
+        # Common location/cookie gates. Some sites present these sequentially.
+        for _ in range(2):
+            for common in (
+                "United States",
+                "Accept & Continue",
+                "Accept All",
+                "Accept Cookies",
+                "I Accept",
+                "Agree",
+            ):
+                _playwright_click_if_present(page, common, timeout_ms=1800)
 
-        # Common gates, then source-specific navigation.
-        for common in ("United States", "Accept & Continue", "Accept All", "Accept Cookies"):
-            _playwright_click_if_present(page, common)
+        # Dimensional's Document Center and similar pages work much better after filtering
+        # to the ticker before looking for the Daily Holdings control.
+        if source.browser_search_term:
+            _playwright_fill_search(page, source.browser_search_term)
+
         for text in source.browser_pre_click:
             _playwright_click_if_present(page, text)
 
-        # First collect promising anchors after JS has rendered.
+        # Scroll through the page once so lazy-loaded portfolio modules initialize.
+        try:
+            page.evaluate("window.scrollTo(0, document.body.scrollHeight * 0.55)")
+            page.wait_for_timeout(1000)
+            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            page.wait_for_timeout(1200)
+            page.evaluate("window.scrollTo(0, 0)")
+        except Exception:
+            pass
+
+        # Collect promising anchors after JS has rendered.
         try:
             anchors = page.locator("a[href]")
-            for i in range(min(anchors.count(), 500)):
+            for i in range(min(anchors.count(), 800)):
                 a = anchors.nth(i)
                 href = a.get_attribute("href") or ""
-                text = a.inner_text(timeout=1000) if a.is_visible(timeout=500) else ""
+                try:
+                    text = a.inner_text(timeout=600)
+                except Exception:
+                    text = ""
                 absolute = urljoin(page.url, href)
-                if _download_link_score(source, absolute, text) >= 8:
+                if _download_link_score(source, absolute, text) >= 7:
                     network_urls.append(absolute)
         except Exception:
             pass
 
-        # Then try controls whose click may trigger a browser download or an API call.
+        # Try download controls. If a control triggers XHR instead of a file download,
+        # response bodies are already captured by add_response_doc().
         for text in source.browser_download_texts:
             locator = None
             for factory in (
                 lambda: page.get_by_role("link", name=re.compile(re.escape(text), re.I)).first,
                 lambda: page.get_by_role("button", name=re.compile(re.escape(text), re.I)).first,
-                lambda: page.get_by_text(text, exact=False).first,
+                lambda: page.get_by_text(re.compile(re.escape(text), re.I), exact=False).first,
             ):
                 try:
                     candidate = factory()
-                    if candidate.is_visible(timeout=1500):
+                    if candidate.is_visible(timeout=1800):
                         locator = candidate
                         break
                 except Exception:
@@ -483,26 +619,40 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
                 continue
 
             try:
-                with page.expect_download(timeout=7000) as download_info:
+                locator.scroll_into_view_if_needed(timeout=2500)
+            except Exception:
+                pass
+
+            try:
+                with page.expect_download(timeout=8000) as download_info:
                     locator.click(timeout=5000)
                 download = download_info.value
                 tmp_path = Path(download.path())
                 docs.append(
                     DownloadedDocument(
                         data=tmp_path.read_bytes(),
-                        source_url=page.url,
+                        source_url=download.url or page.url,
                         filename=download.suggested_filename or f"{source.ticker}-holdings",
                         content_type="application/octet-stream",
                     )
                 )
-                break
+                # Keep going: some providers expose both a display API and a download file.
             except PlaywrightTimeoutError:
-                # It may have navigated or loaded an API instead of a browser download.
-                page.wait_for_timeout(1000)
+                try:
+                    locator.click(timeout=2500)
+                except Exception:
+                    pass
+                page.wait_for_timeout(1800)
             except Exception as exc:
                 LOG.debug("%s click %r did not download: %s", source.ticker, text, exc)
 
-        # Fetch captured URLs through Playwright's request context so cookies are shared.
+        page.wait_for_timeout(1500)
+
+        # Add captured POST/GraphQL/XHR bodies first; these cannot safely be reconstructed
+        # later with requests.get().
+        docs.extend(captured_responses)
+
+        # Fetch promising GET-able URLs using the browser request context so cookies are shared.
         for url in network_urls:
             if url in seen_urls:
                 continue
@@ -512,17 +662,21 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
                 if not resp.ok:
                     continue
                 headers = resp.headers
+                body = resp.body()
+                if not body:
+                    continue
                 docs.append(
                     DownloadedDocument(
-                        data=resp.body(),
+                        data=body,
                         source_url=url,
                         filename=filename_from_response(url, headers),
                         content_type=headers.get("content-type", ""),
                     )
                 )
             except Exception as exc:
-                LOG.debug("%s browser API candidate failed: %s", source.ticker, exc)
+                LOG.debug("%s browser URL candidate failed: %s", source.ticker, exc)
 
+        # Always preserve rendered HTML for sites whose holdings table exists directly in DOM.
         if source.allow_html_table:
             docs.append(
                 DownloadedDocument(
@@ -589,17 +743,23 @@ def find_column(df: pd.DataFrame, source: ETFSource, key: str) -> str | None:
         if key == "ticker" and any(word in norm for word in ("ticker", "symbol")):
             return original
         if key == "shares" and (
-            "share" in norm or norm in {"quantity", "qty", "position"}
+            "share" in norm
+            or "quantity" in norm
+            or norm in {"qty", "position", "units", "unit"}
+            or ("position" in norm and "value" not in norm)
         ):
             return original
         if key == "weight" and (
             "weight" in norm
-            or ("net asset" in norm and ("%" in norm or "percent" in norm))
+            or (("percent" in norm or "pct" in norm or "%" in norm)
+                and any(x in norm for x in ("asset", "portfolio", "market", "nav")))
+            or ("net asset" in norm and ("%" in norm or "percent" in norm or "pct" in norm))
             or ("market value" in norm and "%" in norm)
         ):
             return original
         if key == "company" and any(
-            word in norm for word in ("security name", "company", "description", "issuer")
+            word in norm
+            for word in ("security name", "company", "description", "issuer", "security", "holding name")
         ):
             return original
     return None
@@ -687,13 +847,17 @@ def _excel_candidates(data: bytes, source: ETFSource) -> list[tuple[pd.DataFrame
 def _html_candidates(text: str, source: ETFSource) -> list[tuple[pd.DataFrame, str]]:
     candidates: list[tuple[pd.DataFrame, str]] = []
     try:
+        # Visible text joins values split by HTML tags (e.g. "As of" + <span>08/14/2026</span>),
+        # which raw HTML date regexes can otherwise miss.
+        visible_text = BeautifulSoup(text, "html.parser").get_text(" ", strip=True)
         tables = pd.read_html(io.StringIO(text))
-    except ValueError:
+    except (ValueError, ImportError):
         return []
+    metadata = visible_text[:100_000]
     for table in tables:
         table.columns = [clean_header(c) for c in table.columns]
         if header_score(table.columns, source) >= 8:
-            candidates.append((table, text[:20_000]))
+            candidates.append((table, metadata))
     return candidates
 
 
