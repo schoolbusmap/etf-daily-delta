@@ -94,11 +94,10 @@ SOURCES: dict[str, ETFSource] = {
         provider="Dimensional Fund Advisors",
         fund_name="Dimensional U.S. Core Equity 2 ETF",
         landing_url="https://www.dimensional.com/us-en/funds/dfac/us-core-equity-2-etf",
-        # No guessed direct blob filename: v7 proved DFAC.csv and DFTCX.csv both 404.
-        # Resolve the current official Daily Holdings route from Dimensional document-grid.
+        # Dimensional's current full-holdings CSV URL is dynamic and date-stamped.
+        # Resolve it from the official funddetail API rather than guessing a blob name.
         direct_urls=(),
-        # v10: go directly to the fund page. v9 proved the Document Center's
-        # exact DFAC drawer exposes quarterly Q1/Q3 holdings but no Daily Holdings link.
+        # The fund page calls fundcenter/funddetail, whose JSON exposes fullHoldingsCsvUrl.
         browser_url="https://www.dimensional.com/us-en/funds/dfac/us-core-equity-2-etf",
         browser_search_term=None,
         browser_pre_click=(),
@@ -1214,6 +1213,41 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
             LOG.info("DFAC initial fund-page state current_url=%s title=%s body_sample=%s", page.url, page.title()[:220], body_sample0)
             _playwright_log_dfac_controls(page)
 
+            # v13 fast path: funddetail normally arrives during initial page rendering and
+            # exposes the exact official date-stamped fullHoldingsCsvUrl. Fetch that file
+            # immediately and skip minutes of generic DOM/link probing.
+            official_full_urls = []
+            for candidate_url in network_urls:
+                if re.match(
+                    r"^https://tools-blob\.dimensional\.com/etf/20\d{6}/DFAC\.csv(?:[?#].*)?$",
+                    candidate_url,
+                    flags=re.I,
+                ) and candidate_url not in official_full_urls:
+                    official_full_urls.append(candidate_url)
+            if official_full_urls:
+                full_url = official_full_urls[0]
+                try:
+                    LOG.info("DFAC fast-path official full holdings URL: %s", full_url)
+                    resp = context.request.get(full_url, timeout=REQUEST_TIMEOUT * 1000)
+                    if resp.ok:
+                        headers = resp.headers
+                        body = resp.body()
+                        if body:
+                            doc = DownloadedDocument(
+                                data=body,
+                                source_url=full_url,
+                                filename=filename_from_response(full_url, headers),
+                                content_type=headers.get("content-type", ""),
+                                last_modified=headers.get("last-modified", ""),
+                            )
+                            LOG.info("DFAC fast-path downloaded %d bytes", len(body))
+                            context.close()
+                            browser.close()
+                            return [doc]
+                    LOG.info("DFAC fast-path URL did not return a usable file; continuing browser fallback")
+                except Exception as exc:
+                    LOG.info("DFAC fast-path fetch failed; continuing browser fallback: %s", exc)
+
         # On Dimensional, click Daily Holdings inside the DFAC result only.
         # IMPORTANT: a Daily Holdings control may directly start a browser download.
         # Earlier versions clicked it outside expect_download(), which meant the file
@@ -1537,6 +1571,7 @@ def browser_candidates(source: ETFSource) -> list[DownloadedDocument]:
                         source_url=url,
                         filename=filename_from_response(url, headers),
                         content_type=headers.get("content-type", ""),
+                        last_modified=headers.get("last-modified", ""),
                     )
                 )
             except Exception as exc:
@@ -1875,6 +1910,28 @@ def _previous_nyse_session(before_date: date) -> date:
     return d
 
 
+def _dimensional_full_holdings_url_as_of(document: DownloadedDocument) -> date | None:
+    """Read the holdings date encoded in Dimensional's official fullHoldingsCsvUrl.
+
+    Current funddetail responses expose URLs such as:
+    https://tools-blob.dimensional.com/etf/20260813/DFAC.csv
+    The YYYYMMDD path component is the holdings as-of date supplied by Dimensional.
+    This is safer than inferring a date from fetch time or publication headers.
+    """
+    url = document.source_url.strip()
+    m = re.search(
+        r"^https://tools-blob\.dimensional\.com/etf/(20\d{6})/[^/?#]+\.csv(?:[?#].*)?$",
+        url,
+        flags=re.I,
+    )
+    if not m:
+        return None
+    try:
+        return datetime.strptime(m.group(1), "%Y%m%d").date()
+    except ValueError:
+        return None
+
+
 def _dimensional_last_modified_as_of(document: DownloadedDocument) -> date | None:
     """Infer holdings as-of date from the official Dimensional blob publication time.
 
@@ -2027,19 +2084,34 @@ def parse_document(document: DownloadedDocument, source: ETFSource) -> ParsedHol
                 )
             as_of = extract_as_of_date(meta, document.filename)
             if as_of is None and source.ticker == "DFAC":
-                as_of = _dimensional_last_modified_as_of(document)
+                # v13: funddetail gives the authoritative date directly in the official
+                # fullHoldingsCsvUrl path, e.g. /etf/20260813/DFAC.csv.
+                as_of = _dimensional_full_holdings_url_as_of(document)
                 if as_of is not None:
                     today_ny = datetime.now(NY_TZ).date()
-                    if (today_ny - as_of).days > 7:
+                    age_days = (today_ny - as_of).days
+                    if age_days < 0 or age_days > 7:
                         raise ValueError(
-                            f"Dimensional daily-holdings blob appears stale: inferred as-of {as_of.isoformat()} "
-                            f"from Last-Modified {document.last_modified}"
+                            f"Dimensional full-holdings URL has implausible as-of date {as_of.isoformat()}"
                         )
                     LOG.info(
-                        "DFAC inferred as-of %s from official blob Last-Modified %s",
+                        "DFAC as-of %s from official fullHoldingsCsvUrl",
                         as_of.isoformat(),
-                        document.last_modified,
                     )
+                else:
+                    as_of = _dimensional_last_modified_as_of(document)
+                    if as_of is not None:
+                        today_ny = datetime.now(NY_TZ).date()
+                        if (today_ny - as_of).days > 7:
+                            raise ValueError(
+                                f"Dimensional daily-holdings blob appears stale: inferred as-of {as_of.isoformat()} "
+                                f"from Last-Modified {document.last_modified}"
+                            )
+                        LOG.info(
+                            "DFAC inferred as-of %s from official blob Last-Modified %s",
+                            as_of.isoformat(),
+                            document.last_modified,
+                        )
             if as_of is None:
                 # Do NOT silently use fetch date: that can turn a stale website file into
                 # a false "new day" and generate fake deltas.
