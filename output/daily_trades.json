@@ -1,1 +1,6644 @@
-[]
+[
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "C",
+    "Company_Name": "CITIGROUP INC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 181996.0,
+    "Weight_Change": 0.06
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "HUM",
+    "Company_Name": "HUMANA INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 32979.0,
+    "Weight_Change": 0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "TJX",
+    "Company_Name": "TJX COS INC/THE COMMON",
+    "Action": "Buy",
+    "Shares_Change": 30495.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "TMUS",
+    "Company_Name": "T-MOBILE US INC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 24322.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "PLTR",
+    "Company_Name": "PALANTIR TECHNOLOGIES",
+    "Action": "Buy",
+    "Shares_Change": 18060.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "GD",
+    "Company_Name": "GENERAL DYNAMICS CORP",
+    "Action": "Buy",
+    "Shares_Change": 4684.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "CMG",
+    "Company_Name": "CHIPOTLE MEXICAN GRILL",
+    "Action": "Buy",
+    "Shares_Change": 2170.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "T",
+    "Company_Name": "AT&T INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 1825.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "MDLZ",
+    "Company_Name": "MONDELEZ INTERNATIONAL",
+    "Action": "Buy",
+    "Shares_Change": 1490.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "NEE",
+    "Company_Name": "NEXTERA ENERGY INC",
+    "Action": "Buy",
+    "Shares_Change": 1360.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "KDP",
+    "Company_Name": "KEURIG DR PEPPER INC",
+    "Action": "Buy",
+    "Shares_Change": 930.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "SRE",
+    "Company_Name": "SEMPRA COMMON STOCK USD",
+    "Action": "Buy",
+    "Shares_Change": 855.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "NFLX",
+    "Company_Name": "NETFLIX INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 815.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "EOG",
+    "Company_Name": "EOG RESOURCES INC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 780.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "DIS",
+    "Company_Name": "THE WALT DISNEY COMPANY",
+    "Action": "Buy",
+    "Shares_Change": 675.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "PEP",
+    "Company_Name": "PEPSICO INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 615.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "MMM",
+    "Company_Name": "3M CO COMMON STOCK USD",
+    "Action": "Buy",
+    "Shares_Change": 610.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "NVDA",
+    "Company_Name": "NVIDIA CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 595.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "VZ",
+    "Company_Name": "VERIZON COMMUNICATIONS",
+    "Action": "Buy",
+    "Shares_Change": 595.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "SO",
+    "Company_Name": "THE SOUTHERN COMPANY",
+    "Action": "Buy",
+    "Shares_Change": 565.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "VTR",
+    "Company_Name": "VENTAS INC REIT USD 0.25",
+    "Action": "Buy",
+    "Shares_Change": 540.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "AMZN",
+    "Company_Name": "AMAZON.COM INC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 525.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "PM",
+    "Company_Name": "PHILIP MORRIS",
+    "Action": "Buy",
+    "Shares_Change": 520.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "WMT",
+    "Company_Name": "WALMART INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 505.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "LOW",
+    "Company_Name": "LOWE'S COS INC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 495.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "EMR",
+    "Company_Name": "EMERSON ELECTRIC CO",
+    "Action": "Buy",
+    "Shares_Change": 475.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "JNJ",
+    "Company_Name": "JOHNSON & COMMON",
+    "Action": "Buy",
+    "Shares_Change": 475.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "ABBV",
+    "Company_Name": "ABBVIE INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 460.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "HPE",
+    "Company_Name": "HEWLETT PACKARD",
+    "Action": "Buy",
+    "Shares_Change": 450.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "RTX",
+    "Company_Name": "RTX CORP",
+    "Action": "Buy",
+    "Shares_Change": 450.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "MDT",
+    "Company_Name": "MEDTRONIC PLC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 425.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "ROST",
+    "Company_Name": "ROSS STORES INC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 425.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "AAPL",
+    "Company_Name": "APPLE INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 410.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "HWM",
+    "Company_Name": "HOWMET AEROSPACE INC",
+    "Action": "Buy",
+    "Shares_Change": 395.0,
+    "Weight_Change": 0.04
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "GOOGL",
+    "Company_Name": "ALPHABET INC-CL A -",
+    "Action": "Buy",
+    "Shares_Change": 360.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "LRCX",
+    "Company_Name": "LAM RESEARCH CORP COMMON",
+    "Action": "Buy",
+    "Shares_Change": 320.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "CHD",
+    "Company_Name": "CHURCH & DWIGHT CO INC",
+    "Action": "Buy",
+    "Shares_Change": 300.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "ECL",
+    "Company_Name": "ECOLAB INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 300.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "AVGO",
+    "Company_Name": "BROADCOM INC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 295.0,
+    "Weight_Change": -0.1
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "V",
+    "Company_Name": "VISA INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 285.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "MSFT",
+    "Company_Name": "MICROSOFT CORP COMMON",
+    "Action": "Buy",
+    "Shares_Change": 280.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "MRK",
+    "Company_Name": "MERCK & CO INC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 275.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "PGR",
+    "Company_Name": "PROGRESSIVE CORP/THE",
+    "Action": "Buy",
+    "Shares_Change": 265.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "BKR",
+    "Company_Name": "BAKER HUGHES CO COMMON",
+    "Action": "Buy",
+    "Shares_Change": 260.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "COP",
+    "Company_Name": "CONOCOPHILLIPS COMMON",
+    "Action": "Buy",
+    "Shares_Change": 255.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "PG",
+    "Company_Name": "THE PROCTER & GAMBLE",
+    "Action": "Buy",
+    "Shares_Change": 255.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "TT",
+    "Company_Name": "TRANE TECHNOLOGIES PLC",
+    "Action": "Buy",
+    "Shares_Change": 250.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "ETN",
+    "Company_Name": "EATON CORP PLC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 245.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "VRT",
+    "Company_Name": "VERTIV HOLDINGS CO",
+    "Action": "Buy",
+    "Shares_Change": 240.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "BAC",
+    "Company_Name": "BANK OF AMERICA CORP",
+    "Action": "Buy",
+    "Shares_Change": 235.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "AJG",
+    "Company_Name": "ARTHUR J GALLAGHER & CO",
+    "Action": "Buy",
+    "Shares_Change": 230.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "MO",
+    "Company_Name": "ALTRIA GROUP INC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 230.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "MA",
+    "Company_Name": "MASTERCARD INC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 225.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "DOV",
+    "Company_Name": "DOVER CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 220.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "ACN",
+    "Company_Name": "ACCENTURE PLC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 215.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "DASH",
+    "Company_Name": "DOORDASH INC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 205.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "TOST",
+    "Company_Name": "TOAST INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 205.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "MCD",
+    "Company_Name": "MCDONALD'S CORP COMMON",
+    "Action": "Buy",
+    "Shares_Change": 200.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "CMS",
+    "Company_Name": "CMS ENERGY CORP COMMON",
+    "Action": "Buy",
+    "Shares_Change": 190.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "META",
+    "Company_Name": "META PLATFORMS INC",
+    "Action": "Buy",
+    "Shares_Change": 175.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "VRTX",
+    "Company_Name": "VERTEX PHARMACEUTICALS",
+    "Action": "Buy",
+    "Shares_Change": 175.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "AON",
+    "Company_Name": "AON PLC COMMON STOCK USD",
+    "Action": "Buy",
+    "Shares_Change": 170.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "CDNS",
+    "Company_Name": "CADENCE DESIGN SYSTEMS",
+    "Action": "Buy",
+    "Shares_Change": 155.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "MNST",
+    "Company_Name": "MONSTER BEVERAGE CORP",
+    "Action": "Buy",
+    "Shares_Change": 155.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "EW",
+    "Company_Name": "EDWARDS LIFESCIENCES",
+    "Action": "Buy",
+    "Shares_Change": 150.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "KMB",
+    "Company_Name": "KIMBERLY-CLARK CORP",
+    "Action": "Buy",
+    "Shares_Change": 150.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "AMD",
+    "Company_Name": "ADVANCED MICRO DEVICES",
+    "Action": "Buy",
+    "Shares_Change": 145.0,
+    "Weight_Change": 0.07
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "CVS",
+    "Company_Name": "CVS HEALTH CORP COMMON",
+    "Action": "Buy",
+    "Shares_Change": 145.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "XOM",
+    "Company_Name": "EXXONMOBIL HOLDINGS CORP",
+    "Action": "Buy",
+    "Shares_Change": 145.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "CB",
+    "Company_Name": "CHUBB LTD COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 140.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "FTNT",
+    "Company_Name": "FORTINET INC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 140.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "CPAY",
+    "Company_Name": "CORPAY INC",
+    "Action": "Buy",
+    "Shares_Change": 130.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "LDOS",
+    "Company_Name": "LEIDOS HOLDINGS INC",
+    "Action": "Buy",
+    "Shares_Change": 130.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "ORCL",
+    "Company_Name": "ORACLE CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 130.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "NXPI",
+    "Company_Name": "NXP SEMICONDUCTORS NV",
+    "Action": "Buy",
+    "Shares_Change": 125.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "AMT",
+    "Company_Name": "AMERICAN TOWER CORP REIT",
+    "Action": "Buy",
+    "Shares_Change": 115.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "AFRM",
+    "Company_Name": "AFFIRM HOLDINGS INC",
+    "Action": "Buy",
+    "Shares_Change": 100.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "HLT",
+    "Company_Name": "HILTON WORLDWIDE",
+    "Action": "Buy",
+    "Shares_Change": 100.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "INTC",
+    "Company_Name": "INTEL CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 100.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "ISRG",
+    "Company_Name": "INTUITIVE SURGICAL INC",
+    "Action": "Buy",
+    "Shares_Change": 100.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "REGN",
+    "Company_Name": "REGENERON",
+    "Action": "Buy",
+    "Shares_Change": 100.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "ADI",
+    "Company_Name": "ANALOG DEVICES INC",
+    "Action": "Buy",
+    "Shares_Change": 95.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "COST",
+    "Company_Name": "COSTCO WHOLESALE CORP",
+    "Action": "Buy",
+    "Shares_Change": 95.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "GLW",
+    "Company_Name": "CORNING INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 95.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "FDX",
+    "Company_Name": "FEDEX CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 90.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "BBY",
+    "Company_Name": "BEST BUY CO INC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 80.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "UNH",
+    "Company_Name": "UNITEDHEALTH GROUP INC",
+    "Action": "Buy",
+    "Shares_Change": 80.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "SPGI",
+    "Company_Name": "S&P GLOBAL INC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 75.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "UNP",
+    "Company_Name": "UNION PACIFIC CORP",
+    "Action": "Buy",
+    "Shares_Change": 75.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "AWK",
+    "Company_Name": "AMERICAN WATER WORKS CO",
+    "Action": "Buy",
+    "Shares_Change": 70.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "WELL",
+    "Company_Name": "WELLTOWER INC",
+    "Action": "Buy",
+    "Shares_Change": 70.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "EQIX",
+    "Company_Name": "EQUINIX INC REIT USD",
+    "Action": "Buy",
+    "Shares_Change": 65.0,
+    "Weight_Change": 0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "MCK",
+    "Company_Name": "MCKESSON CORP COMMON",
+    "Action": "Buy",
+    "Shares_Change": 65.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "LLY",
+    "Company_Name": "ELI LILLY AND COMPANY",
+    "Action": "Buy",
+    "Shares_Change": 60.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "BRK.B",
+    "Company_Name": "BERKSHIRE HATHAWAY INC",
+    "Action": "Buy",
+    "Shares_Change": 55.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "TSLA",
+    "Company_Name": "TESLA INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 55.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "CMI",
+    "Company_Name": "CUMMINS INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 50.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "FDXF",
+    "Company_Name": "FEDEX FREIGHT HOLDING CO",
+    "Action": "Buy",
+    "Shares_Change": 40.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "MU",
+    "Company_Name": "MICRON TECHNOLOGY INC",
+    "Action": "Buy",
+    "Shares_Change": 30.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "STX",
+    "Company_Name": "SEAGATE TECHNOLOGY",
+    "Action": "Buy",
+    "Shares_Change": 30.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "TMO",
+    "Company_Name": "THERMO FISHER SCIENTIFIC",
+    "Action": "Buy",
+    "Shares_Change": 30.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "MAR",
+    "Company_Name": "MARRIOTT INTERNATIONAL",
+    "Action": "Buy",
+    "Shares_Change": 25.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "WDC",
+    "Company_Name": "WESTERN DIGITAL CORP",
+    "Action": "Buy",
+    "Shares_Change": 25.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "AZO",
+    "Company_Name": "AUTOZONE INC COMMON",
+    "Action": "Buy",
+    "Shares_Change": 10.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "LIN",
+    "Company_Name": "LINDE PLC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 10.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "TDG",
+    "Company_Name": "TRANSDIGM GROUP INC",
+    "Action": "Buy",
+    "Shares_Change": 10.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "ANET",
+    "Company_Name": "ARISTA NETWORKS INC",
+    "Action": "Closed Position",
+    "Shares_Change": -140797.0,
+    "Weight_Change": -0.06
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "DE",
+    "Company_Name": "DEERE & CO COMMON STOCK",
+    "Action": "Sell",
+    "Shares_Change": -3460.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "YUM",
+    "Company_Name": "YUM BRANDS INC COMMON",
+    "Action": "Sell",
+    "Shares_Change": -6373.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "ADSK",
+    "Company_Name": "AUTODESK INC COMMON",
+    "Action": "Sell",
+    "Shares_Change": -10691.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "AXP",
+    "Company_Name": "AMERICAN EXPRESS CO",
+    "Action": "Sell",
+    "Shares_Change": -19445.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "TXN",
+    "Company_Name": "TEXAS INSTRUMENTS INC",
+    "Action": "Sell",
+    "Shares_Change": -19696.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "BURL",
+    "Company_Name": "BURLINGTON STORES INC",
+    "Action": "Sell",
+    "Shares_Change": -24916.0,
+    "Weight_Change": -0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "VMC",
+    "Company_Name": "VULCAN MATERIALS CO",
+    "Action": "Sell",
+    "Shares_Change": -26699.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "SYK",
+    "Company_Name": "STRYKER CORP COMMON",
+    "Action": "Sell",
+    "Shares_Change": -27429.0,
+    "Weight_Change": -0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "APH",
+    "Company_Name": "AMPHENOL CORP COMMON",
+    "Action": "Sell",
+    "Shares_Change": -52104.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "BMY",
+    "Company_Name": "BRISTOL-MYERS SQUIBB CO",
+    "Action": "Sell",
+    "Shares_Change": -157473.0,
+    "Weight_Change": -0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "JEPI",
+    "Stock_Ticker": "JIMXX",
+    "Company_Name": "JPMORGAN PRIME MONEY",
+    "Action": "Sell",
+    "Shares_Change": -76763445.0,
+    "Weight_Change": -0.16
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "DFAC",
+    "Stock_Ticker": "NAN",
+    "Company_Name": "PIPER SANDLER COMP",
+    "Action": "Buy",
+    "Shares_Change": 4158797.05,
+    "Weight_Change": 0.007186
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "DFAC",
+    "Stock_Ticker": "ASIX US",
+    "Company_Name": "ADVANSIX INC",
+    "Action": "Sell",
+    "Shares_Change": -71.0,
+    "Weight_Change": 2.5e-05
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "GLEN",
+    "Company_Name": "GLENCORE PLC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 32640.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "GMEXICO B",
+    "Company_Name": "GRUPO MEXICO SAB DE CV SER B COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 29580.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "CMQXX",
+    "Company_Name": "CAPITAL GROUP CENTRAL CASH FUN CAPITAL GROUP CNTRL CSH M",
+    "Action": "Buy",
+    "Shares_Change": 24207.58,
+    "Weight_Change": 0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "AUR",
+    "Company_Name": "AURORA INNOVATION INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 18840.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "CMG",
+    "Company_Name": "CHIPOTLE MEXICAN GRILL INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 13440.0,
+    "Weight_Change": 0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "NVDA",
+    "Company_Name": "NVIDIA CORP COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 13260.0,
+    "Weight_Change": 0.06
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "RKT",
+    "Company_Name": "ROCKET COS INC CLASS A COMMON STOCK USD.00001",
+    "Action": "Buy",
+    "Shares_Change": 12180.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "RR.",
+    "Company_Name": "ROLLS ROYCE HOLDINGS PLC COMMON STOCK GBP.2",
+    "Action": "Buy",
+    "Shares_Change": 8940.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "AVGO",
+    "Company_Name": "BROADCOM INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 7500.0,
+    "Weight_Change": -0.27
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "NCLH",
+    "Company_Name": "NORWEGIAN CRUISE LINE HOLDIN COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 7380.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "SHOP",
+    "Company_Name": "SHOPIFY INC   CLASS A COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 6780.0,
+    "Weight_Change": -0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "NFLX",
+    "Company_Name": "NETFLIX INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 6720.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "TOST",
+    "Company_Name": "TOAST INC CLASS A COMMON STOCK USD.000001",
+    "Action": "Buy",
+    "Shares_Change": 6720.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "INTC",
+    "Company_Name": "INTEL CORP COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 6660.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "TSLA",
+    "Company_Name": "TESLA INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 6360.0,
+    "Weight_Change": 0.07
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "META",
+    "Company_Name": "META PLATFORMS INC CLASS A COMMON STOCK USD.000006",
+    "Action": "Buy",
+    "Shares_Change": 5700.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "AMZN",
+    "Company_Name": "AMAZON.COM INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 5340.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "GOOG",
+    "Company_Name": "ALPHABET INC CL C COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 5220.0,
+    "Weight_Change": 0.04
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "MRNA",
+    "Company_Name": "MODERNA INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 5160.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "MSFT",
+    "Company_Name": "MICROSOFT CORP COMMON STOCK USD.00000625",
+    "Action": "Buy",
+    "Shares_Change": 5100.0,
+    "Weight_Change": 0.04
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "NKE",
+    "Company_Name": "NIKE INC  CL B COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 5100.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "PFGC",
+    "Company_Name": "PERFORMANCE FOOD GROUP CO COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 5040.0,
+    "Weight_Change": 0.04
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "GOOGL",
+    "Company_Name": "ALPHABET INC CL A COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 4920.0,
+    "Weight_Change": 0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "V",
+    "Company_Name": "VISA INC CLASS A SHARES COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 4920.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "MSTR",
+    "Company_Name": "STRATEGY INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 4800.0,
+    "Weight_Change": -0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "CSGP",
+    "Company_Name": "COSTAR GROUP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 4740.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "UBER",
+    "Company_Name": "UBER TECHNOLOGIES INC COMMON STOCK USD.00001",
+    "Action": "Buy",
+    "Shares_Change": 4680.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "AFRM",
+    "Company_Name": "AFFIRM HOLDINGS INC COMMON STOCK USD.00001",
+    "Action": "Buy",
+    "Shares_Change": 4560.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "NET",
+    "Company_Name": "CLOUDFLARE INC   CLASS A COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 4260.0,
+    "Weight_Change": -0.08
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "ARMK",
+    "Company_Name": "ARAMARK COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 3960.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "XYZ",
+    "Company_Name": "BLOCK INC COMMON STOCK USD.0000001",
+    "Action": "Buy",
+    "Shares_Change": 3960.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "CVNA",
+    "Company_Name": "CARVANA CO COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 3840.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "WELL",
+    "Company_Name": "WELLTOWER INC REIT USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 3720.0,
+    "Weight_Change": 0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "Z",
+    "Company_Name": "ZILLOW GROUP INC   C COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 3720.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "AAPL",
+    "Company_Name": "APPLE INC COMMON STOCK USD.00001",
+    "Action": "Buy",
+    "Shares_Change": 3540.0,
+    "Weight_Change": 0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "BSP",
+    "Company_Name": "BENDING SPOONS SPA COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 3480.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "APH",
+    "Company_Name": "AMPHENOL CORP CL A COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 3300.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "EOG",
+    "Company_Name": "EOG RESOURCES INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 3300.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "INIO",
+    "Company_Name": "INNIO NV COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 3180.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "DHI",
+    "Company_Name": "DR HORTON INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 3060.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "IONS",
+    "Company_Name": "IONIS PHARMACEUTICALS INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 2940.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "KLAC",
+    "Company_Name": "KLA CORP COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 2880.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "WPM",
+    "Company_Name": "WHEATON PRECIOUS METALS CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 2820.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "KKR",
+    "Company_Name": "KKR + CO INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 2460.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "CBRS",
+    "Company_Name": "CEREBRAS SYSTEMS INC   A COMMON STOCK USD.00001",
+    "Action": "Buy",
+    "Shares_Change": 2340.0,
+    "Weight_Change": -0.04
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "AKAM",
+    "Company_Name": "AKAMAI TECHNOLOGIES INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 2280.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "CSCO",
+    "Company_Name": "CISCO SYSTEMS INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 2100.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "VRTX",
+    "Company_Name": "VERTEX PHARMACEUTICALS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 2100.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "LYV",
+    "Company_Name": "LIVE NATION ENTERTAINMENT IN COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1980.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "PM",
+    "Company_Name": "PHILIP MORRIS INTERNATIONAL COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 1920.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "TSM",
+    "Company_Name": "TAIWAN SEMICONDUCTOR SP ADR ADR",
+    "Action": "Buy",
+    "Shares_Change": 1860.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "DASH",
+    "Company_Name": "DOORDASH INC   A COMMON STOCK USD.00001",
+    "Action": "Buy",
+    "Shares_Change": 1800.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "GE",
+    "Company_Name": "GENERAL ELECTRIC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1800.0,
+    "Weight_Change": 0.04
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "ISRG",
+    "Company_Name": "INTUITIVE SURGICAL INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1740.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "CRM",
+    "Company_Name": "SALESFORCE INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1560.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "ALNY",
+    "Company_Name": "ALNYLAM PHARMACEUTICALS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1500.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "RCL",
+    "Company_Name": "ROYAL CARIBBEAN CRUISES LTD COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1500.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "ALB",
+    "Company_Name": "ALBEMARLE CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1440.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "UAL",
+    "Company_Name": "UNITED AIRLINES HOLDINGS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1380.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "FANG",
+    "Company_Name": "DIAMONDBACK ENERGY INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1260.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "HOOD",
+    "Company_Name": "ROBINHOOD MARKETS INC   A COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 1260.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "FTAI",
+    "Company_Name": "FTAI AVIATION LTD COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 1200.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "AMGN",
+    "Company_Name": "AMGEN INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 1140.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "INSM",
+    "Company_Name": "INSMED INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1140.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "FSLR",
+    "Company_Name": "FIRST SOLAR INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1020.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "LLY",
+    "Company_Name": "ELI LILLY + CO COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 1020.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "UNH",
+    "Company_Name": "UNITEDHEALTH GROUP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1020.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "GH",
+    "Company_Name": "GUARDANT HEALTH INC COMMON STOCK USD.00001",
+    "Action": "Buy",
+    "Shares_Change": 960.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "SKHY",
+    "Company_Name": "SK HYNIX INC ADR ADR",
+    "Action": "Buy",
+    "Shares_Change": 900.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "TDG",
+    "Company_Name": "TRANSDIGM GROUP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 900.0,
+    "Weight_Change": 0.04
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "AIR",
+    "Company_Name": "AIRBUS SE COMMON STOCK EUR1.0",
+    "Action": "Buy",
+    "Shares_Change": 840.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "BBD.B",
+    "Company_Name": "BOMBARDIER INC B COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 840.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "COHR",
+    "Company_Name": "COHERENT CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 780.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "CEG",
+    "Company_Name": "CONSTELLATION ENERGY COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 720.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "PWR",
+    "Company_Name": "QUANTA SERVICES INC COMMON STOCK USD.00001",
+    "Action": "Buy",
+    "Shares_Change": 720.0,
+    "Weight_Change": 0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "APP",
+    "Company_Name": "APPLOVIN CORP CLASS A COMMON STOCK USD.00003",
+    "Action": "Buy",
+    "Shares_Change": 660.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "BURL",
+    "Company_Name": "BURLINGTON STORES INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 660.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "SPCX",
+    "Company_Name": "SPACE EXPLORATION TECHN CL A COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 660.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "CDNS",
+    "Company_Name": "CADENCE DESIGN SYS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 600.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "DE",
+    "Company_Name": "DEERE + CO COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 600.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "QNT",
+    "Company_Name": "QUANTINUUM INC A COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 600.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "AMAT",
+    "Company_Name": "APPLIED MATERIALS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 480.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "HCA",
+    "Company_Name": "HCA HEALTHCARE INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 480.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "TMO",
+    "Company_Name": "THERMO FISHER SCIENTIFIC INC COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 480.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "A000660",
+    "Company_Name": "SK HYNIX INC COMMON STOCK KRW5000.0",
+    "Action": "Buy",
+    "Shares_Change": 420.0,
+    "Weight_Change": 0.04
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "FICO",
+    "Company_Name": "FAIR ISAAC CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 420.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "MA",
+    "Company_Name": "MASTERCARD INC   A COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 420.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "ASML",
+    "Company_Name": "ASML HOLDING NV NY REG SHS NY REG SHRS EUR.09",
+    "Action": "Buy",
+    "Shares_Change": 360.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "COST",
+    "Company_Name": "COSTCO WHOLESALE CORP COMMON STOCK USD.005",
+    "Action": "Buy",
+    "Shares_Change": 360.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "GEV",
+    "Company_Name": "GE VERNOVA INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 300.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "NOC",
+    "Company_Name": "NORTHROP GRUMMAN CORP COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 300.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "WDC",
+    "Company_Name": "WESTERN DIGITAL CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 300.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "MTD",
+    "Company_Name": "METTLER TOLEDO INTERNATIONAL COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 180.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "CSU",
+    "Company_Name": "CONSTELLATION SOFTWARE INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 120.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "MU",
+    "Company_Name": "MICRON TECHNOLOGY INC COMMON STOCK USD.1",
+    "Action": "Sell",
+    "Shares_Change": -142696.0,
+    "Weight_Change": -0.42
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "CGGR",
+    "Stock_Ticker": "NAN",
+    "Company_Name": "NET OTHER ASSETS",
+    "Action": "Sell",
+    "Shares_Change": -151777846687.11,
+    "Weight_Change": -0.5
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "VISN",
+    "Company_Name": "VISTANCE NETWORKS INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 213380.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PGY",
+    "Company_Name": "PAGAYA TECHNOLOGIES LTD  A COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 74625.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TREX",
+    "Company_Name": "TREX COMPANY INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 53652.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "AAP",
+    "Company_Name": "ADVANCE AUTO PARTS INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 43089.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "OPEN",
+    "Company_Name": "OPENDOOR TECHNOLOGIES INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 36582.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "QLYS",
+    "Company_Name": "QUALYS INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 20438.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RIG",
+    "Company_Name": "TRANSOCEAN LTD COMMON STOCK CHF.1",
+    "Action": "Buy",
+    "Shares_Change": 19488.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "KOS",
+    "Company_Name": "KOSMOS ENERGY LTD COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 18738.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "EPC",
+    "Company_Name": "EDGEWELL PERSONAL CARE CO COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 18595.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ZD",
+    "Company_Name": "ZIFF DAVIS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 18203.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "LYFT",
+    "Company_Name": "LYFT INC A COMMON STOCK USD.00001",
+    "Action": "Buy",
+    "Shares_Change": 16470.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "EXP",
+    "Company_Name": "EAGLE MATERIALS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 14152.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CLVT",
+    "Company_Name": "CLARIVATE PLC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 10980.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BULL",
+    "Company_Name": "WEBULL CORP COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 9090.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TDOC",
+    "Company_Name": "TELADOC HEALTH INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 8574.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NOV",
+    "Company_Name": "NOV INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 8280.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MZTI",
+    "Company_Name": "MARZETTI COMPANY/THE COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 8004.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CRGY",
+    "Company_Name": "CRESCENT ENERGY INC A COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 7908.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FLR",
+    "Company_Name": "FLUOR CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 6810.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GPK",
+    "Company_Name": "GRAPHIC PACKAGING HOLDING CO COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 6336.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GT",
+    "Company_Name": "GOODYEAR TIRE + RUBBER CO COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 6006.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "M",
+    "Company_Name": "MACY S INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 5760.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PTEN",
+    "Company_Name": "PATTERSON UTI ENERGY INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 5166.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GNTX",
+    "Company_Name": "GENTEX CORP COMMON STOCK USD.06",
+    "Action": "Buy",
+    "Shares_Change": 4470.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PGNY",
+    "Company_Name": "PROGYNY INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 4452.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CRMD",
+    "Company_Name": "CORMEDIX INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 4170.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HLIT",
+    "Company_Name": "HARMONIC INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 4128.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GO",
+    "Company_Name": "GROCERY OUTLET HOLDING CORP COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 4122.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "EVC",
+    "Company_Name": "ENTRAVISION COMMUNICATIONS A COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 4044.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HNST",
+    "Company_Name": "HONEST CO INC/THE COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 3564.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "DLO",
+    "Company_Name": "DLOCAL LTD COMMON STOCK USD.002",
+    "Action": "Buy",
+    "Shares_Change": 3540.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MTDR",
+    "Company_Name": "MATADOR RESOURCES CO COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 3474.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "DXC",
+    "Company_Name": "DXC TECHNOLOGY CO COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 3420.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RLI",
+    "Company_Name": "RLI CORP COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 3288.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BLMN",
+    "Company_Name": "BLOOMIN  BRANDS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 3174.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "WSBC",
+    "Company_Name": "WESBANCO INC COMMON STOCK USD2.0833",
+    "Action": "Buy",
+    "Shares_Change": 3126.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "XZO",
+    "Company_Name": "EXZEO GROUP INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 2994.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ENOV",
+    "Company_Name": "ENOVIS CORP COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 2952.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "AEO",
+    "Company_Name": "AMERICAN EAGLE OUTFITTERS COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 2814.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SFL",
+    "Company_Name": "SFL CORP LTD COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 2802.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MUR",
+    "Company_Name": "MURPHY OIL CORP COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 2790.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "XPER",
+    "Company_Name": "XPERI INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 2778.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "AROC",
+    "Company_Name": "ARCHROCK INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 2724.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ASH",
+    "Company_Name": "ASHLAND INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 2640.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "DHT",
+    "Company_Name": "DHT HOLDINGS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 2628.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ASB",
+    "Company_Name": "ASSOCIATED BANC CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 2622.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ZGN",
+    "Company_Name": "ERMENEGILDO ZEGNA NV COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 2580.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ALK",
+    "Company_Name": "ALASKA AIR GROUP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 2466.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NE",
+    "Company_Name": "NOBLE CORP PLC COMMON STOCK USD.00001",
+    "Action": "Buy",
+    "Shares_Change": 2448.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FMC",
+    "Company_Name": "FMC CORP COMMON STOCK USD.1",
+    "Action": "Buy",
+    "Shares_Change": 2400.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SWIM",
+    "Company_Name": "LATHAM GROUP INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 2352.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "KEX",
+    "Company_Name": "KIRBY CORP COMMON STOCK USD.1",
+    "Action": "Buy",
+    "Shares_Change": 2328.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HAPN",
+    "Company_Name": "HAPPEN INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 2214.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "EBS",
+    "Company_Name": "EMERGENT BIOSOLUTIONS INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 2190.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TDS",
+    "Company_Name": "TELEPHONE AND DATA SYSTEMS COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 2154.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "INGM",
+    "Company_Name": "INGRAM MICRO HOLDING CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 2130.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PUMP",
+    "Company_Name": "PROPETRO HOLDING CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 1998.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TALO",
+    "Company_Name": "TALOS ENERGY INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 1998.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "UPBD",
+    "Company_Name": "UPBOUND GROUP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1986.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CNX",
+    "Company_Name": "CNX RESOURCES CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1962.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "KSS",
+    "Company_Name": "KOHLS CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1956.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ORA",
+    "Company_Name": "ORMAT TECHNOLOGIES INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1926.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CFFN",
+    "Company_Name": "CAPITOL FEDERAL FINANCIAL IN COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1908.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TTI",
+    "Company_Name": "TETRA TECHNOLOGIES INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1830.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PFS",
+    "Company_Name": "PROVIDENT FINANCIAL SERVICES COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1794.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "KBH",
+    "Company_Name": "KB HOME COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 1782.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "QDEL",
+    "Company_Name": "QUIDELORTHO CORP COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1776.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "LNTH",
+    "Company_Name": "LANTHEUS HOLDINGS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1770.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MDXG",
+    "Company_Name": "MIMEDX GROUP INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1752.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TRN",
+    "Company_Name": "TRINITY INDUSTRIES INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1752.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FOSL",
+    "Company_Name": "FOSSIL GROUP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1746.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SWBI",
+    "Company_Name": "SMITH + WESSON BRANDS INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1734.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PRGO",
+    "Company_Name": "PERRIGO CO PLC COMMON STOCK EUR.001",
+    "Action": "Buy",
+    "Shares_Change": 1728.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CARS",
+    "Company_Name": "CARS.COM INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1710.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "YETI",
+    "Company_Name": "YETI HOLDINGS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1698.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "OSPN",
+    "Company_Name": "ONESPAN INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1668.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HLX",
+    "Company_Name": "HELIX ENERGY SOLUTIONS GROUP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 1656.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HOG",
+    "Company_Name": "HARLEY DAVIDSON INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1620.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SB",
+    "Company_Name": "SAFE BULKERS INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1620.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "QTTB",
+    "Company_Name": "Q32 BIO INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 1614.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FBP",
+    "Company_Name": "FIRST BANCORP PUERTO RICO COMMON STOCK USD.1",
+    "Action": "Buy",
+    "Shares_Change": 1584.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RJET",
+    "Company_Name": "REPUBLIC AIRWAYS HOLDINGS IN COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 1584.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "KRP",
+    "Company_Name": "KIMBELL ROYALTY PARTNERS LP UNIT",
+    "Action": "Buy",
+    "Shares_Change": 1578.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "OEC",
+    "Company_Name": "ORION SA COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 1578.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RDN",
+    "Company_Name": "RADIAN GROUP INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1560.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "LXU",
+    "Company_Name": "LSB INDUSTRIES INC COMMON STOCK USD.1",
+    "Action": "Buy",
+    "Shares_Change": 1548.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "AZTA",
+    "Company_Name": "AZENTA INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1524.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RUSHA",
+    "Company_Name": "RUSH ENTERPRISES INC CL A COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1524.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SPNT",
+    "Company_Name": "SIRIUSPOINT LTD COMMON STOCK USD.1",
+    "Action": "Buy",
+    "Shares_Change": 1488.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CROX",
+    "Company_Name": "CROCS INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1452.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TRS",
+    "Company_Name": "TRIMAS CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1446.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "OII",
+    "Company_Name": "OCEANEERING INTL INC COMMON STOCK USD.25",
+    "Action": "Buy",
+    "Shares_Change": 1440.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BYD",
+    "Company_Name": "BOYD GAMING CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1434.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NEWT",
+    "Company_Name": "NEWTEKONE INC COMMON STOCK USD.02",
+    "Action": "Buy",
+    "Shares_Change": 1428.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BVS",
+    "Company_Name": "BIOVENTUS INC   A COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1416.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "EVER",
+    "Company_Name": "EVERQUOTE INC   CLASS A COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1410.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MGRC",
+    "Company_Name": "MCGRATH RENTCORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 1404.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BBSI",
+    "Company_Name": "BARRETT BUSINESS SVCS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1392.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CLNE",
+    "Company_Name": "CLEAN ENERGY FUELS CORP COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 1380.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NOG",
+    "Company_Name": "NORTHERN OIL AND GAS INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1380.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BUSE",
+    "Company_Name": "FIRST BUSEY CORP COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1374.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "EGY",
+    "Company_Name": "VAALCO ENERGY INC COMMON STOCK USD.1",
+    "Action": "Buy",
+    "Shares_Change": 1356.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MASS",
+    "Company_Name": "908 DEVICES INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 1356.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CMP",
+    "Company_Name": "COMPASS MINERALS INTERNATION COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1314.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ACEL",
+    "Company_Name": "ACCEL ENTERTAINMENT INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 1284.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SBH",
+    "Company_Name": "SALLY BEAUTY HOLDINGS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1278.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PRDO",
+    "Company_Name": "PERDOCEO EDUCATION CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1272.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SLDE",
+    "Company_Name": "SLIDE INSURANCE HOLDINGS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1230.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "LEA",
+    "Company_Name": "LEAR CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1224.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HRMY",
+    "Company_Name": "HARMONY BIOSCIENCES HOLDINGS COMMON STOCK USD.00001",
+    "Action": "Buy",
+    "Shares_Change": 1212.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GRNT",
+    "Company_Name": "GRANITE RIDGE RESOURCES INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 1200.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CBT",
+    "Company_Name": "CABOT CORP COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 1182.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "INVX",
+    "Company_Name": "INNOVEX INTERNATIONAL INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1176.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MEI",
+    "Company_Name": "METHODE ELECTRONICS INC COMMON STOCK USD.5",
+    "Action": "Buy",
+    "Shares_Change": 1176.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SMPL",
+    "Company_Name": "SIMPLY GOOD FOODS CO/THE COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 1176.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TTAM",
+    "Company_Name": "TITAN AMERICA SA COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 1176.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MATV",
+    "Company_Name": "MATIV HOLDINGS INC COMMON STOCK USD.1",
+    "Action": "Buy",
+    "Shares_Change": 1158.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PRAA",
+    "Company_Name": "PRA GROUP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1158.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "AMRC",
+    "Company_Name": "AMERESCO INC CL A COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 1146.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "APAM",
+    "Company_Name": "ARTISAN PARTNERS ASSET MA  A COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1122.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "URBN",
+    "Company_Name": "URBAN OUTFITTERS INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 1110.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "KELYA",
+    "Company_Name": "KELLY SERVICES INC  A COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 1104.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "WERN",
+    "Company_Name": "WERNER ENTERPRISES INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1104.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CNO",
+    "Company_Name": "CNO FINANCIAL GROUP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1098.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NUS",
+    "Company_Name": "NU SKIN ENTERPRISES INC   A COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1080.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TILE",
+    "Company_Name": "INTERFACE INC COMMON STOCK USD.1",
+    "Action": "Buy",
+    "Shares_Change": 1074.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "UNFI",
+    "Company_Name": "UNITED NATURAL FOODS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1074.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CVI",
+    "Company_Name": "CVR ENERGY INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1056.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CRK",
+    "Company_Name": "COMSTOCK RESOURCES INC COMMON STOCK USD.5",
+    "Action": "Buy",
+    "Shares_Change": 1044.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "UFPI",
+    "Company_Name": "UFP INDUSTRIES INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 1044.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CENTA",
+    "Company_Name": "CENTRAL GARDEN AND PET CO A COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1038.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "IPAR",
+    "Company_Name": "INTERPARFUMS INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 1014.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MUX",
+    "Company_Name": "MCEWEN INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 1014.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SIGI",
+    "Company_Name": "SELECTIVE INSURANCE GROUP COMMON STOCK USD2.0",
+    "Action": "Buy",
+    "Shares_Change": 1014.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SKYW",
+    "Company_Name": "SKYWEST INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 1008.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ARDT",
+    "Company_Name": "ARDENT HEALTH INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1002.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BNED",
+    "Company_Name": "BARNES + NOBLE EDUCATION INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1002.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NBBK",
+    "Company_Name": "NB BANCORP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 1002.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GDOT",
+    "Company_Name": "GREEN DOT CORP CLASS A COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 972.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ASO",
+    "Company_Name": "ACADEMY SPORTS + OUTDOORS IN COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 960.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CMRE",
+    "Company_Name": "COSTAMARE INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 960.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FLWS",
+    "Company_Name": "1 800 FLOWERS.COM INC CL A COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 960.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RUN",
+    "Company_Name": "SUNRUN INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 948.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HIPO",
+    "Company_Name": "HIPPO HOLDINGS INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 942.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NVGS",
+    "Company_Name": "NAVIGATOR HOLDINGS LTD COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 942.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SKWD",
+    "Company_Name": "SKYWARD SPECIALTY INSURANCE COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 942.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "EPAM",
+    "Company_Name": "EPAM SYSTEMS INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 924.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "EBF",
+    "Company_Name": "ENNIS INC COMMON STOCK USD2.5",
+    "Action": "Buy",
+    "Shares_Change": 918.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HP",
+    "Company_Name": "HELMERICH + PAYNE COMMON STOCK USD.1",
+    "Action": "Buy",
+    "Shares_Change": 918.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PLGO",
+    "Company_Name": "PELAGOS INSURANCE CAPITAL LT COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 906.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CNOB",
+    "Company_Name": "CONNECTONE BANCORP INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 894.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CNR",
+    "Company_Name": "CORE NATURAL RESOURCES INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 888.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "AIN",
+    "Company_Name": "ALBANY INTL CORP CL A COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 882.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PVH",
+    "Company_Name": "PVH CORP COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 882.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ATKR",
+    "Company_Name": "ATKORE INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 876.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "LOB",
+    "Company_Name": "LIVE OAK BANCSHARES INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 870.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "INSW",
+    "Company_Name": "INTERNATIONAL SEAWAYS INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 858.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BC",
+    "Company_Name": "BRUNSWICK CORP COMMON STOCK USD.75",
+    "Action": "Buy",
+    "Shares_Change": 852.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SCSC",
+    "Company_Name": "SCANSOURCE INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 852.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PBYI",
+    "Company_Name": "PUMA BIOTECHNOLOGY INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 834.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TITN",
+    "Company_Name": "TITAN MACHINERY INC COMMON STOCK USD.00001",
+    "Action": "Buy",
+    "Shares_Change": 834.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HELE",
+    "Company_Name": "HELEN OF TROY LTD COMMON STOCK USD.1",
+    "Action": "Buy",
+    "Shares_Change": 816.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "WAFD",
+    "Company_Name": "WAFD INC COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 816.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BOBS",
+    "Company_Name": "BOB S DISCOUNT FURNITURE COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 810.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PARR",
+    "Company_Name": "PAR PACIFIC HOLDINGS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 810.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ANF",
+    "Company_Name": "ABERCROMBIE + FITCH CO CL A COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 804.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "THRM",
+    "Company_Name": "GENTHERM INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 804.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SLVM",
+    "Company_Name": "SYLVAMO CORP COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 798.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TPC",
+    "Company_Name": "TUTOR PERINI CORP COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 798.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SIGA",
+    "Company_Name": "SIGA TECHNOLOGIES INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 792.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ANIP",
+    "Company_Name": "ANI PHARMACEUTICALS INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 780.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CRCT",
+    "Company_Name": "CRICUT INC   CLASS A COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 774.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MTRX",
+    "Company_Name": "MATRIX SERVICE CO COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 768.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "OIS",
+    "Company_Name": "OIL STATES INTERNATIONAL INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 768.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NX",
+    "Company_Name": "QUANEX BUILDING PRODUCTS COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 762.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "WFRD",
+    "Company_Name": "WEATHERFORD INTERNATIONAL PL COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 762.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CRI",
+    "Company_Name": "CARTER S INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 756.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TRMK",
+    "Company_Name": "TRUSTMARK CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 756.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SNDR",
+    "Company_Name": "SCHNEIDER NATIONAL INC CL B COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 750.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "AMTB",
+    "Company_Name": "AMERANT BANCORP INC COMMON STOCK USD.1",
+    "Action": "Buy",
+    "Shares_Change": 744.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SIG",
+    "Company_Name": "SIGNET JEWELERS LTD COMMON STOCK USD.18",
+    "Action": "Buy",
+    "Shares_Change": 744.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ALGT",
+    "Company_Name": "ALLEGIANT TRAVEL CO COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 738.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "DCOM",
+    "Company_Name": "DIME COMMERCIAL BANCSHARES I COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 732.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "EPSN",
+    "Company_Name": "EPSILON ENERGY LTD COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 732.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FG",
+    "Company_Name": "F+G ANNUITIES + LIFE INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 726.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SND",
+    "Company_Name": "SMART SAND INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 720.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RIGL",
+    "Company_Name": "RIGEL PHARMACEUTICALS INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 708.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "KOP",
+    "Company_Name": "KOPPERS HOLDINGS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 690.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "LOVE",
+    "Company_Name": "LOVESAC CO/THE COMMON STOCK USD.00001",
+    "Action": "Buy",
+    "Shares_Change": 684.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HNRG",
+    "Company_Name": "HALLADOR ENERGY CO COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 678.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TCBI",
+    "Company_Name": "TEXAS CAPITAL BANCSHARES INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 678.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GATX",
+    "Company_Name": "GATX CORP COMMON STOCK USD.625",
+    "Action": "Buy",
+    "Shares_Change": 672.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BKV",
+    "Company_Name": "BKV CORPORATION COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 666.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CAKE",
+    "Company_Name": "CHEESECAKE FACTORY INC/THE COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 654.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GLIBK",
+    "Company_Name": "LIBERTY CAPITAL CORP CL C COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 654.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HHH",
+    "Company_Name": "HOWARD HUGHES HOLDINGS INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 654.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CBRL",
+    "Company_Name": "CRACKER BARREL OLD COUNTRY COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 648.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MCS",
+    "Company_Name": "MARCUS CORPORATION COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 648.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "LKFN",
+    "Company_Name": "LAKELAND FINANCIAL CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 642.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HMN",
+    "Company_Name": "HORACE MANN EDUCATORS COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 636.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TDW",
+    "Company_Name": "TIDEWATER INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 636.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GBX",
+    "Company_Name": "GREENBRIER COMPANIES INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 630.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ASLE",
+    "Company_Name": "AERSALE CORP COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 624.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BOW",
+    "Company_Name": "BOWHEAD SPECIALTY HOLDINGS I COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 612.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "OPRT",
+    "Company_Name": "OPORTUN FINANCIAL CORP COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 612.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "DBI",
+    "Company_Name": "DESIGNER BRANDS INC CLASS A COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 594.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "LZB",
+    "Company_Name": "LA Z BOY INC COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 594.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CARE",
+    "Company_Name": "CARTER BANKSHARES INC COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 570.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CCS",
+    "Company_Name": "CENTURY COMMUNITIES INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 570.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "INGR",
+    "Company_Name": "INGREDION INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 570.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "KE",
+    "Company_Name": "KIMBALL ELECTRONICS INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 570.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "EPM",
+    "Company_Name": "EVOLUTION PETROLEUM CORP COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 558.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "AREC",
+    "Company_Name": "AMERICAN RESOURCES CORP COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 540.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "LFVN",
+    "Company_Name": "LIFEVANTAGE CORP COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 540.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "AMPH",
+    "Company_Name": "AMPHASTAR PHARMACEUTICALS IN COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 534.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BCAL",
+    "Company_Name": "CALIFORNIA BANCORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 528.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BANR",
+    "Company_Name": "BANNER CORPORATION COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 522.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FNRN",
+    "Company_Name": "FIRST NORTHERN COMMUNITY BAN COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 522.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "INFU",
+    "Company_Name": "INFUSYSTEM HOLDINGS INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 516.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "LPG",
+    "Company_Name": "DORIAN LPG LTD COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 516.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ASIX",
+    "Company_Name": "ADVANSIX INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 510.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HOFT",
+    "Company_Name": "HOOKER FURNISHINGS CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 504.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "OSBC",
+    "Company_Name": "OLD SECOND BANCORP INC COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 498.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PEBO",
+    "Company_Name": "PEOPLES BANCORP INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 498.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "APOG",
+    "Company_Name": "APOGEE ENTERPRISES INC COMMON STOCK USD.333",
+    "Action": "Buy",
+    "Shares_Change": 492.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NRDS",
+    "Company_Name": "NERDWALLET INC CL A COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 492.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FISI",
+    "Company_Name": "FINANCIAL INSTITUTIONS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 480.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PDLB",
+    "Company_Name": "PONCE FINANCIAL GROUP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 480.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ACIC",
+    "Company_Name": "AMERICAN COASTAL INSURANCE C COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 474.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TGLS",
+    "Company_Name": "TECNOGLASS HOLDINGS INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 474.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "APC",
+    "Company_Name": "ARKO PETROLEUM CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 462.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CCNE",
+    "Company_Name": "CNB FINANCIAL CORP/PA COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 462.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NPB",
+    "Company_Name": "NORTHPOINTE BANCSHARES INC COMMON STOCK NPV",
+    "Action": "Buy",
+    "Shares_Change": 462.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SD",
+    "Company_Name": "SANDRIDGE ENERGY INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 462.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "WASH",
+    "Company_Name": "WASHINGTON TRUST BANCORP COMMON STOCK USD.0625",
+    "Action": "Buy",
+    "Shares_Change": 462.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ARHS",
+    "Company_Name": "ARHAUS INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 456.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FSTR",
+    "Company_Name": "FOSTER (LB) CO A COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 456.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "AMSF",
+    "Company_Name": "AMERISAFE INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 450.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CVLG",
+    "Company_Name": "COVENANT LOGISTICS GROUP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 450.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "LCUT",
+    "Company_Name": "LIFETIME BRANDS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 444.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MLR",
+    "Company_Name": "MILLER INDUSTRIES INC/TENN COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 444.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "UFCS",
+    "Company_Name": "UNITED FIRE GROUP INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 438.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "UVE",
+    "Company_Name": "UNIVERSAL INSURANCE HOLDINGS COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 438.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "VC",
+    "Company_Name": "VISTEON CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 438.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HZO",
+    "Company_Name": "MARINEMAX INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 432.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PHIN",
+    "Company_Name": "PHINIA INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 432.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SCL",
+    "Company_Name": "STEPAN CO COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 432.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SRI",
+    "Company_Name": "STONERIDGE INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 432.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "UPWK",
+    "Company_Name": "UPWORK INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 432.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SPB",
+    "Company_Name": "SPECTRUM BRANDS HOLDINGS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 426.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "WMK",
+    "Company_Name": "WEIS MARKETS INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 426.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BJRI",
+    "Company_Name": "BJ S RESTAURANTS INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 420.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BKE",
+    "Company_Name": "BUCKLE INC/THE COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 420.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HPK",
+    "Company_Name": "HIGHPEAK ENERGY INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 420.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "VFF",
+    "Company_Name": "VILLAGE FARMS INTERNATIONAL COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 420.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "VTS",
+    "Company_Name": "VITESSE ENERGY INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 420.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ECPG",
+    "Company_Name": "ENCORE CAPITAL GROUP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 408.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ETD",
+    "Company_Name": "ETHAN ALLEN INTERIORS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 396.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "JAKK",
+    "Company_Name": "JAKKS PACIFIC INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 396.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "OFG",
+    "Company_Name": "OFG BANCORP COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 396.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "VTOL",
+    "Company_Name": "BRISTOW GROUP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 390.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GCO",
+    "Company_Name": "GENESCO INC COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 384.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CBAN",
+    "Company_Name": "COLONY BANKCORP COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 378.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GLRE",
+    "Company_Name": "GREENLIGHT CAPITAL RE LTD A COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 378.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MAGN",
+    "Company_Name": "MAGNERA CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 378.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SHBI",
+    "Company_Name": "SHORE BANCSHARES INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 378.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ASC",
+    "Company_Name": "ARDMORE SHIPPING CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 372.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CUBI",
+    "Company_Name": "CUSTOMERS BANCORP INC COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 372.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "EFSC",
+    "Company_Name": "ENTERPRISE FINANCIAL SERVICE COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 372.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "AMCX",
+    "Company_Name": "AMC GLOBAL MEDIA INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 366.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FOR",
+    "Company_Name": "FORESTAR GROUP INC COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 366.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FRBA",
+    "Company_Name": "FIRST BANK/HAMILTON NJ COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 366.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TBBK",
+    "Company_Name": "BANCORP INC/THE COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 366.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "REPX",
+    "Company_Name": "RILEY EXPLORATION PERMIAN IN COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 360.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "AD",
+    "Company_Name": "ARRAY DIGITAL INFRASTRUCTURE COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 354.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NGVC",
+    "Company_Name": "NATURAL GROCERS BY VITAMIN C COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 354.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NWPX",
+    "Company_Name": "NWPX INFRASTRUCTURE INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 354.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CLMB",
+    "Company_Name": "CLIMB GLOBAL SOLUTIONS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 348.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FVCB",
+    "Company_Name": "FVCBANKCORP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 348.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GOLD",
+    "Company_Name": "GOLD.COM INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 348.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "JJSF",
+    "Company_Name": "J + J SNACK FOODS CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 348.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NATR",
+    "Company_Name": "NATURES SUNSHINE PRODS INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 348.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "COFS",
+    "Company_Name": "CHOICEONE FINANCIAL SVCS INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 342.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BFST",
+    "Company_Name": "BUSINESS FIRST BANCSHARES COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 336.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GTE",
+    "Company_Name": "GRAN TIERRA ENERGY INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 336.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CAC",
+    "Company_Name": "CAMDEN NATIONAL CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 330.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FNLC",
+    "Company_Name": "FIRST BANCORP INC/ME COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 324.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "IPI",
+    "Company_Name": "INTREPID POTASH INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 324.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BY",
+    "Company_Name": "BYLINE BANCORP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 318.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GCT",
+    "Company_Name": "GIGACLOUD TECHNOLOGY INC   A COMMON STOCK USD.05",
+    "Action": "Buy",
+    "Shares_Change": 318.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MCBS",
+    "Company_Name": "METROCITY BANKSHARES INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 318.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "OXM",
+    "Company_Name": "OXFORD INDUSTRIES INC COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 318.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "UVSP",
+    "Company_Name": "UNIVEST FINANCIAL CORP COMMON STOCK USD5.0",
+    "Action": "Buy",
+    "Shares_Change": 318.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FMAO",
+    "Company_Name": "FARMERS + MERCHANTS BANCO/OH COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 312.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MED",
+    "Company_Name": "MEDIFAST INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 312.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NWFL",
+    "Company_Name": "NORWOOD FINANCIAL CORP COMMON STOCK USD.1",
+    "Action": "Buy",
+    "Shares_Change": 312.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TNK",
+    "Company_Name": "TEEKAY TANKERS LTD CLASS A COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 312.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "IMKTA",
+    "Company_Name": "INGLES MARKETS INC CLASS A COMMON STOCK USD.05",
+    "Action": "Buy",
+    "Shares_Change": 306.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MSBI",
+    "Company_Name": "MIDLAND STATES BANCORP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 306.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NTB",
+    "Company_Name": "BANK OF N.T. BUTTERFIELD+SON COMMON STOCK BMD1.0",
+    "Action": "Buy",
+    "Shares_Change": 306.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BHRB",
+    "Company_Name": "BURKE + HERBERT FINANCIAL SE COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 300.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "JCAP",
+    "Company_Name": "JEFFERSON CAPITAL INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 300.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ORRF",
+    "Company_Name": "ORRSTOWN FINL SERVICES INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 300.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BWB",
+    "Company_Name": "BRIDGEWATER BANCSHARES INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 294.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TG",
+    "Company_Name": "TREDEGAR CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 294.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TRUP",
+    "Company_Name": "TRUPANION INC COMMON STOCK USD.00001",
+    "Action": "Buy",
+    "Shares_Change": 294.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "USCB",
+    "Company_Name": "USCB FINANCIAL HOLDINGS INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 294.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ACT",
+    "Company_Name": "ENACT HOLDINGS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 288.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FSBC",
+    "Company_Name": "FIVE STAR BANCORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 288.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PCB",
+    "Company_Name": "PCB BANCORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 288.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PKOH",
+    "Company_Name": "PARK OHIO HOLDINGS CORP COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 288.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HRTG",
+    "Company_Name": "HERITAGE INSURANCE HOLDINGS COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 282.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SHOE",
+    "Company_Name": "SHOE STATION GROUP INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 282.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GIII",
+    "Company_Name": "G III APPAREL GROUP LTD COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 276.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "KD",
+    "Company_Name": "KYNDRYL HOLDINGS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 276.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MBUU",
+    "Company_Name": "MALIBU BOATS INC   A COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 276.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CPF",
+    "Company_Name": "CENTRAL PACIFIC FINANCIAL CO COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 264.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NRIM",
+    "Company_Name": "NORTHRIM BANCORP INC COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 264.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RNGR",
+    "Company_Name": "RANGER ENERGY SERVICES CL A COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 264.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "WEYS",
+    "Company_Name": "WEYCO GROUP INC COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 264.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "DGICA",
+    "Company_Name": "DONEGAL GROUP INC CL A COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 258.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "AII",
+    "Company_Name": "AMERICAN INTEGRITY INSURANCE COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 252.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "COLL",
+    "Company_Name": "COLLEGIUM PHARMACEUTICAL INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 252.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "IBCP",
+    "Company_Name": "INDEPENDENT BANK CORP   MICH COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 252.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "WTBA",
+    "Company_Name": "WEST BANCORPORATION COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 252.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GCBC",
+    "Company_Name": "GREENE COUNTY BANCORP INC COMMON STOCK USD.1",
+    "Action": "Buy",
+    "Shares_Change": 246.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NGS",
+    "Company_Name": "NATURAL GAS SERVICES GROUP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 240.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TMP",
+    "Company_Name": "TOMPKINS FINANCIAL CORP COMMON STOCK USD.1",
+    "Action": "Buy",
+    "Shares_Change": 240.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "IBEX",
+    "Company_Name": "IBEX LTD COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 234.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "JBSS",
+    "Company_Name": "JOHN B. SANFILIPPO + SON INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 234.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HVT",
+    "Company_Name": "HAVERTY FURNITURE COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 228.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "WS",
+    "Company_Name": "WORTHINGTON STEEL INC COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 228.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "WSBF",
+    "Company_Name": "WATERSTONE FINANCIAL INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 228.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "LE",
+    "Company_Name": "LANDS  END INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 222.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NBR",
+    "Company_Name": "NABORS INDUSTRIES LTD COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 222.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SPFI",
+    "Company_Name": "SOUTH PLAINS FINANCIAL INC COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 222.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SRCE",
+    "Company_Name": "1ST SOURCE CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 222.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CTRN",
+    "Company_Name": "CITI TRENDS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 216.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MPAA",
+    "Company_Name": "MOTORCAR PARTS OF AMERICA IN COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 216.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NNI",
+    "Company_Name": "NELNET INC CL A COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 216.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PXED",
+    "Company_Name": "PHOENIX EDUCATION PARTNERS I COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 216.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RUSHB",
+    "Company_Name": "RUSH ENTERPRISES INC   CL B COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 216.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TTGT",
+    "Company_Name": "TECHTARGET INC COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 216.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "AROW",
+    "Company_Name": "ARROW FINANCIAL CORP COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 210.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BCML",
+    "Company_Name": "BAYCOM CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 210.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CBNK",
+    "Company_Name": "CAPITAL BANCORP INC/MD COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 210.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "JILL",
+    "Company_Name": "J. JILL INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 204.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MCRI",
+    "Company_Name": "MONARCH CASINO + RESORT INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 198.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PPC",
+    "Company_Name": "PILGRIM S PRIDE CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 198.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SBFG",
+    "Company_Name": "SB FINANCIAL GROUP INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 198.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SFST",
+    "Company_Name": "SOUTHERN FIRST BANCSHARES COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 198.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PKBK",
+    "Company_Name": "PARKE BANCORP INC COMMON STOCK USD.1",
+    "Action": "Buy",
+    "Shares_Change": 192.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SMBK",
+    "Company_Name": "SMARTFINANCIAL INC COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 192.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "VLGEA",
+    "Company_Name": "VILLAGE SUPER MARKET CLASS A COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 192.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ATLO",
+    "Company_Name": "AMES NATIONAL CORP COMMON STOCK USD2.0",
+    "Action": "Buy",
+    "Shares_Change": 186.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CMCL",
+    "Company_Name": "CALEDONIA MINING CORP PLC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 186.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FXNC",
+    "Company_Name": "FIRST NATIONAL CORP/VA COMMON STOCK USD1.25",
+    "Action": "Buy",
+    "Shares_Change": 186.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "KINS",
+    "Company_Name": "KINGSTONE COS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 186.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PFIS",
+    "Company_Name": "PEOPLES FINANCIAL SERVICES COMMON STOCK USD2.0",
+    "Action": "Buy",
+    "Shares_Change": 186.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FSBW",
+    "Company_Name": "FS BANCORP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 180.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MBWM",
+    "Company_Name": "MERCANTILE BANK CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 180.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MGPI",
+    "Company_Name": "MGP INGREDIENTS INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 180.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ACNB",
+    "Company_Name": "ACNB CORP COMMON STOCK USD2.5",
+    "Action": "Buy",
+    "Shares_Change": 174.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "OBT",
+    "Company_Name": "ORANGE COUNTY BANCORP INC COMMON STOCK USD.25",
+    "Action": "Buy",
+    "Shares_Change": 174.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RBB",
+    "Company_Name": "RBB BANCORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 174.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CBK",
+    "Company_Name": "COMMERCIAL BANCGROUP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 168.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HTB",
+    "Company_Name": "HOMETRUST BANCSHARES INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 168.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BBW",
+    "Company_Name": "BUILD A BEAR WORKSHOP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 162.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CTBI",
+    "Company_Name": "COMMUNITY TRUST BANCORP INC COMMON STOCK USD5.0",
+    "Action": "Buy",
+    "Shares_Change": 162.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NUTX",
+    "Company_Name": "NUTEX HEALTH INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 162.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "OVLY",
+    "Company_Name": "OAK VALLEY BANCORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 162.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "WABC",
+    "Company_Name": "WESTAMERICA BANCORPORATION COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 162.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BSRR",
+    "Company_Name": "SIERRA BANCORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 156.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BSVN",
+    "Company_Name": "BANK7 CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 156.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CCBG",
+    "Company_Name": "CAPITAL CITY BANK GROUP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 156.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CENT",
+    "Company_Name": "CENTRAL GARDEN + PET CO COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 156.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CMTV",
+    "Company_Name": "COMMUNITY BANCORP INC/VT COMMON STOCK USD2.5",
+    "Action": "Buy",
+    "Shares_Change": 156.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "EQPT",
+    "Company_Name": "EQUIPMENTSHARE.COM INC A COMMON STOCK USD.0000013",
+    "Action": "Buy",
+    "Shares_Change": 156.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HCI",
+    "Company_Name": "HCI GROUP INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 156.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "LNN",
+    "Company_Name": "LINDSAY CORP COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 156.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MRBK",
+    "Company_Name": "MERIDIAN CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 156.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SAM",
+    "Company_Name": "BOSTON BEER COMPANY INC A COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 156.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TCBX",
+    "Company_Name": "THIRD COAST BANCSHARES INC COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 156.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TSBK",
+    "Company_Name": "TIMBERLAND BANCORP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 156.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ATLC",
+    "Company_Name": "ATLANTICUS HOLDINGS CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 150.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ATNI",
+    "Company_Name": "ATN INTERNATIONAL INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 150.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "EBMT",
+    "Company_Name": "EAGLE BANCORP MONTANA INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 150.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PLBC",
+    "Company_Name": "PLUMAS BANCORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 150.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GPOR",
+    "Company_Name": "GULFPORT ENERGY CORP COMMON STOCK USD.0001",
+    "Action": "Buy",
+    "Shares_Change": 144.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HOV",
+    "Company_Name": "HOVNANIAN ENTERPRISES A COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 144.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MBIN",
+    "Company_Name": "MERCHANTS BANCORP/IN COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 144.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "EFSI",
+    "Company_Name": "EAGLE FINANCIAL SERVICES INC COMMON STOCK USD2.5",
+    "Action": "Buy",
+    "Shares_Change": 138.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FUNC",
+    "Company_Name": "FIRST UNITED CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 138.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "VEL",
+    "Company_Name": "VELOCITY FINANCIAL INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 138.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "AMAL",
+    "Company_Name": "AMALGAMATED FINANCIAL CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 132.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CVEO",
+    "Company_Name": "CIVEO CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 132.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PFBC",
+    "Company_Name": "PREFERRED BANK/LOS ANGELES COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 132.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TRST",
+    "Company_Name": "TRUSTCO BANK CORP NY COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 132.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CZFS",
+    "Company_Name": "CITIZENS FINANCIAL SERVICES COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 126.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FCAP",
+    "Company_Name": "FIRST CAPITAL INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 120.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SENEA",
+    "Company_Name": "SENECA FOODS CORP   CL A COMMON STOCK USD.25",
+    "Action": "Buy",
+    "Shares_Change": 120.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MNSB",
+    "Company_Name": "MAINSTREET BANCSHARES INC COMMON STOCK USD4.0",
+    "Action": "Buy",
+    "Shares_Change": 114.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RICK",
+    "Company_Name": "RCI HOSPITALITY HOLDINGS INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 114.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "THFF",
+    "Company_Name": "FIRST FINANCIAL CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 114.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ZUMZ",
+    "Company_Name": "ZUMIEZ INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 114.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BOOM",
+    "Company_Name": "DMC GLOBAL INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 108.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BWFG",
+    "Company_Name": "BANKWELL FINANCIAL GROUP INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 108.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CABO",
+    "Company_Name": "CABLE ONE INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 108.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "COOK",
+    "Company_Name": "TRAEGER INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 108.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CBNA",
+    "Company_Name": "CHAIN BRIDGE BANCORP INC A COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 102.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CFBK",
+    "Company_Name": "CF BANKSHARES INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 102.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FET",
+    "Company_Name": "FORUM ENERGY TECHNOLOGIES IN COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 102.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FBIZ",
+    "Company_Name": "FIRST BUSINESS FINANCIAL SER COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 96.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "WGO",
+    "Company_Name": "WINNEBAGO INDUSTRIES COMMON STOCK USD.5",
+    "Action": "Buy",
+    "Shares_Change": 96.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FRAF",
+    "Company_Name": "FRANKLIN FINANCIAL SERVICES COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 90.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PEBK",
+    "Company_Name": "PEOPLES BANCORP OF NC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 90.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SMBC",
+    "Company_Name": "SOUTHERN MISSOURI BANCORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 90.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GSBC",
+    "Company_Name": "GREAT SOUTHERN BANCORP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 84.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HBCP",
+    "Company_Name": "HOME BANCORP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 84.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RRBI",
+    "Company_Name": "RED RIVER BANCSHARES INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 84.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "UNTY",
+    "Company_Name": "UNITY BANCORP INC COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 84.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "AGM",
+    "Company_Name": "FEDERAL AGRIC MTG CORP CL C COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 78.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GLOB",
+    "Company_Name": "GLOBANT SA COMMON STOCK USD1.2",
+    "Action": "Buy",
+    "Shares_Change": 78.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NBN",
+    "Company_Name": "NORTHEAST BANK COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 72.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RM",
+    "Company_Name": "REGIONAL MANAGEMENT CORP COMMON STOCK USD.1",
+    "Action": "Buy",
+    "Shares_Change": 72.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "STRT",
+    "Company_Name": "STRATTEC SECURITY CORP COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 72.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GLIBA",
+    "Company_Name": "LIBERTY CAPITAL CORP COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 60.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ONIT",
+    "Company_Name": "ONITY GROUP INC COMMON STOCK USD.01",
+    "Action": "Buy",
+    "Shares_Change": 60.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HAFC",
+    "Company_Name": "HANMI FINANCIAL CORPORATION COMMON STOCK USD.001",
+    "Action": "Buy",
+    "Shares_Change": 54.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "WTM",
+    "Company_Name": "WHITE MOUNTAINS INSURANCE GP COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 54.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ITIC",
+    "Company_Name": "INVESTORS TITLE CO COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 42.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RBCAA",
+    "Company_Name": "REPUBLIC BANCORP INC CLASS A COMMON STOCK",
+    "Action": "Buy",
+    "Shares_Change": 36.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FLXS",
+    "Company_Name": "FLEXSTEEL INDS COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 24.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HIFS",
+    "Company_Name": "HINGHAM INSTITUTION FOR SVGS COMMON STOCK USD1.0",
+    "Action": "Buy",
+    "Shares_Change": 24.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "VITL",
+    "Company_Name": "VITAL FARMS INC COMMON STOCK USD.0001",
+    "Action": "Closed Position",
+    "Shares_Change": -22637.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "VREX",
+    "Company_Name": "VAREX IMAGING CORP COMMON STOCK USD.01",
+    "Action": "Closed Position",
+    "Shares_Change": -59726.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CLSK",
+    "Company_Name": "CLEANSPARK INC COMMON STOCK",
+    "Action": "New Position",
+    "Shares_Change": 705138.0,
+    "Weight_Change": 0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FND",
+    "Company_Name": "FLOOR + DECOR HOLDINGS INC A COMMON STOCK USD.001",
+    "Action": "New Position",
+    "Shares_Change": 54269.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MAN",
+    "Company_Name": "MANPOWERGROUP INC COMMON STOCK USD.01",
+    "Action": "New Position",
+    "Shares_Change": 28346.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MTH",
+    "Company_Name": "MERITAGE HOMES CORP COMMON STOCK USD.01",
+    "Action": "New Position",
+    "Shares_Change": 20892.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GIC",
+    "Company_Name": "GLOBAL INDUSTRIAL CO COMMON STOCK USD.01",
+    "Action": "New Position",
+    "Shares_Change": 2846.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CACC",
+    "Company_Name": "CREDIT ACCEPTANCE CORP COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -139.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "STKS",
+    "Company_Name": "ONE GROUP HOSPITALITY INC/TH COMMON STOCK USD.0001",
+    "Action": "Sell",
+    "Shares_Change": -300.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "IMXI",
+    "Company_Name": "INTERNATIONAL MONEY EXPRESS COMMON STOCK USD.0001",
+    "Action": "Sell",
+    "Shares_Change": -503.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "INBK",
+    "Company_Name": "FIRST INTERNET BANCORP COMMON STOCK",
+    "Action": "Sell",
+    "Shares_Change": -807.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BOH",
+    "Company_Name": "BANK OF HAWAII CORP COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -1482.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PPIH",
+    "Company_Name": "PERMA PIPE INTERNATIONAL HOL COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -1933.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FLL",
+    "Company_Name": "FULL HOUSE RESORTS INC COMMON STOCK USD.0001",
+    "Action": "Sell",
+    "Shares_Change": -2490.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RGR",
+    "Company_Name": "STURM RUGER + CO INC COMMON STOCK USD1.0",
+    "Action": "Sell",
+    "Shares_Change": -2678.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ADV",
+    "Company_Name": "ADVANTAGE SOLUTIONS INC COMMON STOCK USD.0001",
+    "Action": "Sell",
+    "Shares_Change": -3286.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "EQBK",
+    "Company_Name": "EQUITY BANCSHARES INC   CL A COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -3649.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ALG",
+    "Company_Name": "ALAMO GROUP INC COMMON STOCK USD.1",
+    "Action": "Sell",
+    "Shares_Change": -3732.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ATROB",
+    "Company_Name": "ASTRONICS CORP CL B COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -4251.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TNC",
+    "Company_Name": "TENNANT CO COMMON STOCK USD.375",
+    "Action": "Sell",
+    "Shares_Change": -5269.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RGP",
+    "Company_Name": "RESOURCES CONNECTION INC COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -5317.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ASTE",
+    "Company_Name": "ASTEC INDUSTRIES INC COMMON STOCK USD.2",
+    "Action": "Sell",
+    "Shares_Change": -7051.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ESP",
+    "Company_Name": "ESPEY MFG + ELECTRONICS CORP COMMON STOCK USD.333",
+    "Action": "Sell",
+    "Shares_Change": -7476.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TCMD",
+    "Company_Name": "TACTILE SYSTEMS TECHNOLOGY I COMMON STOCK USD.001",
+    "Action": "Sell",
+    "Shares_Change": -7557.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GEF.B",
+    "Company_Name": "GREIF INC CL B COMMON STOCK",
+    "Action": "Sell",
+    "Shares_Change": -9954.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ANIK",
+    "Company_Name": "ANIKA THERAPEUTICS INC COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -10566.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MRTN",
+    "Company_Name": "MARTEN TRANSPORT LTD COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -12810.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HDSN",
+    "Company_Name": "HUDSON TECHNOLOGIES INC COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -12821.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MYRG",
+    "Company_Name": "MYR GROUP INC/DELAWARE COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -13693.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PCRX",
+    "Company_Name": "PACIRA BIOSCIENCES INC COMMON STOCK USD.001",
+    "Action": "Sell",
+    "Shares_Change": -14126.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PFSI",
+    "Company_Name": "PENNYMAC FINANCIAL SERVICES COMMON STOCK USD.0001",
+    "Action": "Sell",
+    "Shares_Change": -14292.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CVGI",
+    "Company_Name": "COMMERCIAL VEHICLE GROUP INC COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -15633.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CRC",
+    "Company_Name": "CALIFORNIA RESOURCES CORP COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -18151.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ACCO",
+    "Company_Name": "ACCO BRANDS CORP COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -19242.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HTLD",
+    "Company_Name": "HEARTLAND EXPRESS INC COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -20125.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "IMAX",
+    "Company_Name": "IMAX CORP COMMON STOCK",
+    "Action": "Sell",
+    "Shares_Change": -20208.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GLUE",
+    "Company_Name": "MONTE ROSA THERAPEUTICS INC COMMON STOCK USD.0001",
+    "Action": "Sell",
+    "Shares_Change": -20347.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MWA",
+    "Company_Name": "MUELLER WATER PRODUCTS INC A COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -21099.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NHC",
+    "Company_Name": "NATIONAL HEALTHCARE CORP COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -21245.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CALM",
+    "Company_Name": "CAL MAINE FOODS INC COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -22149.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TEX",
+    "Company_Name": "TEREX CORP COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -22177.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CNDT",
+    "Company_Name": "CONDUENT INC COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -23028.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HBT",
+    "Company_Name": "HBT FINANCIAL INC/DE COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -24507.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "DOLE",
+    "Company_Name": "DOLE PLC COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -25237.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "LINC",
+    "Company_Name": "LINCOLN EDUCATIONAL SERVICES COMMON STOCK",
+    "Action": "Sell",
+    "Shares_Change": -25556.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ESQ",
+    "Company_Name": "ESQUIRE FINANCIAL HOLDINGS I COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -25991.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CNXN",
+    "Company_Name": "PC CONNECTION INC COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -26520.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SIF",
+    "Company_Name": "SIFCO INDUSTRIES COMMON STOCK USD1.0",
+    "Action": "Sell",
+    "Shares_Change": -30508.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FF",
+    "Company_Name": "FUTUREFUEL CORP COMMON STOCK USD.0001",
+    "Action": "Sell",
+    "Shares_Change": -30643.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SAH",
+    "Company_Name": "SONIC AUTOMOTIVE INC CLASS A COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -31382.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "LPX",
+    "Company_Name": "LOUISIANA PACIFIC CORP COMMON STOCK USD1.0",
+    "Action": "Sell",
+    "Shares_Change": -34364.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ECVT",
+    "Company_Name": "ECOVYST INC COMMON STOCK",
+    "Action": "Sell",
+    "Shares_Change": -34483.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "IDT",
+    "Company_Name": "IDT CORP CLASS B COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -34510.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GEF",
+    "Company_Name": "GREIF INC CL A COMMON STOCK",
+    "Action": "Sell",
+    "Shares_Change": -39639.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ALRS",
+    "Company_Name": "ALERUS FINANCIAL CORP COMMON STOCK USD1.0",
+    "Action": "Sell",
+    "Shares_Change": -40426.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "FIVE",
+    "Company_Name": "FIVE BELOW COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -50622.0,
+    "Weight_Change": -0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PLXS",
+    "Company_Name": "PLEXUS CORP COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -52059.0,
+    "Weight_Change": -0.04
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PRSU",
+    "Company_Name": "PURSUIT ATTRACTIONS AND HOSP COMMON STOCK USD1.5",
+    "Action": "Sell",
+    "Shares_Change": -53547.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "MTRN",
+    "Company_Name": "MATERION CORP COMMON STOCK",
+    "Action": "Sell",
+    "Shares_Change": -54148.0,
+    "Weight_Change": -0.05
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BZH",
+    "Company_Name": "BEAZER HOMES USA INC COMMON STOCK USD.001",
+    "Action": "Sell",
+    "Shares_Change": -68917.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "HUN",
+    "Company_Name": "HUNTSMAN CORP COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -72560.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "TROX",
+    "Company_Name": "TRONOX HOLDINGS PLC COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -75917.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CC",
+    "Company_Name": "CHEMOURS CO/THE COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -76710.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ALRM",
+    "Company_Name": "ALARM.COM HOLDINGS INC COMMON STOCK",
+    "Action": "Sell",
+    "Shares_Change": -79222.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "LBRT",
+    "Company_Name": "LIBERTY ENERGY INC COMMON STOCK",
+    "Action": "Sell",
+    "Shares_Change": -81526.0,
+    "Weight_Change": 0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ENS",
+    "Company_Name": "ENERSYS COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -82883.0,
+    "Weight_Change": -0.05
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "SM",
+    "Company_Name": "SM ENERGY CO COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -87922.0,
+    "Weight_Change": 0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RYZ",
+    "Company_Name": "RYERSON HOLDING CORP COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -90745.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PRG",
+    "Company_Name": "PROG HOLDINGS INC COMMON STOCK USD.5",
+    "Action": "Sell",
+    "Shares_Change": -97698.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "GVA",
+    "Company_Name": "GRANITE CONSTRUCTION INC COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -104748.0,
+    "Weight_Change": -0.04
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ACDC",
+    "Company_Name": "PROFRAC HOLDING CORP A COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -112075.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BLBD",
+    "Company_Name": "BLUE BIRD CORP COMMON STOCK USD.0001",
+    "Action": "Sell",
+    "Shares_Change": -113044.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "VAL",
+    "Company_Name": "VALARIS LTD COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -158612.0,
+    "Weight_Change": -0.04
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "NPKI",
+    "Company_Name": "NPK INTERNATIONAL INC COMMON STOCK",
+    "Action": "Sell",
+    "Shares_Change": -160885.0,
+    "Weight_Change": 0.0
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "PACS",
+    "Company_Name": "PACS GROUP INC COMMON STOCK USD.001",
+    "Action": "Sell",
+    "Shares_Change": -174399.0,
+    "Weight_Change": -0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ASPN",
+    "Company_Name": "ASPEN AEROGELS INC COMMON STOCK USD.00001",
+    "Action": "Sell",
+    "Shares_Change": -179511.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "KMT",
+    "Company_Name": "KENNAMETAL INC COMMON STOCK USD1.25",
+    "Action": "Sell",
+    "Shares_Change": -215640.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "DAN",
+    "Company_Name": "DANA INC COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -245276.0,
+    "Weight_Change": -0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "RES",
+    "Company_Name": "RPC INC COMMON STOCK USD.1",
+    "Action": "Sell",
+    "Shares_Change": -292094.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "CALY",
+    "Company_Name": "CALLAWAY GOLF COMPANY COMMON STOCK",
+    "Action": "Sell",
+    "Shares_Change": -300605.0,
+    "Weight_Change": -0.01
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "UTI",
+    "Company_Name": "UNIVERSAL TECHNICAL INSTITUT COMMON STOCK USD.0001",
+    "Action": "Sell",
+    "Shares_Change": -312290.0,
+    "Weight_Change": -0.03
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "ALKS",
+    "Company_Name": "ALKERMES PLC COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -317487.0,
+    "Weight_Change": -0.05
+  },
+  {
+    "Date": "2026-08-14",
+    "ETF_Ticker": "AVUV",
+    "Stock_Ticker": "BANC",
+    "Company_Name": "BANC OF CALIFORNIA INC COMMON STOCK USD.01",
+    "Action": "Sell",
+    "Shares_Change": -520715.0,
+    "Weight_Change": -0.03
+  },
+  {
+    "Date": "2026-08-17",
+    "ETF_Ticker": "BLOK",
+    "Stock_Ticker": "BBBY/WS",
+    "Company_Name": "Bed Bath & Beyond Inc",
+    "Action": "Closed Position",
+    "Shares_Change": -479274.0,
+    "Weight_Change": -0.02
+  },
+  {
+    "Date": "2026-08-17",
+    "ETF_Ticker": "BLOK",
+    "Stock_Ticker": "BBBY",
+    "Company_Name": "Bed Bath & Beyond Inc",
+    "Action": "Closed Position",
+    "Shares_Change": -6922739.0,
+    "Weight_Change": -2.86
+  },
+  {
+    "Date": "2026-08-17",
+    "ETF_Ticker": "BLOK",
+    "Stock_Ticker": "NHX",
+    "Company_Name": "Neighborhood Intelligence Inc",
+    "Action": "New Position",
+    "Shares_Change": 6922739.0,
+    "Weight_Change": 2.78
+  },
+  {
+    "Date": "2026-08-17",
+    "ETF_Ticker": "BLOK",
+    "Stock_Ticker": "BBBYW",
+    "Company_Name": "BED BATH & BEYOND INC",
+    "Action": "New Position",
+    "Shares_Change": 479274.0,
+    "Weight_Change": 0.03
+  },
+  {
+    "Date": "2026-08-17",
+    "ETF_Ticker": "BLOK",
+    "Stock_Ticker": "CASH&OTHER",
+    "Company_Name": "Cash & Other",
+    "Action": "Sell",
+    "Shares_Change": -17992.0,
+    "Weight_Change": 0.0
+  }
+]
