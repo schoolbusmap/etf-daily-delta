@@ -6,7 +6,7 @@
     "Company_Name": "CITIGROUP INC COMMON",
     "Action": "Buy",
     "Shares_Change": 181996.0,
-    "Weight_Change": 0.06
+    "Weight_Change": 0.05
   },
   {
     "Date": "2026-08-14",
@@ -123,7 +123,7 @@
     "Company_Name": "EOG RESOURCES INC COMMON",
     "Action": "Buy",
     "Shares_Change": 780.0,
-    "Weight_Change": 0.02
+    "Weight_Change": 0.01
   },
   {
     "Date": "2026-08-14",
@@ -141,7 +141,7 @@
     "Company_Name": "PEPSICO INC COMMON STOCK",
     "Action": "Buy",
     "Shares_Change": 615.0,
-    "Weight_Change": 0.0
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-14",
@@ -150,7 +150,7 @@
     "Company_Name": "3M CO COMMON STOCK USD",
     "Action": "Buy",
     "Shares_Change": 610.0,
-    "Weight_Change": 0.01
+    "Weight_Change": 0.0
   },
   {
     "Date": "2026-08-14",
@@ -159,7 +159,7 @@
     "Company_Name": "NVIDIA CORP COMMON STOCK",
     "Action": "Buy",
     "Shares_Change": 595.0,
-    "Weight_Change": 0.0
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-14",
@@ -231,7 +231,7 @@
     "Company_Name": "EMERSON ELECTRIC CO",
     "Action": "Buy",
     "Shares_Change": 475.0,
-    "Weight_Change": 0.0
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-14",
@@ -240,7 +240,7 @@
     "Company_Name": "JOHNSON & COMMON",
     "Action": "Buy",
     "Shares_Change": 475.0,
-    "Weight_Change": -0.01
+    "Weight_Change": -0.02
   },
   {
     "Date": "2026-08-14",
@@ -249,7 +249,7 @@
     "Company_Name": "ABBVIE INC COMMON STOCK",
     "Action": "Buy",
     "Shares_Change": 460.0,
-    "Weight_Change": -0.01
+    "Weight_Change": -0.02
   },
   {
     "Date": "2026-08-14",
@@ -267,7 +267,7 @@
     "Company_Name": "RTX CORP",
     "Action": "Buy",
     "Shares_Change": 450.0,
-    "Weight_Change": 0.02
+    "Weight_Change": 0.01
   },
   {
     "Date": "2026-08-14",
@@ -285,7 +285,7 @@
     "Company_Name": "ROSS STORES INC COMMON",
     "Action": "Buy",
     "Shares_Change": 425.0,
-    "Weight_Change": 0.0
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-14",
@@ -294,7 +294,7 @@
     "Company_Name": "APPLE INC COMMON STOCK",
     "Action": "Buy",
     "Shares_Change": 410.0,
-    "Weight_Change": 0.01
+    "Weight_Change": 0.0
   },
   {
     "Date": "2026-08-14",
@@ -420,7 +420,7 @@
     "Company_Name": "TRANE TECHNOLOGIES PLC",
     "Action": "Buy",
     "Shares_Change": 250.0,
-    "Weight_Change": 0.01
+    "Weight_Change": 0.0
   },
   {
     "Date": "2026-08-14",
@@ -429,7 +429,7 @@
     "Company_Name": "EATON CORP PLC COMMON",
     "Action": "Buy",
     "Shares_Change": 245.0,
-    "Weight_Change": 0.0
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-14",
@@ -456,7 +456,7 @@
     "Company_Name": "ARTHUR J GALLAGHER & CO",
     "Action": "Buy",
     "Shares_Change": 230.0,
-    "Weight_Change": 0.0
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-14",
@@ -483,7 +483,7 @@
     "Company_Name": "DOVER CORP COMMON STOCK",
     "Action": "Buy",
     "Shares_Change": 220.0,
-    "Weight_Change": 0.01
+    "Weight_Change": 0.0
   },
   {
     "Date": "2026-08-14",
@@ -519,7 +519,7 @@
     "Company_Name": "MCDONALD'S CORP COMMON",
     "Action": "Buy",
     "Shares_Change": 200.0,
-    "Weight_Change": 0.01
+    "Weight_Change": 0.0
   },
   {
     "Date": "2026-08-14",
@@ -564,7 +564,7 @@
     "Company_Name": "CADENCE DESIGN SYSTEMS",
     "Action": "Buy",
     "Shares_Change": 155.0,
-    "Weight_Change": 0.01
+    "Weight_Change": 0.0
   },
   {
     "Date": "2026-08-14",
@@ -600,7 +600,7 @@
     "Company_Name": "ADVANCED MICRO DEVICES",
     "Action": "Buy",
     "Shares_Change": 145.0,
-    "Weight_Change": 0.07
+    "Weight_Change": 0.06
   },
   {
     "Date": "2026-08-14",
@@ -654,7 +654,7 @@
     "Company_Name": "LEIDOS HOLDINGS INC",
     "Action": "Buy",
     "Shares_Change": 130.0,
-    "Weight_Change": 0.01
+    "Weight_Change": 0.0
   },
   {
     "Date": "2026-08-14",
@@ -699,7 +699,7 @@
     "Company_Name": "HILTON WORLDWIDE",
     "Action": "Buy",
     "Shares_Change": 100.0,
-    "Weight_Change": 0.01
+    "Weight_Change": 0.0
   },
   {
     "Date": "2026-08-14",
@@ -717,7 +717,7 @@
     "Company_Name": "INTUITIVE SURGICAL INC",
     "Action": "Buy",
     "Shares_Change": 100.0,
-    "Weight_Change": 0.0
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-14",
@@ -744,7 +744,7 @@
     "Company_Name": "COSTCO WHOLESALE CORP",
     "Action": "Buy",
     "Shares_Change": 95.0,
-    "Weight_Change": 0.0
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-14",
@@ -780,7 +780,7 @@
     "Company_Name": "UNITEDHEALTH GROUP INC",
     "Action": "Buy",
     "Shares_Change": 80.0,
-    "Weight_Change": 0.01
+    "Weight_Change": 0.0
   },
   {
     "Date": "2026-08-14",
@@ -825,7 +825,7 @@
     "Company_Name": "EQUINIX INC REIT USD",
     "Action": "Buy",
     "Shares_Change": 65.0,
-    "Weight_Change": 0.03
+    "Weight_Change": 0.02
   },
   {
     "Date": "2026-08-14",
@@ -843,7 +843,7 @@
     "Company_Name": "ELI LILLY AND COMPANY",
     "Action": "Buy",
     "Shares_Change": 60.0,
-    "Weight_Change": -0.02
+    "Weight_Change": -0.03
   },
   {
     "Date": "2026-08-14",
@@ -852,7 +852,7 @@
     "Company_Name": "BERKSHIRE HATHAWAY INC",
     "Action": "Buy",
     "Shares_Change": 55.0,
-    "Weight_Change": 0.0
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-14",
@@ -906,7 +906,7 @@
     "Company_Name": "THERMO FISHER SCIENTIFIC",
     "Action": "Buy",
     "Shares_Change": 30.0,
-    "Weight_Change": 0.0
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-14",
@@ -933,7 +933,7 @@
     "Company_Name": "AUTOZONE INC COMMON",
     "Action": "Buy",
     "Shares_Change": 10.0,
-    "Weight_Change": 0.0
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-14",
@@ -978,7 +978,7 @@
     "Company_Name": "YUM BRANDS INC COMMON",
     "Action": "Sell",
     "Shares_Change": -6373.0,
-    "Weight_Change": -0.02
+    "Weight_Change": -0.03
   },
   {
     "Date": "2026-08-14",
@@ -1059,7 +1059,7 @@
     "Company_Name": "JPMORGAN PRIME MONEY",
     "Action": "Sell",
     "Shares_Change": -76763445.0,
-    "Weight_Change": -0.16
+    "Weight_Change": -0.17
   },
   {
     "Date": "2026-08-14",
