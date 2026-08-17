@@ -38,12 +38,15 @@ jobs:
         run: python -m playwright install --with-deps chromium
 
       - name: Fetch holdings and calculate deltas
+        id: fetch
+        continue-on-error: true
         env:
           BROWSER_FALLBACK: "1"
           LOG_LEVEL: "INFO"
         run: python scraper.py --strict
 
       - name: Commit updated data
+        if: always()
         shell: bash
         run: |
           if [[ -z "$(git status --porcelain data output)" ]]; then
@@ -56,3 +59,10 @@ jobs:
           git add data output
           git commit -m "chore(data): update ETF holdings $(TZ=America/New_York date +%F)"
           git push
+
+      - name: Report source failures
+        if: steps.fetch.outcome == 'failure'
+        shell: bash
+        run: |
+          echo "One or more ETF sources failed, but successful data was committed."
+          exit 1
