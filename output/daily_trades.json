@@ -15,7 +15,7 @@
     "Company_Name": "PALANTIR TECHNOLOGIES",
     "Action": "Buy",
     "Shares_Change": 19813.0,
-    "Weight_Change": 0.0
+    "Weight_Change": 0.01
   },
   {
     "Date": "2026-08-17",
@@ -24,7 +24,7 @@
     "Company_Name": "CHIPOTLE MEXICAN GRILL",
     "Action": "Buy",
     "Shares_Change": 1736.0,
-    "Weight_Change": 0.01
+    "Weight_Change": 0.02
   },
   {
     "Date": "2026-08-17",
@@ -33,7 +33,7 @@
     "Company_Name": "AT&T INC COMMON STOCK",
     "Action": "Buy",
     "Shares_Change": 1460.0,
-    "Weight_Change": -0.01
+    "Weight_Change": 0.0
   },
   {
     "Date": "2026-08-17",
@@ -42,7 +42,7 @@
     "Company_Name": "MONDELEZ INTERNATIONAL",
     "Action": "Buy",
     "Shares_Change": 1192.0,
-    "Weight_Change": -0.03
+    "Weight_Change": -0.02
   },
   {
     "Date": "2026-08-17",
@@ -51,7 +51,7 @@
     "Company_Name": "NEXTERA ENERGY INC",
     "Action": "Buy",
     "Shares_Change": 1088.0,
-    "Weight_Change": 0.0
+    "Weight_Change": 0.01
   },
   {
     "Date": "2026-08-17",
@@ -60,7 +60,7 @@
     "Company_Name": "BRISTOL-MYERS SQUIBB CO",
     "Action": "Buy",
     "Shares_Change": 808.0,
-    "Weight_Change": 0.01
+    "Weight_Change": 0.02
   },
   {
     "Date": "2026-08-17",
@@ -105,7 +105,7 @@
     "Company_Name": "THE WALT DISNEY COMPANY",
     "Action": "Buy",
     "Shares_Change": 540.0,
-    "Weight_Change": -0.03
+    "Weight_Change": -0.02
   },
   {
     "Date": "2026-08-17",
@@ -132,7 +132,7 @@
     "Company_Name": "NVIDIA CORP COMMON STOCK",
     "Action": "Buy",
     "Shares_Change": 476.0,
-    "Weight_Change": 0.01
+    "Weight_Change": 0.02
   },
   {
     "Date": "2026-08-17",
@@ -177,7 +177,7 @@
     "Company_Name": "PHILIP MORRIS",
     "Action": "Buy",
     "Shares_Change": 416.0,
-    "Weight_Change": -0.04
+    "Weight_Change": -0.03
   },
   {
     "Date": "2026-08-17",
@@ -186,7 +186,7 @@
     "Company_Name": "WALMART INC COMMON STOCK",
     "Action": "Buy",
     "Shares_Change": 404.0,
-    "Weight_Change": -0.01
+    "Weight_Change": 0.0
   },
   {
     "Date": "2026-08-17",
@@ -195,7 +195,7 @@
     "Company_Name": "LOWE'S COS INC COMMON",
     "Action": "Buy",
     "Shares_Change": 396.0,
-    "Weight_Change": -0.02
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-17",
@@ -213,7 +213,7 @@
     "Company_Name": "JOHNSON & COMMON",
     "Action": "Buy",
     "Shares_Change": 380.0,
-    "Weight_Change": 0.02
+    "Weight_Change": 0.03
   },
   {
     "Date": "2026-08-17",
@@ -249,7 +249,7 @@
     "Company_Name": "RTX CORP",
     "Action": "Buy",
     "Shares_Change": 360.0,
-    "Weight_Change": 0.0
+    "Weight_Change": 0.01
   },
   {
     "Date": "2026-08-17",
@@ -267,7 +267,7 @@
     "Company_Name": "ROSS STORES INC COMMON",
     "Action": "Buy",
     "Shares_Change": 340.0,
-    "Weight_Change": -0.05
+    "Weight_Change": -0.04
   },
   {
     "Date": "2026-08-17",
@@ -285,7 +285,7 @@
     "Company_Name": "HOWMET AEROSPACE INC",
     "Action": "Buy",
     "Shares_Change": 316.0,
-    "Weight_Change": 0.0
+    "Weight_Change": 0.01
   },
   {
     "Date": "2026-08-17",
@@ -294,7 +294,7 @@
     "Company_Name": "ALPHABET INC-CL A -",
     "Action": "Buy",
     "Shares_Change": 288.0,
-    "Weight_Change": -0.01
+    "Weight_Change": 0.0
   },
   {
     "Date": "2026-08-17",
@@ -321,7 +321,7 @@
     "Company_Name": "ECOLAB INC COMMON STOCK",
     "Action": "Buy",
     "Shares_Change": 240.0,
-    "Weight_Change": 0.0
+    "Weight_Change": 0.01
   },
   {
     "Date": "2026-08-17",
@@ -330,7 +330,7 @@
     "Company_Name": "BROADCOM INC COMMON",
     "Action": "Buy",
     "Shares_Change": 236.0,
-    "Weight_Change": 0.0
+    "Weight_Change": 0.01
   },
   {
     "Date": "2026-08-17",
@@ -339,7 +339,7 @@
     "Company_Name": "VISA INC COMMON STOCK",
     "Action": "Buy",
     "Shares_Change": 228.0,
-    "Weight_Change": -0.02
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-17",
@@ -366,7 +366,7 @@
     "Company_Name": "PROGRESSIVE CORP/THE",
     "Action": "Buy",
     "Shares_Change": 212.0,
-    "Weight_Change": -0.02
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-17",
@@ -402,7 +402,7 @@
     "Company_Name": "TRANE TECHNOLOGIES PLC",
     "Action": "Buy",
     "Shares_Change": 200.0,
-    "Weight_Change": -0.01
+    "Weight_Change": 0.0
   },
   {
     "Date": "2026-08-17",
@@ -411,7 +411,7 @@
     "Company_Name": "EATON CORP PLC COMMON",
     "Action": "Buy",
     "Shares_Change": 196.0,
-    "Weight_Change": 0.02
+    "Weight_Change": 0.03
   },
   {
     "Date": "2026-08-17",
@@ -456,7 +456,7 @@
     "Company_Name": "MASTERCARD INC COMMON",
     "Action": "Buy",
     "Shares_Change": 180.0,
-    "Weight_Change": -0.02
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-17",
@@ -465,7 +465,7 @@
     "Company_Name": "DOVER CORP COMMON STOCK",
     "Action": "Buy",
     "Shares_Change": 176.0,
-    "Weight_Change": 0.0
+    "Weight_Change": 0.01
   },
   {
     "Date": "2026-08-17",
@@ -546,7 +546,7 @@
     "Company_Name": "AON PLC COMMON STOCK USD",
     "Action": "Buy",
     "Shares_Change": 136.0,
-    "Weight_Change": -0.02
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-17",
@@ -555,7 +555,7 @@
     "Company_Name": "CADENCE DESIGN SYSTEMS",
     "Action": "Buy",
     "Shares_Change": 124.0,
-    "Weight_Change": 0.0
+    "Weight_Change": 0.01
   },
   {
     "Date": "2026-08-17",
@@ -645,7 +645,7 @@
     "Company_Name": "CORPAY INC",
     "Action": "Buy",
     "Shares_Change": 104.0,
-    "Weight_Change": -0.02
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-17",
@@ -717,7 +717,7 @@
     "Company_Name": "HILTON WORLDWIDE",
     "Action": "Buy",
     "Shares_Change": 80.0,
-    "Weight_Change": 0.0
+    "Weight_Change": 0.01
   },
   {
     "Date": "2026-08-17",
@@ -744,7 +744,7 @@
     "Company_Name": "REGENERON",
     "Action": "Buy",
     "Shares_Change": 80.0,
-    "Weight_Change": 0.0
+    "Weight_Change": 0.01
   },
   {
     "Date": "2026-08-17",
@@ -780,7 +780,7 @@
     "Company_Name": "FEDEX CORP COMMON STOCK",
     "Action": "Buy",
     "Shares_Change": 72.0,
-    "Weight_Change": -0.01
+    "Weight_Change": 0.0
   },
   {
     "Date": "2026-08-17",
@@ -807,7 +807,7 @@
     "Company_Name": "S&P GLOBAL INC COMMON",
     "Action": "Buy",
     "Shares_Change": 60.0,
-    "Weight_Change": -0.01
+    "Weight_Change": 0.0
   },
   {
     "Date": "2026-08-17",
@@ -843,7 +843,7 @@
     "Company_Name": "EQUINIX INC REIT USD",
     "Action": "Buy",
     "Shares_Change": 52.0,
-    "Weight_Change": 0.0
+    "Weight_Change": 0.01
   },
   {
     "Date": "2026-08-17",
@@ -942,7 +942,7 @@
     "Company_Name": "THERMO FISHER SCIENTIFIC",
     "Action": "Buy",
     "Shares_Change": 24.0,
-    "Weight_Change": 0.0
+    "Weight_Change": 0.01
   },
   {
     "Date": "2026-08-17",
@@ -1032,7 +1032,7 @@
     "Company_Name": "AMERICAN EXPRESS CO",
     "Action": "Sell",
     "Shares_Change": -7869.0,
-    "Weight_Change": -0.02
+    "Weight_Change": -0.01
   },
   {
     "Date": "2026-08-17",
@@ -1041,7 +1041,7 @@
     "Company_Name": "STRYKER CORP COMMON",
     "Action": "Sell",
     "Shares_Change": -8762.0,
-    "Weight_Change": -0.03
+    "Weight_Change": -0.02
   },
   {
     "Date": "2026-08-17",

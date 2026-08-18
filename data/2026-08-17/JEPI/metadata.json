@@ -3,10 +3,10 @@
   "fund_name": "JPMorgan Equity Premium Income ETF",
   "provider": "J.P. Morgan Asset Management",
   "as_of_date": "2026-08-17",
-  "fetched_at": "2026-08-18T09:07:30.922041-04:00",
+  "fetched_at": "2026-08-18T10:09:36.730876-04:00",
   "source_url": "https://am.jpmorgan.com/FundsMarketingHandler/excel?country=us&cusip=46641Q332&locale=en-US&role=adv&type=dailyETFHoldings",
   "raw_filename": "JPMorgan-Equity-Premium-Income-ETF-ETF-Shares-Holdings-08-17-2026.xlsx",
   "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8",
-  "sha256": "30d0ff91bd4158924f4876f33ca5eeb876894eab05b260caa1747af8f43d6984",
+  "sha256": "108769dfb7beaba47f9329d36e76237a02011c07fca17e899453bbed1fc233fe",
   "normalized_rows": 119
 }
