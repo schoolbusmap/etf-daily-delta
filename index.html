@@ -1,176 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Daily ETF holdings changes for JEPI, DFAC, CGGR, AVUV and BLOK." />
-  <title>ETF Daily Trade Delta</title>
-  <link rel="stylesheet" href="./styles.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ETF 每日持仓变化 · Dashboard v2</title>
+  <style>
+    html,body{margin:0;width:100%;height:100%;background:#07111f;overflow:hidden}
+    iframe{border:0;width:100%;height:100%;display:block}
+  </style>
 </head>
 <body>
-  <div class="page-shell">
-    <header class="topbar">
-      <div>
-        <div class="eyebrow">DAILY HOLDINGS INTELLIGENCE</div>
-        <h1>ETF Daily Trade Delta</h1>
-        <p class="subtitle">See what active ETFs added, trimmed, opened, and closed.</p>
-      </div>
-      <div class="update-box">
-        <span class="update-dot" aria-hidden="true"></span>
-        <div>
-          <div class="update-label">Last updated</div>
-          <div id="lastUpdated" class="update-value">Loading…</div>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero-grid">
-        <article class="hero-card">
-          <div class="hero-card-label">Tracked ETFs</div>
-          <div class="hero-card-value">5</div>
-          <div class="hero-card-note">JEPI · DFAC · CGGR · AVUV · BLOK</div>
-        </article>
-        <article class="hero-card">
-          <div class="hero-card-label">Changes today</div>
-          <div id="totalChanges" class="hero-card-value">—</div>
-          <div class="hero-card-note">Across all tracked funds</div>
-        </article>
-        <article class="hero-card">
-          <div class="hero-card-label">New positions</div>
-          <div id="newPositionsCount" class="hero-card-value">—</div>
-          <div class="hero-card-note">New names added</div>
-        </article>
-        <article class="hero-card">
-          <div class="hero-card-label">Closed positions</div>
-          <div id="closedPositionsCount" class="hero-card-value">—</div>
-          <div class="hero-card-note">Positions exited</div>
-        </article>
-      </section>
-
-      <section>
-        <div class="section-heading">
-          <div>
-            <div class="section-kicker">FUND SNAPSHOT</div>
-            <h2>What changed by ETF</h2>
-          </div>
-          <div id="statusPill" class="status-pill">Loading data…</div>
-        </div>
-        <div id="etfCards" class="etf-cards"></div>
-      </section>
-
-      <section class="insight-grid">
-        <article class="panel">
-          <div class="panel-header">
-            <div>
-              <div class="section-kicker">TOP MOVES</div>
-              <h2>Largest increases</h2>
-            </div>
-            <span class="small-note">By weight change</span>
-          </div>
-          <div id="topBuys" class="rank-list"></div>
-        </article>
-
-        <article class="panel">
-          <div class="panel-header">
-            <div>
-              <div class="section-kicker">TOP MOVES</div>
-              <h2>Largest decreases</h2>
-            </div>
-            <span class="small-note">By weight change</span>
-          </div>
-          <div id="topSells" class="rank-list"></div>
-        </article>
-      </section>
-
-      <section class="panel trades-panel">
-        <div class="panel-header trades-header">
-          <div>
-            <div class="section-kicker">ALL CHANGES</div>
-            <h2>Daily holdings activity</h2>
-          </div>
-          <div class="legend" aria-label="Action legend">
-            <span><i class="legend-dot buy"></i>Buy</span>
-            <span><i class="legend-dot sell"></i>Sell</span>
-            <span><i class="legend-dot new"></i>New</span>
-            <span><i class="legend-dot closed"></i>Closed</span>
-          </div>
-        </div>
-
-        <div class="filters">
-          <label>
-            <span>ETF</span>
-            <select id="etfFilter">
-              <option value="ALL">All ETFs</option>
-              <option value="JEPI">JEPI</option>
-              <option value="DFAC">DFAC</option>
-              <option value="CGGR">CGGR</option>
-              <option value="AVUV">AVUV</option>
-              <option value="BLOK">BLOK</option>
-            </select>
-          </label>
-
-          <label>
-            <span>Action</span>
-            <select id="actionFilter">
-              <option value="ALL">All actions</option>
-              <option value="BUY">Buy</option>
-              <option value="SELL">Sell</option>
-              <option value="NEW POSITION">New position</option>
-              <option value="CLOSED POSITION">Closed position</option>
-            </select>
-          </label>
-
-          <label class="search-label">
-            <span>Search</span>
-            <input id="searchInput" type="search" placeholder="Ticker or company" />
-          </label>
-
-          <button id="clearFilters" class="secondary-button" type="button">Clear filters</button>
-        </div>
-
-        <div id="tableSummary" class="table-summary"></div>
-
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th data-sort="Date">Date</th>
-                <th data-sort="ETF_Ticker">ETF</th>
-                <th data-sort="Stock_Ticker">Stock</th>
-                <th data-sort="Company_Name">Company</th>
-                <th data-sort="Action">Action</th>
-                <th class="numeric" data-sort="Shares_Change">Shares change</th>
-                <th class="numeric" data-sort="Weight_Change">Weight change</th>
-              </tr>
-            </thead>
-            <tbody id="tradesBody"></tbody>
-          </table>
-        </div>
-
-        <div id="emptyState" class="empty-state" hidden>
-          <div class="empty-icon">↔</div>
-          <h3>No daily changes yet</h3>
-          <p>
-            The dashboard needs two different holdings snapshots for the same ETF before it can calculate buys,
-            sells, new positions, and closed positions.
-          </p>
-        </div>
-      </section>
-
-      <section class="method-note">
-        <strong>How to read this page:</strong>
-        Green means the ETF increased a position, red means it reduced a position, blue means a new position,
-        and gray means the position was fully closed. Data is generated from the fund sponsors' official holdings files.
-      </section>
-    </main>
-
-    <footer>
-      <span>ETF Daily Trade Delta</span>
-      <span>For research only · Not investment advice</span>
-    </footer>
-  </div>
-
-  <script src="./app.js"></script>
+  <iframe id="dashboard" src="./dashboard-v2.html" title="ETF 每日持仓变化 Dashboard v2"></iframe>
+  <script>
+    // 主页面每 5 分钟重新载入 Dashboard v2。Dashboard v2 每次加载都会
+    // 使用 cache:no-store + 时间戳重新读取 GitHub 上最新的 status/trades JSON。
+    const frame=document.getElementById('dashboard');
+    setInterval(()=>{
+      frame.src='./dashboard-v2.html?refresh='+Date.now();
+    },300000);
+  </script>
 </body>
 </html>
