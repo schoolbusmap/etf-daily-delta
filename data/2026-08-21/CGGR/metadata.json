@@ -1,0 +1,12 @@
+{
+  "ETF_Ticker": "CGGR",
+  "fund_name": "Capital Group Growth ETF",
+  "provider": "Capital Group",
+  "as_of_date": "2026-08-21",
+  "fetched_at": "2026-08-24T10:28:26.917550-04:00",
+  "source_url": "https://www.capitalgroup.com/api/investments/investment-service/v1/etfs/cggr/download/daily-holdings?audience=advisor",
+  "raw_filename": "daily-holdings",
+  "content_type": "application/octet-stream",
+  "sha256": "45d92236d1f10c97c0d807983121de1501454abf2006c9f9b78ae9dffff5a1a1",
+  "normalized_rows": 97
+}
