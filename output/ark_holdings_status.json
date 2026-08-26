@@ -1,0 +1,78 @@
+{
+  "generated_at_utc": "2026-08-26T13:49:12.291252+00:00",
+  "source": "ARK official Full Holdings CSV",
+  "funds": {
+    "ARKK": {
+      "fund": "ARKK",
+      "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv",
+      "reported_date": "2026-08-26",
+      "previous_reported_date": null,
+      "row_count": 44,
+      "saved": true,
+      "sha256": "7127e8e9cf5ce392a3543414f7afd4753c61c9a11f2519ee68e1870ea2d955b8",
+      "content_type": "application/octet-stream",
+      "fetched_at_utc": "2026-08-26T13:49:11.211366+00:00"
+    },
+    "ARKQ": {
+      "fund": "ARKQ",
+      "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_AUTONOMOUS_TECH._&_ROBOTICS_ETF_ARKQ_HOLDINGS.csv",
+      "reported_date": "2026-08-26",
+      "previous_reported_date": null,
+      "row_count": 38,
+      "saved": true,
+      "sha256": "739d2dc6b047d273c5781cbe6dfd0623bef15af8a145fcc513b8de29a2f53978",
+      "content_type": "application/octet-stream",
+      "fetched_at_utc": "2026-08-26T13:49:11.297081+00:00"
+    },
+    "ARKW": {
+      "fund": "ARKW",
+      "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv",
+      "reported_date": "2026-08-26",
+      "previous_reported_date": null,
+      "row_count": 39,
+      "saved": true,
+      "sha256": "6bec56667b13d506f5b1d5ddc6c3ea0256a629210bd9c4f955c83db3a9ae62c5",
+      "content_type": "application/octet-stream",
+      "fetched_at_utc": "2026-08-26T13:49:11.838574+00:00"
+    },
+    "ARKG": {
+      "fund": "ARKG",
+      "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv",
+      "reported_date": "2026-08-26",
+      "previous_reported_date": null,
+      "row_count": 32,
+      "saved": true,
+      "sha256": "c000ce96ff0db1e88918f427091ebc2cdf214791f2b38ad205664fffabf04191",
+      "content_type": "application/octet-stream",
+      "fetched_at_utc": "2026-08-26T13:49:11.996550+00:00"
+    },
+    "ARKF": {
+      "fund": "ARKF",
+      "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_BLOCKCHAIN_&_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv",
+      "reported_date": "2026-08-26",
+      "previous_reported_date": null,
+      "row_count": 36,
+      "saved": true,
+      "sha256": "301b21697917787fc3cb6e3ef2492a0cd4947d2b757709598355651bc18095b5",
+      "content_type": "application/octet-stream",
+      "fetched_at_utc": "2026-08-26T13:49:12.098732+00:00"
+    },
+    "ARKX": {
+      "fund": "ARKX",
+      "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_SPACE_&_DEFENSE_INNOVATION_ETF_ARKX_HOLDINGS.csv",
+      "reported_date": "2026-08-26",
+      "previous_reported_date": null,
+      "row_count": 34,
+      "saved": true,
+      "sha256": "cc379e53132d31df4c4e92d899e388c1c19fb8bb2d41167de2cae47f61cf430e",
+      "content_type": "application/octet-stream",
+      "fetched_at_utc": "2026-08-26T13:49:12.291178+00:00"
+    }
+  },
+  "notes": [
+    "reported_date is the date printed in the official holdings file.",
+    "ARK states that displayed holdings date is the next trading day; reconcile against the prior trading session.",
+    "flow_adjusted_manager_delta estimates manager activity after removing robust proportional fund-flow scaling.",
+    "Use the Daily Trade Notification to confirm manager trades and avoid misclassifying creations/redemptions or corporate actions."
+  ]
+}
