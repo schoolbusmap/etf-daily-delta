@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - "institutional_consensus.py"
+      - "institutional_latest.py"
       - "tests/test_institutional_consensus.py"
       - "requirements.txt"
       - ".github/workflows/institutional_consensus.yml"
@@ -47,8 +48,13 @@ jobs:
       - name: Build flow-adjusted institutional signals
         run: python institutional_consensus.py --strict
 
+      - name: Build compact latest signal views
+        run: python institutional_latest.py
+
       - name: Show status summary
-        run: cat output/institutional_consensus_status.json
+        run: |
+          cat output/institutional_consensus_status.json
+          cat output/institutional_consensus_latest_summary.json
 
       - name: Commit generated consensus outputs
         if: github.ref == 'refs/heads/main'
