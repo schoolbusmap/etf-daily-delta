@@ -6,6 +6,7 @@ on:
     paths:
       - "institutional_consensus.py"
       - "tests/test_institutional_consensus.py"
+      - "requirements.txt"
       - ".github/workflows/institutional_consensus.yml"
   schedule:
     # Runs after the morning holdings pipeline. This produces a fully date-aligned
