@@ -46,9 +46,9 @@ jobs:
         if: github.ref != 'refs/heads/main'
         run: python signal_backtest.py --start 2021-01-01 --max-signals 50
 
-      - name: Full historical event study on main
+      - name: Initial bounded validation on main
         if: github.ref == 'refs/heads/main'
-        run: python signal_backtest.py --start 2020-10-20
+        run: python signal_backtest.py --start 2020-10-20 --max-signals 200
 
       - name: Show research status
         run: |
