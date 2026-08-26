@@ -75,7 +75,7 @@ def normalize_archive(df: pd.DataFrame) -> pd.DataFrame:
 
 def add_flow_adjustment(df: pd.DataFrame) -> pd.DataFrame:
     frames: list[pd.DataFrame] = []
-    for (d, fund), g in df.groupby(["date", "fund"], sort=True):
+    for (_d, _fund), g in df.groupby(["date", "fund"], sort=True):
         g = g.copy()
         factor, confidence, cluster_count = estimate_flow_factor(g)
         g["flow_factor"] = factor
@@ -113,7 +113,10 @@ def classify_direction(row: pd.Series) -> str:
 def aggregate_ark_signals(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     df["direction"] = df.apply(classify_direction, axis=1)
+    calendar = sorted(pd.unique(df["date"]))
+    calendar_pos = {d: i for i, d in enumerate(calendar)}
     rows: list[dict] = []
+
     for (d, ticker), g in df.groupby(["date", "ticker"], sort=True):
         buys = sorted(g.loc[g["direction"] == "Buy", "fund"].unique())
         sells = sorted(g.loc[g["direction"] == "Sell", "fund"].unique())
@@ -140,8 +143,11 @@ def aggregate_ark_signals(df: pd.DataFrame) -> pd.DataFrame:
             label = "ARK Single-Fund Sell"
         else:
             continue
+
+        max_rel = pd.to_numeric(g["relative_manager_delta"], errors="coerce").abs().max(skipna=True)
         rows.append({
             "signal_date": pd.Timestamp(d).date().isoformat(),
+            "calendar_position": calendar_pos[d],
             "ticker": ticker,
             "company": next((x for x in g["company"] if isinstance(x, str) and x), ""),
             "direction": direction,
@@ -150,51 +156,52 @@ def aggregate_ark_signals(df: pd.DataFrame) -> pd.DataFrame:
             "sell_fund_count": len(sells),
             "buy_funds": "|".join(buys),
             "sell_funds": "|".join(sells),
-            "max_abs_relative_manager_delta": float(pd.to_numeric(g["relative_manager_delta"], errors="coerce").abs().max(skipna=True) or 0.0),
+            "max_abs_relative_manager_delta": 0.0 if pd.isna(max_rel) else float(max_rel),
             "min_flow_confidence": "low" if (g["flow_confidence"].isin(["unavailable", "low_cluster"]).any()) else "medium_or_high",
             "source_kind": "SECONDARY_ARCHIVE_OF_ARK_OFFICIAL_HOLDINGS",
             "source_repository": SOURCE_REPO,
             "availability_rule": "CONSERVATIVE_NEXT_SESSION_ENTRY",
         })
+
     signals = pd.DataFrame(rows)
     if signals.empty:
         return signals
 
-    signals = signals.sort_values(["ticker", "signal_date"]).reset_index(drop=True)
-    signals["buy_days_5d"] = 0
-    signals["buy_days_20d"] = 0
-    signals["sell_days_5d"] = 0
-    signals["sell_days_20d"] = 0
-    signals["consecutive_buy_days"] = 0
-    signals["consecutive_sell_days"] = 0
+    signals = signals.sort_values(["ticker", "calendar_position"]).reset_index(drop=True)
+    for col in ("buy_days_5d", "buy_days_20d", "sell_days_5d", "sell_days_20d", "consecutive_buy_days", "consecutive_sell_days"):
+        signals[col] = 0
 
-    for ticker, idxs in signals.groupby("ticker").groups.items():
-        idx_list = list(idxs)
+    for _ticker, idxs in signals.groupby("ticker").groups.items():
         history: list[tuple[int, str]] = []
+        previous_pos: int | None = None
+        previous_direction: str | None = None
         buy_streak = 0
         sell_streak = 0
-        for idx in idx_list:
-            direction = signals.at[idx, "direction"]
-            history.append((idx, direction))
-            last5 = history[-5:]
-            last20 = history[-20:]
-            signals.at[idx, "buy_days_5d"] = sum(d == "Buy" for _, d in last5)
-            signals.at[idx, "buy_days_20d"] = sum(d == "Buy" for _, d in last20)
-            signals.at[idx, "sell_days_5d"] = sum(d == "Sell" for _, d in last5)
-            signals.at[idx, "sell_days_20d"] = sum(d == "Sell" for _, d in last20)
+        for idx in list(idxs):
+            pos = int(signals.at[idx, "calendar_position"])
+            direction = str(signals.at[idx, "direction"])
+            history.append((pos, direction))
+            signals.at[idx, "buy_days_5d"] = sum(d == "Buy" and p >= pos - 4 for p, d in history)
+            signals.at[idx, "buy_days_20d"] = sum(d == "Buy" and p >= pos - 19 for p, d in history)
+            signals.at[idx, "sell_days_5d"] = sum(d == "Sell" and p >= pos - 4 for p, d in history)
+            signals.at[idx, "sell_days_20d"] = sum(d == "Sell" and p >= pos - 19 for p, d in history)
+
+            adjacent = previous_pos is not None and pos == previous_pos + 1
             if direction == "Buy":
-                buy_streak += 1
+                buy_streak = buy_streak + 1 if adjacent and previous_direction == "Buy" else 1
                 sell_streak = 0
             elif direction == "Sell":
-                sell_streak += 1
+                sell_streak = sell_streak + 1 if adjacent and previous_direction == "Sell" else 1
                 buy_streak = 0
             else:
                 buy_streak = 0
                 sell_streak = 0
             signals.at[idx, "consecutive_buy_days"] = buy_streak
             signals.at[idx, "consecutive_sell_days"] = sell_streak
+            previous_pos = pos
+            previous_direction = direction
 
-    return signals.sort_values(["signal_date", "ticker"]).reset_index(drop=True)
+    return signals.drop(columns=["calendar_position"]).sort_values(["signal_date", "ticker"]).reset_index(drop=True)
 
 
 def main() -> int:
@@ -226,6 +233,7 @@ def main() -> int:
         "first_signal_date": None if signals.empty else str(signals["signal_date"].min()),
         "last_signal_date": None if signals.empty else str(signals["signal_date"].max()),
         "flow_normalization": True,
+        "persistence_windows": "observed ARK archive trading sessions, not last-N signal occurrences",
         "entry_timing_rule": "signal date is never traded at same-day close; earliest modeled entry is next market session open",
         "warning": "Historical archive methodology and ARK reporting conventions changed over time. Results must be labeled historical-research evidence, not identical to the current Gmail trade-notification feed.",
     }
