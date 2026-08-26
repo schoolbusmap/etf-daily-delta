@@ -1,0 +1,73 @@
+name: Institutional Consensus Layer
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "institutional_consensus.py"
+      - "tests/test_institutional_consensus.py"
+      - "requirements.txt"
+      - ".github/workflows/institutional_consensus.yml"
+  schedule:
+    # Runs after the morning holdings pipeline. This produces a fully date-aligned
+    # cross-manager view for the latest session available across independent managers.
+    - cron: "15 10 * * 1-5"
+      timezone: "America/New_York"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: institutional-consensus-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build-consensus:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -p "test_institutional_consensus.py" -v
+
+      - name: Build flow-adjusted institutional signals
+        run: python institutional_consensus.py --strict
+
+      - name: Show status summary
+        run: cat output/institutional_consensus_status.json
+
+      - name: Commit generated consensus outputs
+        if: github.ref == 'refs/heads/main'
+        shell: bash
+        run: |
+          if [[ -z "$(git status --porcelain output/institutional_*)" ]]; then
+            echo "No institutional consensus output changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/institutional_*
+          git commit -m "chore(data): update institutional consensus $(TZ=America/New_York date +%F)"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "Unable to push consensus outputs after 3 attempts."
+          exit 1
