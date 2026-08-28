@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T09:42:40.504415-04:00",
+  "generated_at": "2026-08-28T17:50:41.109033-04:00",
   "timezone": "America/New_York",
   "sources": {
     "JEPI": {
@@ -8,7 +8,7 @@
       "as_of_date": "2026-08-27",
       "rows": 121,
       "source_url": "https://am.jpmorgan.com/FundsMarketingHandler/excel?country=us&cusip=46641Q332&locale=en-US&role=adv&type=dailyETFHoldings",
-      "sha256": "e72590077d15cba15bf0ef72c6238dc8198ce75d6503f64c75794cc820ee50f0",
+      "sha256": "267481c2b7a85da515cd0034a8a9208937986325a17a43eec4cd8d1e9361a37f",
       "state": "delta_ready",
       "latest_as_of": "2026-08-27",
       "previous_as_of": "2026-08-25",
@@ -20,7 +20,7 @@
       "as_of_date": "2026-08-27",
       "rows": 2516,
       "source_url": "https://tools-blob.dimensional.com/etf/20260827/DFAC.csv",
-      "sha256": "91b84e14c42260deb27661bb6239d4dabee90dbfa89839e1e45ede74191b73b4",
+      "sha256": "169380bfad99330e679d44cfd2e91074e8ddd12c58ce2730f9f085c66910e0d0",
       "state": "delta_ready",
       "latest_as_of": "2026-08-27",
       "previous_as_of": "2026-08-25",
@@ -32,7 +32,7 @@
       "as_of_date": "2026-08-27",
       "rows": 97,
       "source_url": "https://www.capitalgroup.com/api/investments/investment-service/v1/etfs/cggr/download/daily-holdings?audience=advisor",
-      "sha256": "63910f9aa254cd73e8e66af2b03edba997fc9e7a0e41b331bea8a96ecff7dd60",
+      "sha256": "afc955f0473a7a71743016a48cdf118f76bfa3ca1b6be4922fe4ae0b03766c7f",
       "state": "delta_ready",
       "latest_as_of": "2026-08-27",
       "previous_as_of": "2026-08-25",
@@ -56,7 +56,7 @@
       "as_of_date": "2026-08-28",
       "rows": 55,
       "source_url": "https://amplifyetfs.com/blok-holdings/",
-      "sha256": "7c9521c367315871525bd10205a3c11f62ba53d6c6b126346daded20b6d70f82",
+      "sha256": "121d247e1750bbbb4ed2496cacbb5c0dc8acd14ebec547887b31f93cb7f1e0aa",
       "state": "delta_ready",
       "latest_as_of": "2026-08-28",
       "previous_as_of": "2026-08-26",
