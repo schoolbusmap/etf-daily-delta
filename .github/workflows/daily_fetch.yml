@@ -8,6 +8,7 @@ on:
       - ".github/workflows/daily_fetch.yml"
   schedule:
     # 08:07 America/New_York, Monday-Friday.
+    # Validation trigger: 2026-08-28.
     - cron: "7 8 * * 1-5"
       timezone: "America/New_York"
 
