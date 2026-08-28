@@ -3,10 +3,10 @@
   "fund_name": "Amplify Transformational Data Sharing ETF",
   "provider": "Amplify ETFs",
   "as_of_date": "2026-08-28",
-  "fetched_at": "2026-08-28T09:29:30.201728-04:00",
+  "fetched_at": "2026-08-28T09:43:47.569156-04:00",
   "source_url": "https://amplifyetfs.com/blok-holdings/",
   "raw_filename": "blok-browser.html",
   "content_type": "text/html",
-  "sha256": "6fe5f2b41121858fea1d5e6ce2b56c11dae4c41ef9c7bd72a7fb42694f558ba5",
+  "sha256": "7c9521c367315871525bd10205a3c11f62ba53d6c6b126346daded20b6d70f82",
   "normalized_rows": 55
 }

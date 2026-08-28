@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T09:28:29.820834-04:00",
+  "generated_at": "2026-08-28T09:42:40.504415-04:00",
   "timezone": "America/New_York",
   "sources": {
     "JEPI": {
@@ -8,7 +8,7 @@
       "as_of_date": "2026-08-27",
       "rows": 121,
       "source_url": "https://am.jpmorgan.com/FundsMarketingHandler/excel?country=us&cusip=46641Q332&locale=en-US&role=adv&type=dailyETFHoldings",
-      "sha256": "922cfb171a5802f1800a4f008440d5b8afdf564053872fb925210722fd93c9d1",
+      "sha256": "e72590077d15cba15bf0ef72c6238dc8198ce75d6503f64c75794cc820ee50f0",
       "state": "delta_ready",
       "latest_as_of": "2026-08-27",
       "previous_as_of": "2026-08-25",
@@ -32,7 +32,7 @@
       "as_of_date": "2026-08-27",
       "rows": 97,
       "source_url": "https://www.capitalgroup.com/api/investments/investment-service/v1/etfs/cggr/download/daily-holdings?audience=advisor",
-      "sha256": "39ac35eca19680215611451d4e4a9f9f3e4df3e95e15516708c90131940b877d",
+      "sha256": "63910f9aa254cd73e8e66af2b03edba997fc9e7a0e41b331bea8a96ecff7dd60",
       "state": "delta_ready",
       "latest_as_of": "2026-08-27",
       "previous_as_of": "2026-08-25",
@@ -56,7 +56,7 @@
       "as_of_date": "2026-08-28",
       "rows": 55,
       "source_url": "https://amplifyetfs.com/blok-holdings/",
-      "sha256": "6fe5f2b41121858fea1d5e6ce2b56c11dae4c41ef9c7bd72a7fb42694f558ba5",
+      "sha256": "7c9521c367315871525bd10205a3c11f62ba53d6c6b126346daded20b6d70f82",
       "state": "delta_ready",
       "latest_as_of": "2026-08-28",
       "previous_as_of": "2026-08-26",
