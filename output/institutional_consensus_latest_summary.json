@@ -1,9 +1,9 @@
 {
-  "latest_confirmed_cross_manager_date": "2026-08-31",
-  "directional_rows_all_history_before_security_filter": 2845,
+  "latest_confirmed_cross_manager_date": "2026-09-01",
+  "directional_rows_all_history_before_security_filter": 2945,
   "excluded_obvious_non_stock_rows_all_history": 8,
-  "signal_rows_all_history": 2837,
-  "signal_rows_latest_date": 189,
+  "signal_rows_all_history": 2937,
+  "signal_rows_latest_date": 85,
   "excluded_obvious_non_stock_rows_latest_date": 0,
   "strong_buy_confirmation_count": 0,
   "moderate_buy_confirmation_count": 0,
