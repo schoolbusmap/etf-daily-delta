@@ -8,4 +8,6 @@ trade_date,ticker,company,observed_manager_count,buying_manager_count,selling_ma
 2026-08-28,SOLQ/U,3IQ SOLANA STAKING ETF,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,2,0,1,1,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,False
 2026-08-28,CASH&OTHER,Cash & Other,1,0,1,0,,Amplify ETFs,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,False
 2026-09-01,SOLQ/U,3IQ SOLANA STAKING ETF,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,2,0,2,2,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,False
+2026-09-02,SOLQ/U,3IQ SOLANA STAKING ETF,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,2,0,3,3,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,False
 2026-09-03,CASH&OTHER,Cash & Other,1,1,0,0,Amplify ETFs,,,1,blockchain_thematic,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,False
+2026-09-04,CASH&OTHER,Cash & Other,1,0,1,0,,Amplify ETFs,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,False
