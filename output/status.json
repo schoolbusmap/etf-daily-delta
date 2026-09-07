@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-09-04T12:18:07.655939-04:00",
+  "generated_at": "2026-09-07T13:44:24.660596-04:00",
   "timezone": "America/New_York",
   "sources": {
     "JEPI": {
       "fetch": "ok",
       "provider": "J.P. Morgan Asset Management",
-      "as_of_date": "2026-09-03",
+      "as_of_date": "2026-09-04",
       "rows": 121,
       "source_url": "https://am.jpmorgan.com/FundsMarketingHandler/excel?country=us&cusip=46641Q332&locale=en-US&role=adv&type=dailyETFHoldings",
-      "sha256": "211d4e1454ba68f2c43d533d915c9c26f574be4fc520e8d863667defc6fa12f8",
+      "sha256": "1edd832ad5001307368ff3b4fd554a9f1c8bde275fc6d292a5b1bf765c730a1d",
       "state": "delta_ready",
-      "latest_as_of": "2026-09-03",
-      "previous_as_of": "2026-09-02",
-      "trade_rows": 120
+      "latest_as_of": "2026-09-04",
+      "previous_as_of": "2026-09-03",
+      "trade_rows": 118
     },
     "DFAC": {
       "fetch": "ok",
       "provider": "Dimensional Fund Advisors",
-      "as_of_date": "2026-09-03",
-      "rows": 2521,
-      "source_url": "https://tools-blob.dimensional.com/etf/20260903/DFAC.csv",
-      "sha256": "e0e138199f3b1110bb13e34ef2901a44617cd4c4a5a45b50106fc56f8fc77b58",
+      "as_of_date": "2026-09-04",
+      "rows": 2522,
+      "source_url": "https://tools-blob.dimensional.com/etf/20260904/DFAC.csv",
+      "sha256": "23731e5c4d82ced89cdb9b7d122a21a43c71646b157720fec5fe6e91e7ab04a7",
       "state": "delta_ready",
-      "latest_as_of": "2026-09-03",
-      "previous_as_of": "2026-09-02",
-      "trade_rows": 428
+      "latest_as_of": "2026-09-04",
+      "previous_as_of": "2026-09-03",
+      "trade_rows": 358
     },
     "CGGR": {
       "fetch": "ok",
@@ -32,7 +32,7 @@
       "as_of_date": "2026-09-03",
       "rows": 97,
       "source_url": "https://www.capitalgroup.com/api/investments/investment-service/v1/etfs/cggr/download/daily-holdings?audience=advisor",
-      "sha256": "6c67bf8bfd45fabe3a4d638553a2889784b50cab1cfd64f3d306b20a63f6e5a7",
+      "sha256": "666cd79fe5b8d7a06a1fd285a1bbdcdaf98cab2b965784a054102c192cf60fab",
       "state": "delta_ready",
       "latest_as_of": "2026-09-03",
       "previous_as_of": "2026-09-02",
@@ -53,14 +53,14 @@
     "BLOK": {
       "fetch": "ok",
       "provider": "Amplify ETFs",
-      "as_of_date": "2026-09-04",
+      "as_of_date": "2026-09-08",
       "rows": 55,
       "source_url": "https://amplifyetfs.com/blok-holdings/",
-      "sha256": "0860a7967c02078479f93cc531aa0ebf1a75003c36d993b7cbedaa3c9e82fc33",
+      "sha256": "13fd9b949e038c64ebb7d61667d84ab0b00fd37ec8954124da961cdd560de7f5",
       "state": "delta_ready",
-      "latest_as_of": "2026-09-04",
-      "previous_as_of": "2026-09-03",
-      "trade_rows": 1
+      "latest_as_of": "2026-09-08",
+      "previous_as_of": "2026-09-04",
+      "trade_rows": 2
     }
   }
 }
