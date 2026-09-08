@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-07T18:44:41.455658+00:00",
+  "generated_at_utc": "2026-09-08T17:56:09.598123+00:00",
   "phase": "V1_DATA_AND_SIGNAL_DEFINITION",
   "scoring_enabled": false,
   "predictive_validation_enabled": false,
@@ -64,16 +64,16 @@
     "CGGR": {
       "manager": "Capital Group",
       "style": "active_growth",
-      "snapshot_count": 15,
-      "latest_reported_date": "2026-09-03",
-      "latest_trade_date": "2026-09-03"
+      "snapshot_count": 16,
+      "latest_reported_date": "2026-09-04",
+      "latest_trade_date": "2026-09-04"
     },
     "AVUV": {
       "manager": "Avantis Investors",
       "style": "small_value",
-      "snapshot_count": 15,
-      "latest_reported_date": "2026-09-03",
-      "latest_trade_date": "2026-09-03"
+      "snapshot_count": 16,
+      "latest_reported_date": "2026-09-04",
+      "latest_trade_date": "2026-09-04"
     },
     "BLOK": {
       "manager": "Amplify ETFs",
@@ -93,9 +93,9 @@
     "2026-09-01": "inferred_from_standard_holdings_calendar"
   },
   "rows": {
-    "fund_flows": 54227,
-    "manager_signals": 53620,
-    "consensus": 52623
+    "fund_flows": 55117,
+    "manager_signals": 54510,
+    "consensus": 53463
   },
   "latest_confirmed_cross_manager_date": "2026-09-04",
   "data_discipline": {
