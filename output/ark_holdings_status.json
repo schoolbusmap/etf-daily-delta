@@ -1,84 +1,72 @@
 {
-  "generated_at_utc": "2026-09-05T04:39:42.286257+00:00",
+  "generated_at_utc": "2026-09-08T05:30:13.816901+00:00",
   "source": "ARK official Full Holdings CSV",
   "funds": {
     "ARKK": {
       "fund": "ARKK",
       "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv",
       "reported_date": "2026-09-04",
-      "previous_reported_date": "2026-09-03",
+      "previous_reported_date": "2026-09-04",
       "row_count": 43,
-      "saved": true,
+      "saved": false,
       "sha256": "e5d1fea7f16a00b9092c2ead0a20367e78bf4ea3820a30c2d96e0730cfc1df0d",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-09-05T04:39:40.570670+00:00",
-      "flow_factor": 0.017430010119019013,
-      "flow_confidence": 0.9767441860465116
+      "fetched_at_utc": "2026-09-08T05:30:11.733020+00:00"
     },
     "ARKQ": {
       "fund": "ARKQ",
       "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_AUTONOMOUS_TECH._&_ROBOTICS_ETF_ARKQ_HOLDINGS.csv",
       "reported_date": "2026-09-04",
-      "previous_reported_date": "2026-09-03",
+      "previous_reported_date": "2026-09-04",
       "row_count": 38,
-      "saved": true,
+      "saved": false,
       "sha256": "18a03417b98b35d17f57255b828ed54bccb7679746efca9bf9a20dcc88da0c6b",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-09-05T04:39:40.774668+00:00",
-      "flow_factor": 0.0,
-      "flow_confidence": 1.0
+      "fetched_at_utc": "2026-09-08T05:30:12.563325+00:00"
     },
     "ARKW": {
       "fund": "ARKW",
       "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv",
       "reported_date": "2026-09-04",
-      "previous_reported_date": "2026-09-03",
+      "previous_reported_date": "2026-09-04",
       "row_count": 39,
-      "saved": true,
+      "saved": false,
       "sha256": "050f3a0d0be451911c9d5809234889db89da666ab056463d19c377ace9b979a6",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-09-05T04:39:41.507757+00:00",
-      "flow_factor": 0.0,
-      "flow_confidence": 1.0
+      "fetched_at_utc": "2026-09-08T05:30:12.858026+00:00"
     },
     "ARKG": {
       "fund": "ARKG",
       "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv",
       "reported_date": "2026-09-04",
-      "previous_reported_date": "2026-09-03",
+      "previous_reported_date": "2026-09-04",
       "row_count": 32,
-      "saved": true,
+      "saved": false,
       "sha256": "e5df807f1fd4b9804e851b597b38447a38cd3286f770dbcd1dfe55c98429b6ff",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-09-05T04:39:41.770823+00:00",
-      "flow_factor": -0.008167321587557952,
-      "flow_confidence": 0.96875
+      "fetched_at_utc": "2026-09-08T05:30:13.154475+00:00"
     },
     "ARKF": {
       "fund": "ARKF",
       "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_BLOCKCHAIN_&_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv",
       "reported_date": "2026-09-04",
-      "previous_reported_date": "2026-09-03",
+      "previous_reported_date": "2026-09-04",
       "row_count": 36,
-      "saved": true,
+      "saved": false,
       "sha256": "9ba17ba97b17819f0455e1f030153ed7aae5bb05cfb342002f33acd951cfe537",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-09-05T04:39:41.972918+00:00",
-      "flow_factor": 0.0,
-      "flow_confidence": 1.0
+      "fetched_at_utc": "2026-09-08T05:30:13.615274+00:00"
     },
     "ARKX": {
       "fund": "ARKX",
       "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_SPACE_&_DEFENSE_INNOVATION_ETF_ARKX_HOLDINGS.csv",
       "reported_date": "2026-09-04",
-      "previous_reported_date": "2026-09-03",
+      "previous_reported_date": "2026-09-04",
       "row_count": 34,
-      "saved": true,
+      "saved": false,
       "sha256": "ad2f1803b6d59d787891d87259c8ec220e5d380b9fe8310ae7e30b93006beca1",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-09-05T04:39:42.182022+00:00",
-      "flow_factor": 0.0,
-      "flow_confidence": 1.0
+      "fetched_at_utc": "2026-09-08T05:30:13.816848+00:00"
     }
   },
   "notes": [
