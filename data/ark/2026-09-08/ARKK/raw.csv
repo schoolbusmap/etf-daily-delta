@@ -1,0 +1,49 @@
+date,fund,company,ticker,cusip,shares,market value ($),weight (%)
+09/08/2026,ARKK,TESLA INC,TSLA,88160R101,"1,706,986","$604,409,602.88",9.13%
+09/08/2026,ARKK,SPACE EXPLORATION TECHN-CL A,SPCX,84615Q103,"2,801,518","$414,484,588.10",6.26%
+09/08/2026,ARKK,CIRCLE INTERNET GROUP INC,CRCL,172573107,"3,916,644","$399,693,520.20",6.04%
+09/08/2026,ARKK,TEMPUS AI INC-CL A,TEM,88023B103,"5,321,487","$343,874,489.94",5.20%
+09/08/2026,ARKK,COINBASE GLOBAL INC -CLASS A,COIN,19260Q107,"1,650,935","$304,828,638.40",4.61%
+09/08/2026,ARKK,CRISPR THERAPEUTICS AG,CRSP,H17182108,"5,381,655","$300,242,532.45",4.54%
+09/08/2026,ARKK,ROBINHOOD MARKETS INC - A,HOOD,770700102,"2,319,975","$283,292,147.25",4.28%
+09/08/2026,ARKK,SHOPIFY INC - CLASS A,SHOP,82509L107,"1,541,975","$223,725,152.75",3.38%
+09/08/2026,ARKK,TWIST BIOSCIENCE CORP,TWST,90184D100,"1,662,903","$207,397,262.16",3.13%
+09/08/2026,ARKK,10X GENOMICS INC-CLASS A,TXG,88025U109,"3,082,482","$193,117,497.30",2.92%
+09/08/2026,ARKK,PALANTIR TECHNOLOGIES INC-A,PLTR,69608A108,"1,055,053","$183,927,389.49",2.78%
+09/08/2026,ARKK,CEREBRAS SYSTEMS INC - A,CBRS,15675D103,"842,891","$177,049,254.55",2.68%
+09/08/2026,ARKK,BEAM THERAPEUTICS INC,BEAM,07373V105,"5,962,400","$176,844,784.00",2.67%
+09/08/2026,ARKK,COREWEAVE INC-CL A,CRWV,21873S108,"1,934,905","$172,903,110.80",2.61%
+09/08/2026,ARKK,OPENAI GROUP PBC SERIES C,,PPOPENAIC,"254,476","$172,563,178.42",2.61%
+09/08/2026,ARKK,ADVANCED MICRO DEVICES,AMD,007903107,"357,105","$170,542,634.85",2.58%
+09/08/2026,ARKK,NVIDIA CORP,NVDA,67066G104,"741,026","$170,702,749.36",2.58%
+09/08/2026,ARKK,BLOCK INC,XYZ,852234103,"2,004,916","$165,926,848.16",2.51%
+09/08/2026,ARKK,AMAZON.COM INC,AMZN,023135106,"630,856","$163,082,584.56",2.46%
+09/08/2026,ARKK,BULLISH,BLSH,G16910120,"4,098,431","$147,543,516.00",2.23%
+09/08/2026,ARKK,BITMINE IMMERSION TECHNOLOGI,BMNR,09175A206,"5,267,757","$131,535,892.29",1.99%
+09/08/2026,ARKK,INTELLIA THERAPEUTICS INC,NTLA,45826J105,"9,568,779","$121,906,244.46",1.84%
+09/08/2026,ARKK,BROADCOM INC,AVGO,11135F101,"310,711","$111,201,913.35",1.68%
+09/08/2026,ARKK,ALPHABET INC-CL C,GOOG,02079K107,"325,978","$109,303,683.18",1.65%
+09/08/2026,ARKK,META PLATFORMS INC-CLASS A,META,30303M102,"152,852","$94,274,528.04",1.42%
+09/08/2026,ARKK,GENEDX HOLDINGS CORP,WGS,81663L200,"965,715","$83,041,832.85",1.25%
+09/08/2026,ARKK,X-ENERGY INC,XE,98386P102,"4,507,071","$79,820,227.41",1.21%
+09/08/2026,ARKK,ARCHER AVIATION INC-A,ACHR,03945R102,"13,784,642","$78,710,305.82",1.19%
+09/08/2026,ARKK,CLOUDFLARE INC - CLASS A,NET,18915M107,"273,117","$76,177,793.64",1.15%
+09/08/2026,ARKK,ILLUMINA INC,ILMN,452327109,"338,461","$73,858,959.42",1.12%
+09/08/2026,ARKK,RECURSION PHARMACEUTICALS-A,RXRX,75629V104,"19,866,796","$72,116,469.48",1.09%
+09/08/2026,ARKK,NATERA INC,NTRA,632307104,"211,458","$69,396,286.44",1.05%
+09/08/2026,ARKK,ROCKET LAB,RKLB UQ,773121108,"1,030,332","$66,209,134.32",1.00%
+09/08/2026,ARKK,TAIWAN SEMICONDUCTOR-SP ADR,TSM,874039100,"152,079","$65,228,203.89",0.99%
+09/08/2026,ARKK,KRATOS DEFENSE & SECURITY,KTOS,50077B207,"1,362,759","$65,167,135.38",0.98%
+09/08/2026,ARKK,TERADYNE INC,TER,880770102,"168,412","$60,128,136.36",0.91%
+09/08/2026,ARKK,BWX TECHNOLOGIES INC,BWXT,05605H100,"366,437","$57,746,806.83",0.87%
+09/08/2026,ARKK,VERACYTE INC,VCYT,92337F107,"1,229,151","$52,275,792.03",0.79%
+09/08/2026,ARKK,SOFI TECHNOLOGIES INC,SOFI,83406F102,"2,188,172","$39,868,493.84",0.60%
+09/08/2026,ARKK,ELI LILLY & CO,LLY,532457108,"27,876","$32,039,559.36",0.48%
+09/08/2026,ARKK,ALPHABET INC-CL A,GOOGL,02079K305,"74,349","$25,164,162.54",0.38%
+09/08/2026,ARKK,CERUS CORP,CERS,157085101,"8,912,889","$23,084,382.51",0.35%
+09/08/2026,ARKK,ARK ACTIVE AUTOCALL INC ETF,ARKY,00214Q724,"996,106","$20,390,289.82",0.31%
+09/08/2026,ARKK,PACIFIC BIOSCIENCES OF CALIF,PACB,69404D108,"12,564,498","$16,962,072.30",0.26%
+09/08/2026,ARKK,GOLDMAN FS TRSY OBLIG INST 468,,X9USDGSFT,"14,443,264","$14,443,263.97",0.22%
+09/08/2026,ARKK,BRERA HOLDINGS PLC WTS,,BREADUMMY,"431,626","$712,182.41",0.01%
+09/08/2026,ARKK,BRERA HOLDINGS PLC-CL B,,G13311132,"206,357","$794,474.45",0.01%
+"Investors should carefully consider the investment objectives and risks as well as charges and expenses of an ARK ETF before investing. This and other information are contained in the ARK ETFs' prospectuses, which may be obtained on ark-funds.com. The prospectus should be read carefully before investing. An investment in an ARK ETF is subject to risks and you can lose money on your investment in an ARK ETF. There can be no assurance that the ARK ETFs will achieve their investment objectives. The ARK ETFs’ portfolios are more volatile than broad market averages. The ARK ETFs also have specific risks, which are described in the ARK ETFs' prospectuses.Shares of the ARK ETFs may be bought or sold throughout the day at their market price on the exchange on which they are listed. The market price of an ARK ETF's shares may be at, above, or below the ARK ETF’s net asset value (""NAV"") and will fluctuate with changes in the NAV as well as supply and demand in the market for the shares. The market price of ARK ETF shares may differ significantly from their NAV during periods of market volatility. Shares of the ARK ETFs may only be redeemed directly with the ARK ETFs at NAV by Authorized Participants, in very large creation units. There can be no guarantee that an active trading market for ARK ETF shares will develop or be maintained, or that their listing will continue or remain unchanged. Buying or selling ARK ETF shares on an exchange may require the payment of brokerage commissions, and frequent trading may incur brokerage costs that detract significantly from investment returns. Not FDIC Insured – No Bank Guarantee – May Lose ValueAll statements made regarding companies, securities, or other financial information are strictly beliefs and points of view held by ARK Investment Management LLC and/or ARK ETF Trust and are not endorsements by ARK of any company or security or recommendations by ARK to buy, sell or hold any security. Holdings are subject to change without notice.Foreside Fund Services, LLC, distributor.© 2026. ARK ETF Trust. No part of this material may be reproduced in any form or referred to in any other publication without written permission."
