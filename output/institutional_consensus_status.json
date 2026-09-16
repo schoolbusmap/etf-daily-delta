@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-15T18:13:41.267684+00:00",
+  "generated_at_utc": "2026-09-16T18:14:10.808533+00:00",
   "phase": "V1_DATA_AND_SIGNAL_DEFINITION",
   "scoring_enabled": false,
   "predictive_validation_enabled": false,
@@ -8,85 +8,86 @@
     "ARKK": {
       "manager": "ARK Invest",
       "style": "innovation_growth",
-      "snapshot_count": 12,
-      "latest_reported_date": "2026-09-14",
-      "latest_trade_date": "2026-09-11"
+      "snapshot_count": 13,
+      "latest_reported_date": "2026-09-15",
+      "latest_trade_date": "2026-09-14"
     },
     "ARKQ": {
       "manager": "ARK Invest",
       "style": "innovation_growth",
-      "snapshot_count": 12,
-      "latest_reported_date": "2026-09-14",
-      "latest_trade_date": "2026-09-11"
+      "snapshot_count": 13,
+      "latest_reported_date": "2026-09-15",
+      "latest_trade_date": "2026-09-14"
     },
     "ARKW": {
       "manager": "ARK Invest",
       "style": "innovation_growth",
-      "snapshot_count": 12,
-      "latest_reported_date": "2026-09-14",
-      "latest_trade_date": "2026-09-11"
+      "snapshot_count": 13,
+      "latest_reported_date": "2026-09-15",
+      "latest_trade_date": "2026-09-14"
     },
     "ARKG": {
       "manager": "ARK Invest",
       "style": "innovation_growth",
-      "snapshot_count": 12,
-      "latest_reported_date": "2026-09-14",
-      "latest_trade_date": "2026-09-11"
+      "snapshot_count": 13,
+      "latest_reported_date": "2026-09-15",
+      "latest_trade_date": "2026-09-14"
     },
     "ARKF": {
       "manager": "ARK Invest",
       "style": "innovation_growth",
-      "snapshot_count": 12,
-      "latest_reported_date": "2026-09-14",
-      "latest_trade_date": "2026-09-11"
+      "snapshot_count": 13,
+      "latest_reported_date": "2026-09-15",
+      "latest_trade_date": "2026-09-14"
     },
     "ARKX": {
       "manager": "ARK Invest",
       "style": "innovation_growth",
-      "snapshot_count": 12,
-      "latest_reported_date": "2026-09-14",
-      "latest_trade_date": "2026-09-11"
+      "snapshot_count": 13,
+      "latest_reported_date": "2026-09-15",
+      "latest_trade_date": "2026-09-14"
     },
     "JEPI": {
       "manager": "J.P. Morgan Asset Management",
       "style": "equity_income_low_vol",
-      "snapshot_count": 21,
-      "latest_reported_date": "2026-09-14",
-      "latest_trade_date": "2026-09-14"
+      "snapshot_count": 22,
+      "latest_reported_date": "2026-09-15",
+      "latest_trade_date": "2026-09-15"
     },
     "DFAC": {
       "manager": "Dimensional Fund Advisors",
       "style": "systematic_core",
-      "snapshot_count": 21,
-      "latest_reported_date": "2026-09-14",
-      "latest_trade_date": "2026-09-14"
+      "snapshot_count": 22,
+      "latest_reported_date": "2026-09-15",
+      "latest_trade_date": "2026-09-15"
     },
     "CGGR": {
       "manager": "Capital Group",
       "style": "active_growth",
-      "snapshot_count": 21,
-      "latest_reported_date": "2026-09-14",
-      "latest_trade_date": "2026-09-14"
+      "snapshot_count": 22,
+      "latest_reported_date": "2026-09-15",
+      "latest_trade_date": "2026-09-15"
     },
     "AVUV": {
       "manager": "Avantis Investors",
       "style": "small_value",
-      "snapshot_count": 21,
-      "latest_reported_date": "2026-09-14",
-      "latest_trade_date": "2026-09-14"
+      "snapshot_count": 22,
+      "latest_reported_date": "2026-09-15",
+      "latest_trade_date": "2026-09-15"
     },
     "BLOK": {
       "manager": "Amplify ETFs",
       "style": "blockchain_thematic",
-      "snapshot_count": 21,
-      "latest_reported_date": "2026-09-15",
-      "latest_trade_date": "2026-09-15"
+      "snapshot_count": 22,
+      "latest_reported_date": "2026-09-16",
+      "latest_trade_date": "2026-09-16"
     }
   },
   "ark_reported_date_mapping": {
     "2026-09-04": "inferred_from_standard_holdings_calendar",
     "2026-09-09": "inferred_from_standard_holdings_calendar",
     "2026-09-02": "inferred_from_standard_holdings_calendar",
+    "2026-09-15": "inferred_from_standard_holdings_calendar",
     "2026-09-10": "inferred_from_standard_holdings_calendar",
     "2026-08-31": "inferred_from_standard_holdings_calendar",
     "2026-08-26": "inferred_from_standard_holdings_calendar",
@@ -98,11 +99,11 @@
     "2026-09-14": "inferred_from_standard_holdings_calendar"
   },
   "rows": {
-    "fund_flows": 74179,
-    "manager_signals": 73067,
-    "consensus": 71560
+    "fund_flows": 77988,
+    "manager_signals": 76775,
+    "consensus": 75175
   },
-  "latest_confirmed_cross_manager_date": "2026-09-14",
+  "latest_confirmed_cross_manager_date": "2026-09-15",
   "data_discipline": {
     "ark_funds_count_as_one_independent_manager": true,
     "creation_redemption_normalization": true,
