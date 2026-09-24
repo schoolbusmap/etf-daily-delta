@@ -1,0 +1,11 @@
+{
+  "fund": "ARKF",
+  "reported_date": "2026-09-23",
+  "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_BLOCKCHAIN_&_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv",
+  "source_tier": "ARK official Full Holdings CSV",
+  "content_type": "application/octet-stream",
+  "sha256": "bb030b29f5f81c4631245386f057d2c2929db674e8120bd32f469d2394c9ed22",
+  "row_count": 36,
+  "fetched_at_utc": "2026-09-24T05:02:30.542554+00:00",
+  "date_alignment_note": "ARK states the holdings document date is the next trading day; align to the prior trading session when reconciling with Daily Trade Notifications."
+}
