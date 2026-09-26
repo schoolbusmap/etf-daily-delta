@@ -1,0 +1,11 @@
+{
+  "fund": "ARKW",
+  "reported_date": "2026-09-25",
+  "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_NEXT_GENERATION_INTERNET_ETF_ARKW_HOLDINGS.csv",
+  "source_tier": "ARK official Full Holdings CSV",
+  "content_type": "application/octet-stream",
+  "sha256": "06d8bc9e6da06ff4a128a94cea3e13f2f861fab806c467a36146c72b5d0959a7",
+  "row_count": 38,
+  "fetched_at_utc": "2026-09-26T05:08:56.022293+00:00",
+  "date_alignment_note": "ARK states the holdings document date is the next trading day; align to the prior trading session when reconciling with Daily Trade Notifications."
+}
