@@ -34,5 +34,6 @@ trade_date,ticker,company,observed_manager_count,buying_manager_count,selling_ma
 2026-09-30,CASH&OTHER,Cash & Other,1,0,1,0,,Amplify ETFs,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,False
 2026-09-30,ETHQ/U,3IQ ETHER STAKING ETF,1,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,1,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,False
 2026-09-30,SOLQ/U,3IQ SOLANA STAKING ETF,1,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,1,2,4,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,False
+2026-10-01,ARKY,ARK ACTIVE AUTOCALL INC ETF,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,3,4,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,False
 2026-10-01,ETH,Grayscale Ethereum Staking Mini ETF,1,1,0,0,Amplify ETFs,,,1,blockchain_thematic,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,False
 2026-10-01,CASH&OTHER,Cash & Other,1,0,1,0,,Amplify ETFs,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,False
