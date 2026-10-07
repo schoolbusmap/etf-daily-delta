@@ -13416,4 +13416,33 @@ trade_date,ticker,company,observed_manager_count,buying_manager_count,selling_ma
 2026-10-05,YUM,YUM  BRANDS INC COMMON STOCK,2,0,1,0,,J.P. Morgan Asset Management,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-05,LNTH,LANTHEUS HOLDINGS INC COMMON STOCK USD.01,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-05,STKS,ONE GROUP HOSPITALITY INC/TH COMMON STOCK USD.0001,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,AUR,AURORA INNOVATION INC,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,1,1,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,AVAV,AEROVIRONMENT INC,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,2,0,1,3,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,CRWV,COREWEAVE INC-CL A,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,2,3,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,GENI,GENIUS SPORTS LTD,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,1,1,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,JOBY,JOBY AVIATION INC,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,2,0,1,1,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,SYM UQ,SYMBOTIC INC,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,1,1,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,VCYT,VERACYTE INC,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,4,7,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,ACHR,ARCHER AVIATION INC-A,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,3,0,1,1,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,BIDU,BAIDU INC - SPON ADR,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,1,1,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,FRNM,FREENOME INC,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,2,2,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,KDK,KODIAK AI INC,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,1,1,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,KTOS,KRATOS DEFENSE & SECURITY,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,1,1,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,KYMR,KYMERA THERAPEUTICS INC,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,1,1,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,LUNR,INTUITIVE MACHINES INC,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,2,0,1,1,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,META,META PLATFORMS INC-CLASS A,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,1,4,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,NRIX,NURIX THERAPEUTICS INC,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,1,1,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,PONY,PONY AI INC,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,1,1,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,RXRX,RECURSION PHARMACEUTICALS-A,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,2,2,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,SCTX,SCRIBE THERAPEUTICS INC,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,2,6,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,XYZ,BLOCK INC,2,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,2,2,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,WRD,WERIDE INC-ADR,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,1,1,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,DKNG UW,DRAFTKINGS INC-CL A,1,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,1,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,IRDM,IRIDIUM COMMUNICATIONS INC,1,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,1,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,PSNL,PERSONALIS INC,1,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,1,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,TER,TERADYNE INC,1,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,2,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,TWST,TWIST BIOSCIENCE CORP,1,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,2,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,TXG,10X GENOMICS INC-CLASS A,1,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,1,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,CDNA,CAREDX INC,1,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,1,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-06,HOOD,ROBINHOOD MARKETS INC - A,2,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,1,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-06,AGPXX,Invesco Government & Agency Portfolio 12/31/2031,1,0,1,0,,Amplify ETFs,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
