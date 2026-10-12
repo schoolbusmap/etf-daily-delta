@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-09T19:34:02.016807+00:00",
+  "generated_at_utc": "2026-10-12T22:13:41.702420+00:00",
   "phase": "V1_DATA_AND_SIGNAL_DEFINITION",
   "scoring_enabled": false,
   "predictive_validation_enabled": false,
@@ -50,37 +50,37 @@
     "JEPI": {
       "manager": "J.P. Morgan Asset Management",
       "style": "equity_income_low_vol",
-      "snapshot_count": 38,
-      "latest_reported_date": "2026-10-08",
-      "latest_trade_date": "2026-10-08"
+      "snapshot_count": 39,
+      "latest_reported_date": "2026-10-09",
+      "latest_trade_date": "2026-10-09"
     },
     "DFAC": {
       "manager": "Dimensional Fund Advisors",
       "style": "systematic_core",
-      "snapshot_count": 37,
-      "latest_reported_date": "2026-10-08",
-      "latest_trade_date": "2026-10-08"
+      "snapshot_count": 38,
+      "latest_reported_date": "2026-10-09",
+      "latest_trade_date": "2026-10-09"
     },
     "CGGR": {
       "manager": "Capital Group",
       "style": "active_growth",
-      "snapshot_count": 38,
-      "latest_reported_date": "2026-10-08",
-      "latest_trade_date": "2026-10-08"
+      "snapshot_count": 39,
+      "latest_reported_date": "2026-10-09",
+      "latest_trade_date": "2026-10-09"
     },
     "AVUV": {
       "manager": "Avantis Investors",
       "style": "small_value",
-      "snapshot_count": 38,
-      "latest_reported_date": "2026-10-08",
-      "latest_trade_date": "2026-10-08"
+      "snapshot_count": 39,
+      "latest_reported_date": "2026-10-09",
+      "latest_trade_date": "2026-10-09"
     },
     "BLOK": {
       "manager": "Amplify ETFs",
       "style": "blockchain_thematic",
-      "snapshot_count": 38,
-      "latest_reported_date": "2026-10-09",
-      "latest_trade_date": "2026-10-09"
+      "snapshot_count": 39,
+      "latest_reported_date": "2026-10-12",
+      "latest_trade_date": "2026-10-12"
     }
   },
   "ark_reported_date_mapping": {
@@ -115,11 +115,11 @@
     "2026-10-09": "inferred_from_standard_holdings_calendar"
   },
   "rows": {
-    "fund_flows": 138930,
-    "manager_signals": 136241,
-    "consensus": 129523
+    "fund_flows": 142561,
+    "manager_signals": 139872,
+    "consensus": 132200
   },
-  "latest_confirmed_cross_manager_date": "2026-10-08",
+  "latest_confirmed_cross_manager_date": "2026-10-09",
   "data_discipline": {
     "ark_funds_count_as_one_independent_manager": true,
     "creation_redemption_normalization": true,
