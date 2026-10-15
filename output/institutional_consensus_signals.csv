@@ -14746,6 +14746,7 @@ trade_date,ticker,company,observed_manager_count,buying_manager_count,selling_ma
 2026-10-13,FND,FLOOR + DECOR HOLDINGS INC A COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,FRBT,FORBRIGHT INC  A COMMON STOCK USD.001,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,JMSB,JOHN MARSHALL BANCORP INC COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-13,META,META PLATFORMS INC-CLASS A,4,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,1,3,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,NTGR,NETGEAR INC COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,PSIX,POWER SOLUTIONS INTERNATIONA COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,PTGX,PROTAGONIST THERAPEUTICS INC COMMON STOCK USD.00001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
@@ -14775,6 +14776,7 @@ trade_date,ticker,company,observed_manager_count,buying_manager_count,selling_ma
 2026-10-13,FIZZ,NATIONAL BEVERAGE CORP COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,FNF,FIDELITY NATIONAL FINANCIAL COMMON STOCK USD.0001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,FNKO,FUNKO INC CLASS A COMMON STOCK USD.0001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-13,FRNM,FREENOME INC,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,4,6,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,GCT,GIGACLOUD TECHNOLOGY INC   A COMMON STOCK USD.05,2,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,IA,INNOVATIVE SOLUTIONS + SUPP COMMON STOCK USD.001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,INR,INFINITY NATURAL RESOUR CL A COMMON STOCK USD.01,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
@@ -14783,16 +14785,19 @@ trade_date,ticker,company,observed_manager_count,buying_manager_count,selling_ma
 2026-10-13,JIMXX,JPMORGAN PRIME MONEY,1,1,0,0,J.P. Morgan Asset Management,,,1,equity_income_low_vol,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,KALU,KAISER ALUMINUM CORP COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,KD,KYNDRYL HOLDINGS INC COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-13,KYMR,KYMERA THERAPEUTICS INC,2,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,4,5,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,LAD,LITHIA MOTORS INC COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,LGIH,LGI HOMES INC COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,LYB,LYONDELLBASELL INDU CL A COMMON STOCK EUR.04,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,LYFT,LYFT INC A COMMON STOCK USD.00001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-13,MASS,908 DEVICES INC,3,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Neutral,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,MGRC,MCGRATH RENTCORP COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,MIAX,MIAMI INTERNATIONAL HOLDINGS COMMON STOCK USD.001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,MNTK,MONTAUK RENEWABLES INC COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,MOD,MODINE MANUFACTURING CO COMMON STOCK USD.625,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,MWA,MUELLER WATER PRODUCTS INC A COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,NKSH,NATIONAL BANKSHARES INC/VA COMMON STOCK USD1.25,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-13,NRIX,NURIX THERAPEUTICS INC,2,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,4,5,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,OLMA,OLEMA PHARMACEUTICALS INC COMMON STOCK USD.0001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,OVV,OVINTIV INC COMMON STOCK,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,PACS,PACS GROUP INC COMMON STOCK USD.001,2,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
@@ -14807,6 +14812,7 @@ trade_date,ticker,company,observed_manager_count,buying_manager_count,selling_ma
 2026-10-13,PUBM,PUBMATIC INC CLASS A COMMON STOCK USD.0001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,RCKT,ROCKET PHARMACEUTICALS INC COMMON STOCK USD.01,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,SBC,SBC MEDICAL GROUP HOLDINGS I COMMON STOCK,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-13,SCTX,SCRIBE THERAPEUTICS INC,1,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,3,9,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,SFD,SMITHFIELD FOODS INC COMMON STOCK NPV,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,SFM,SPROUTS FARMERS MARKET INC COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,SHOO,STEVEN MADDEN LTD COMMON STOCK USD.0001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
@@ -14832,6 +14838,7 @@ trade_date,ticker,company,observed_manager_count,buying_manager_count,selling_ma
 2026-10-13,ARDT,ARDENT HEALTH INC COMMON STOCK USD.01,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,BAX,BAXTER INTERNATIONAL INC COMMON STOCK USD1.0,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,BBT,BEACON FINANCIAL CORP COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-13,BEAM,BEAM THERAPEUTICS INC,2,1,0,0,ARK Invest,,,1,innovation_growth,False,Single Manager Buy,Buy,1,0,2,4,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,BOBS,BOB S DISCOUNT FURNITURE COMMON STOCK,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,BTU,PEABODY ENERGY CORP COMMON STOCK,2,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,CARS,CARS.COM INC COMMON STOCK USD.01,2,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
@@ -14883,7 +14890,6 @@ trade_date,ticker,company,observed_manager_count,buying_manager_count,selling_ma
 2026-10-13,KRO,KRONOS WORLDWIDE INC COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,MAGN,MAGNERA CORP COMMON STOCK USD.01,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,MAN,MANPOWERGROUP INC COMMON STOCK USD.01,2,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
-2026-10-13,MASS,908 DEVICES INC COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,MAZE,MAZE THERAPEUTICS INC COMMON STOCK USD.001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,MDXG,MIMEDX GROUP INC COMMON STOCK USD.001,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,MFIN,MEDALLION FINANCIAL CORP COMMON STOCK USD.01,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
@@ -14916,7 +14922,7 @@ trade_date,ticker,company,observed_manager_count,buying_manager_count,selling_ma
 2026-10-13,TTAM,TITAN AMERICA SA COMMON STOCK,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,TVTX,TRAVERE THERAPEUTICS INC COMMON STOCK USD.0001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,UCB,UNITED COMMUNITY BANKS/GA COMMON STOCK USD1.0,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
-2026-10-13,VCYT,VERACYTE INC COMMON STOCK USD.001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-13,VCYT,VERACYTE INC,2,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Neutral,0,0,0,7,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,VFF,VILLAGE FARMS INTERNATIONAL COMMON STOCK,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,WDAY,WORKDAY INC CLASS A COMMON STOCK USD.001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,WEYS,WEYCO GROUP INC COMMON STOCK USD1.0,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
@@ -14930,12 +14936,15 @@ trade_date,ticker,company,observed_manager_count,buying_manager_count,selling_ma
 2026-10-13,CAI,CARIS LIFE SCIENCES INC COMMON STOCK USD.001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Small,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,ACDC,PROFRAC HOLDING CORP A COMMON STOCK USD.01,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,ADV,ADVANTAGE SOLUTIONS INC COMMON STOCK USD.0001,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-13,BABA,ALIBABA GROUP HOLDING-SP ADR,1,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,1,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-13,DKNG UW,DRAFTKINGS INC-CL A,1,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,1,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,DKS,DICK S SPORTING GOODS INC COMMON STOCK USD.01,1,0,1,0,,Dimensional Fund Advisors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,ELA,ENVELA CORP COMMON STOCK USD.01,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,GLUE,MONTE ROSA THERAPEUTICS INC COMMON STOCK USD.0001,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,LONA,LEONABIO INC COMMON STOCK USD.0001,1,0,1,0,,Dimensional Fund Advisors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,MZTI,MARZETTI COMPANY/THE COMMON STOCK,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,NCMI,NATIONAL CINEMEDIA INC COMMON STOCK USD.01,1,0,1,0,,Dimensional Fund Advisors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-13,PSNL,PERSONALIS INC,2,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,1,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,THO,THOR INDUSTRIES INC COMMON STOCK USD.1,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,UTI,UNIVERSAL TECHNICAL INSTITUT COMMON STOCK USD.0001,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,ASTE,ASTEC INDUSTRIES INC COMMON STOCK USD.2,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
@@ -14944,6 +14953,7 @@ trade_date,ticker,company,observed_manager_count,buying_manager_count,selling_ma
 2026-10-13,BCBP,BCB BANCORP INC COMMON STOCK,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,CABO,CABLE ONE INC COMMON STOCK USD.01,1,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,CC,CHEMOURS CO/THE COMMON STOCK USD.01,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-13,CDNA,CAREDX INC,2,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,1,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,CMP,COMPASS MINERALS INTERNATION COMMON STOCK USD.01,2,0,1,0,,Dimensional Fund Advisors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,CMQXX,CAPITAL GROUP CENTRAL CASH FUN CAPITAL GROUP CNTRL CSH M,1,0,1,0,,Capital Group,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,DOUG,DOUGLAS ELLIMAN INC COMMON STOCK,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
@@ -14958,6 +14968,7 @@ trade_date,ticker,company,observed_manager_count,buying_manager_count,selling_ma
 2026-10-13,IMXI,INTERNATIONAL MONEY EXPRESS COMMON STOCK USD.0001,1,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,INBK,FIRST INTERNET BANCORP COMMON STOCK,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,LNTH,LANTHEUS HOLDINGS INC COMMON STOCK USD.01,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-13,NTLA,INTELLIA THERAPEUTICS INC,2,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,2,1,5,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,OPEN,OPENDOOR TECHNOLOGIES INC COMMON STOCK USD.0001,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,ORA,ORMAT TECHNOLOGIES INC COMMON STOCK USD.001,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,RGP,RESOURCES CONNECTION INC COMMON STOCK USD.01,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
@@ -14967,7 +14978,9 @@ trade_date,ticker,company,observed_manager_count,buying_manager_count,selling_ma
 2026-10-13,SEDG,SOLAREDGE TECHNOLOGIES INC COMMON STOCK USD.0001,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,SLGN,SILGAN HOLDINGS INC COMMON STOCK USD.01,1,0,1,0,,Dimensional Fund Advisors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,TCMD,TACTILE SYSTEMS TECHNOLOGY I COMMON STOCK USD.001,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-13,TER,TERADYNE INC,2,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,1,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,TIPT,TIPTREE INC COMMON STOCK USD.001,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-13,TOST,TOAST INC-CLASS A,4,0,1,0,,ARK Invest,,0,,False,Single Manager Sell,Sell,0,1,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,VSNT,VERSANT MEDIA GROUP INC COMMON STOCK USD.01,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,ACNT,ASCENT INDUSTRIES CO COMMON STOCK USD1.0,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,AN,AUTONATION INC COMMON STOCK USD.01,1,0,1,0,,Dimensional Fund Advisors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
@@ -14994,4 +15007,176 @@ trade_date,ticker,company,observed_manager_count,buying_manager_count,selling_ma
 2026-10-13,SIGA,SIGA TECHNOLOGIES INC COMMON STOCK USD.0001,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,TEX,TEREX CORP COMMON STOCK USD.01,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-13,TNC,TENNANT CO COMMON STOCK USD.375,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,BULL,Webull Corp,3,2,0,0,Avantis Investors|Dimensional Fund Advisors,,,2,small_value|systematic_core,True,Moderate Buy Confirmation,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,MRX,MAREX GROUP LTD COMMON STOCK,2,2,0,0,Avantis Investors|Dimensional Fund Advisors,,,2,small_value|systematic_core,True,Moderate Buy Confirmation,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
 2026-10-14,AGPXX,Invesco Government & Agency Portfolio 12/31/2031,1,1,0,0,Amplify ETFs,,,1,blockchain_thematic,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,CMI,CUMMINS INC COMMON STOCK USD2.5,2,1,0,0,J.P. Morgan Asset Management,,,1,equity_income_low_vol,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,CMQXX,CAPITAL GROUP CENTRAL CASH FUN CAPITAL GROUP CNTRL CSH M,1,1,0,0,Capital Group,,,1,active_growth,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,ENS,ENERSYS COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,EW,EDWARDS LIFESCIENCES CORP COMMON STOCK USD1.0,2,1,0,0,J.P. Morgan Asset Management,,,1,equity_income_low_vol,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,FRBT,FORBRIGHT INC  A COMMON STOCK USD.001,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,GD,GENERAL DYNAMICS CORP COMMON STOCK USD1.0,2,1,0,0,J.P. Morgan Asset Management,,,1,equity_income_low_vol,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,HPE,HEWLETT PACKARD ENTERPRISE COMMON STOCK USD.01,2,1,0,0,J.P. Morgan Asset Management,,,1,equity_income_low_vol,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,JMSB,JOHN MARSHALL BANCORP INC COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,MIAX,MIAMI INTERNATIONAL HOLDINGS COMMON STOCK USD.001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,PLTR,PALANTIR TECHNOLOGIES INC A COMMON STOCK USD.001,2,1,0,0,J.P. Morgan Asset Management,,,1,equity_income_low_vol,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,PSIX,POWER SOLUTIONS INTERNATIONA COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,SCHW,SCHWAB (CHARLES) CORP COMMON STOCK USD.01,2,1,0,0,J.P. Morgan Asset Management,,,1,equity_income_low_vol,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,UNH,UNITEDHEALTH GROUP INC COMMON STOCK USD.01,3,1,0,0,J.P. Morgan Asset Management,,,1,equity_income_low_vol,False,Single Manager Buy,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,AGL,AGILON HEALTH INC COMMON STOCK USD.01,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,ALIT,ALIGHT INC   CLASS A COMMON STOCK USD.0001,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,EGAN,EGAIN CORP COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,EQPT,EQUIPMENTSHARE.COM INC A COMMON STOCK USD.0000013,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,INR,INFINITY NATURAL RESOUR CL A COMMON STOCK USD.01,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,INSP,INSPIRE MEDICAL SYSTEMS INC COMMON STOCK USD.001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,JIMXX,JPMORGAN PRIME MONEY,1,1,0,0,J.P. Morgan Asset Management,,,1,equity_income_low_vol,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,NTGR,NETGEAR INC COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,NUTX,NUTEX HEALTH INC COMMON STOCK,2,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,NVRI,ENVIRI CORP COMMON STOCK USD.00001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,PGEN,PRECIGEN INC COMMON STOCK,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,PM,PHILIP MORRIS INTERNATIONAL COMMON STOCK,3,1,0,0,J.P. Morgan Asset Management,,,1,equity_income_low_vol,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,PPIH,PERMA PIPE INTERNATIONAL HOL COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,PPTA,PERPETUA RESOURCES CORP COMMON STOCK,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,PTRN,PATTERN GROUP INC CL A COMMON STOCK USD.001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,RBRK,RUBRIK INC A COMMON STOCK USD.000025,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,SBC,SBC MEDICAL GROUP HOLDINGS I COMMON STOCK,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,SO,SOUTHERN CO/THE COMMON STOCK USD5.0,2,1,0,0,J.P. Morgan Asset Management,,,1,equity_income_low_vol,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,TASK,TASKUS INC A COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,TISI,TEAM INC COMMON STOCK USD.3,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,TVTX,TRAVERE THERAPEUTICS INC COMMON STOCK USD.0001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,TYRA,TYRA BIOSCIENCES INC COMMON STOCK USD.0001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,VNCE,VINCE HOLDING CORP COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,WGO,WINNEBAGO INDUSTRIES COMMON STOCK USD.5,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,WW,WW INTERNATIONAL INC NEW COMMON STOCK,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,WYFI,WHITEFIBER INC COMMON STOCK USD.01,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,XMTR,XOMETRY INC A COMMON STOCK USD.000001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,ABG,ASBURY AUTOMOTIVE GROUP COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,ACU,ACME UNITED CORP COMMON STOCK USD2.5,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,AESI,ATLAS ENERGY SOLUTIONS INC COMMON STOCK,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,ALTO,ALTO INGREDIENTS INC COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,AOUT,AMERICAN OUTDOOR BRANDS INC COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,AP,AMPCO PITTSBURGH CORP COMMON STOCK USD1.0,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,APAM,ARTISAN PARTNERS ASSET MA  A COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,ARDT,ARDENT HEALTH INC COMMON STOCK USD.01,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,ASH,ASHLAND INC COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,AVTR,AVANTOR INC COMMON STOCK USD.01,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,BAX,BAXTER INTERNATIONAL INC COMMON STOCK USD1.0,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,BBT,BEACON FINANCIAL CORP COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,BKV,BKV CORPORATION COMMON STOCK USD.01,2,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,BOBS,BOB S DISCOUNT FURNITURE COMMON STOCK,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,BPRN,PRINCETON BANCORP INC COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,BWEN,BROADWIND INC COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,CAVA,CAVA GROUP INC COMMON STOCK USD.0001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,CBRL,CRACKER BARREL OLD COUNTRY COMMON STOCK USD.01,2,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,CHMG,CHEMUNG FINANCIAL CORP COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,CMCL,CALEDONIA MINING CORP PLC COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,CMTV,COMMUNITY BANCORP INC/VT COMMON STOCK USD2.5,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,COOK,TRAEGER INC COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,COUR,COURSERA INC COMMON STOCK USD.00001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,CRD.A,CRAWFORD + COMPANY  CL A COMMON STOCK USD1.0,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,CRD.B,CRAWFORD + CO   CL B COMMON STOCK USD1.0,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,CRI,CARTER S INC COMMON STOCK USD.01,2,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,CRMD,CORMEDIX INC COMMON STOCK USD.001,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,CTRI,CENTURI HOLDINGS INC COMMON STOCK USD.01,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,CVI,CVR ENERGY INC COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,DCH,DAUCH CORPORATION COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,DLO,DLOCAL LTD COMMON STOCK USD.002,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,EFSI,EAGLE FINANCIAL SERVICES INC COMMON STOCK USD2.5,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,ELVN,ENLIVEN THERAPEUTICS INC COMMON STOCK USD.001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,EPAM,EPAM SYSTEMS INC COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,EPC,EDGEWELL PERSONAL CARE CO COMMON STOCK USD.01,2,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,ETON,ETON PHARMACEUTICALS INC COMMON STOCK USD.001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,EXP,EAGLE MATERIALS INC COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,FAF,FIRST AMERICAN FINANCIAL COMMON STOCK USD.00001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,FCAP,FIRST CAPITAL INC COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,FIRY,FIRY INC COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,FIZZ,NATIONAL BEVERAGE CORP COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,FND,FLOOR + DECOR HOLDINGS INC A COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,FNKO,FUNKO INC CLASS A COMMON STOCK USD.0001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,FNRN,FIRST NORTHERN COMMUNITY BAN COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,FRST,PRIMIS FINANCIAL CORP COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,GH,GUARDANT HEALTH INC COMMON STOCK USD.00001,2,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,GIC,GLOBAL INDUSTRIAL CO COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,GLOB,GLOBANT SA COMMON STOCK USD1.2,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,GPK,GRAPHIC PACKAGING HOLDING CO COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,GRDN,GUARDIAN PHRMCY SERVICES A COMMON STOCK USD.01,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,GRND,GRINDR INC COMMON STOCK USD.0001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,HASI,HA SUSTAINABLE INFRASTRUCTUR COMMON STOCK USD.01,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,HE,HAWAIIAN ELECTRIC INDS COMMON STOCK,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,HIPO,HIPPO HOLDINGS INC COMMON STOCK USD.0001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,IMMR,IMMERSION CORPORATION COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,INSM,INSMED INC COMMON STOCK USD.01,2,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,JBTM,JBT MAREL CORP COMMON STOCK USD.01,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,KALU,KAISER ALUMINUM CORP COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,KD,KYNDRYL HOLDINGS INC COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,KKR,KKR + CO INC COMMON STOCK USD.01,2,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,KRO,KRONOS WORLDWIDE INC COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,LAD,LITHIA MOTORS INC COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,LGIH,LGI HOMES INC COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,MAN,MANPOWERGROUP INC COMMON STOCK USD.01,2,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,MASS,908 DEVICES INC COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,MDXG,MIMEDX GROUP INC COMMON STOCK USD.001,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,MFIN,MEDALLION FINANCIAL CORP COMMON STOCK USD.01,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,MGRC,MCGRATH RENTCORP COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,MMM,3M CO COMMON STOCK USD.01,2,1,0,0,J.P. Morgan Asset Management,,,1,equity_income_low_vol,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,MNTK,MONTAUK RENEWABLES INC COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,MTW,MANITOWOC COMPANY INC COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,NBBK,NB BANCORP INC COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,NBTB,N B T BANCORP INC COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,NCNO,NCINO INC COMMON STOCK USD.0005,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,NEWT,NEWTEKONE INC COMMON STOCK USD.02,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,NKSH,NATIONAL BANKSHARES INC/VA COMMON STOCK USD1.25,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,NSP,INSPERITY INC COMMON STOCK USD.01,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,NVTS,NAVITAS SEMICONDUCTOR CORP COMMON STOCK USD.0001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,NWFL,NORWOOD FINANCIAL CORP COMMON STOCK USD.1,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,OMF,ONEMAIN HOLDINGS INC COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,OPFI,OPPFI INC COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,PRCH,PORCH GROUP INC COMMON STOCK USD.0001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,PRGO,PERRIGO CO PLC COMMON STOCK EUR.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,PUBM,PUBMATIC INC CLASS A COMMON STOCK USD.0001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,RHI,ROBERT HALF INC COMMON STOCK USD.001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,SFBS,SERVISFIRST BANCSHARES INC COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,SFD,SMITHFIELD FOODS INC COMMON STOCK NPV,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,SFM,SPROUTS FARMERS MARKET INC COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,SHOO,STEVEN MADDEN LTD COMMON STOCK USD.0001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,SMP,STANDARD MOTOR PRODS COMMON STOCK USD2.0,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,TH,TARGET HOSPITALITY CORP COMMON STOCK USD.0001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,TLS,TELOS CORPORATION COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,TLYS,TILLY S INC CLASS A SHRS COMMON STOCK USD.001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,TRUP,TRUPANION INC COMMON STOCK USD.00001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,TWI,TITAN INTERNATIONAL INC COMMON STOCK,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,UCB,UNITED COMMUNITY BANKS/GA COMMON STOCK USD1.0,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,USB,US BANCORP COMMON STOCK USD.01,2,1,0,0,J.P. Morgan Asset Management,,,1,equity_income_low_vol,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,VFF,VILLAGE FARMS INTERNATIONAL COMMON STOCK,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,WDAY,WORKDAY INC CLASS A COMMON STOCK USD.001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,WEYS,WEYCO GROUP INC COMMON STOCK USD1.0,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,WLFC,WILLIS LEASE FINANCE CORP COMMON STOCK USD.01,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,WOLF,WOLFSPEED INC COMMON STOCK USD.00125,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,WS,WORTHINGTON STEEL INC COMMON STOCK USD.0001,2,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,WU,WESTERN UNION CO COMMON STOCK USD.01,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,XZO,EXZEO GROUP INC COMMON STOCK,1,1,0,0,Avantis Investors,,,1,small_value,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,YOU,CLEAR SECURE INC  CLASS A COMMON STOCK USD.00001,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,SKYD/WS,SKYDANCE CORP PARAMOUNT SKYDANCE   31,1,1,0,0,Dimensional Fund Advisors,,,1,systematic_core,False,Single Manager Buy,Not Observed,0,0,0,0,Small,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,AVD,AMERICAN VANGUARD CORP COMMON STOCK USD.1,1,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,CDNS,CADENCE DESIGN SYS INC COMMON STOCK USD.01,3,0,1,0,,J.P. Morgan Asset Management,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,CMS,CMS ENERGY CORP COMMON STOCK USD.01,2,0,1,0,,J.P. Morgan Asset Management,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,KMB,KIMBERLY CLARK CORP COMMON STOCK USD1.25,2,0,1,0,,J.P. Morgan Asset Management,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,MAR,MARRIOTT INTERNATIONAL  CL A COMMON STOCK USD.01,2,0,1,0,,J.P. Morgan Asset Management,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,MCK,MCKESSON CORP COMMON STOCK USD.01,2,0,1,0,,J.P. Morgan Asset Management,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,MRK,MERCK + CO. INC. COMMON STOCK USD.5,2,0,1,0,,J.P. Morgan Asset Management,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,MU,MICRON TECHNOLOGY INC COMMON STOCK USD.1,3,0,1,0,,Capital Group,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,ORCL,ORACLE CORP COMMON STOCK USD.01,2,0,1,0,,J.P. Morgan Asset Management,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,PENG,PENGUIN SOLUTIONS INC COMMON STOCK USD.01,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,SSTK,SHUTTERSTOCK INC COMMON STOCK USD.01,1,0,1,0,,Dimensional Fund Advisors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,ABBV,ABBVIE INC COMMON STOCK USD.01,2,0,1,0,,J.P. Morgan Asset Management,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,CLNE,CLEAN ENERGY FUELS CORP COMMON STOCK USD.0001,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,EMR,EMERSON ELECTRIC CO COMMON STOCK USD.5,2,0,1,0,,J.P. Morgan Asset Management,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,ETN,EATON CORP PLC COMMON STOCK USD.01,2,0,1,0,,J.P. Morgan Asset Management,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,MSFT,MICROSOFT CORP COMMON STOCK USD.00000625,3,0,1,0,,J.P. Morgan Asset Management,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,PG,PROCTER + GAMBLE CO/THE COMMON STOCK,2,0,1,0,,J.P. Morgan Asset Management,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,ROST,ROSS STORES INC COMMON STOCK USD.01,2,0,1,0,,J.P. Morgan Asset Management,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Meaningful,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,INTC,INTEL CORP COMMON STOCK USD.001,3,0,1,0,,Capital Group,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,LNTH,LANTHEUS HOLDINGS INC COMMON STOCK USD.01,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,PWR,QUANTA SERVICES INC COMMON STOCK USD.00001,2,0,1,0,,Capital Group,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-14,STKS,ONE GROUP HOSPITALITY INC/TH COMMON STOCK USD.0001,2,0,1,0,,Avantis Investors,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,Moderate,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
+2026-10-15,AGPXX,Invesco Government & Agency Portfolio 12/31/2031,1,0,1,0,,Amplify ETFs,,0,,False,Single Manager Sell,Not Observed,0,0,0,0,High,PENDING_MANDATE_VALIDATION,NOT_SCORED_V1,True
