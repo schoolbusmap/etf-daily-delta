@@ -1,28 +1,28 @@
 {
-  "generated_at_utc": "2026-10-15T05:32:13.470600+00:00",
+  "generated_at_utc": "2026-10-16T05:23:05.155905+00:00",
   "source": "ARK official Full Holdings CSV",
   "funds": {
     "ARKK": {
       "fund": "ARKK",
       "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv",
-      "reported_date": "2026-10-14",
-      "previous_reported_date": "2026-10-14",
+      "reported_date": "2026-10-15",
+      "previous_reported_date": "2026-10-15",
       "row_count": 42,
       "saved": false,
-      "sha256": "0fdde75c2bdd25d001c937b6bdd5bf249aec181a1e8e76745ecc67ce20f74fc7",
+      "sha256": "47fad1e3982aecbe8b02cf53d31301f1a49b915468506eebc472e47283bf628e",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-10-15T05:32:12.457957+00:00"
+      "fetched_at_utc": "2026-10-16T05:23:04.248640+00:00"
     },
     "ARKQ": {
       "fund": "ARKQ",
       "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_AUTONOMOUS_TECH._&_ROBOTICS_ETF_ARKQ_HOLDINGS.csv",
-      "reported_date": "2026-10-14",
-      "previous_reported_date": "2026-10-14",
+      "reported_date": "2026-10-15",
+      "previous_reported_date": "2026-10-15",
       "row_count": 36,
       "saved": false,
-      "sha256": "142c0101cda14456d8f7a5a9fbe02878447903d02ae70c35bdad653dded53d63",
+      "sha256": "521058c5ea2fcbe4f113bba1121340b3ed0d23dee21a8f6e635e4267f7c36cd8",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-10-15T05:32:13.015844+00:00"
+      "fetched_at_utc": "2026-10-16T05:23:04.496107+00:00"
     },
     "ARKW": {
       "fund": "ARKW",
@@ -33,40 +33,40 @@
       "saved": false,
       "sha256": "5841809321c54e519c2aa08f97436c4db2a1a9636efd7748e9bb8d724ef993e3",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-10-15T05:32:13.131826+00:00"
+      "fetched_at_utc": "2026-10-16T05:23:04.660087+00:00"
     },
     "ARKG": {
       "fund": "ARKG",
       "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv",
-      "reported_date": "2026-10-14",
-      "previous_reported_date": "2026-10-14",
+      "reported_date": "2026-10-15",
+      "previous_reported_date": "2026-10-15",
       "row_count": 33,
       "saved": false,
-      "sha256": "8b0b68a65201f878ca79dfefcc5cff6d5459569429a74d546ea6983ea5b1f6d8",
+      "sha256": "5284690b725aa0a57c744f983dfdf27ac78e4934b94818a72cbc749a1dfa6673",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-10-15T05:32:13.256906+00:00"
+      "fetched_at_utc": "2026-10-16T05:23:04.891676+00:00"
     },
     "ARKF": {
       "fund": "ARKF",
       "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_BLOCKCHAIN_&_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv",
-      "reported_date": "2026-10-14",
-      "previous_reported_date": "2026-10-14",
-      "row_count": 36,
+      "reported_date": "2026-10-15",
+      "previous_reported_date": "2026-10-15",
+      "row_count": 35,
       "saved": false,
-      "sha256": "42690514105b07a59f09b02fca9cb28c85f9ef4f4a4affe18b81202cf11cf242",
+      "sha256": "9be54ea44f17f761e635784705caad221fb60cf3b5c83983546b985e2c03b5ff",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-10-15T05:32:13.367702+00:00"
+      "fetched_at_utc": "2026-10-16T05:23:05.019238+00:00"
     },
     "ARKX": {
       "fund": "ARKX",
       "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_SPACE_&_DEFENSE_INNOVATION_ETF_ARKX_HOLDINGS.csv",
-      "reported_date": "2026-10-14",
-      "previous_reported_date": "2026-10-14",
+      "reported_date": "2026-10-15",
+      "previous_reported_date": "2026-10-15",
       "row_count": 32,
       "saved": false,
-      "sha256": "ff8d7a7fed36d90d0fa314ae3e8d72b8af2b7a8185c2709f2effddf51743e4f7",
+      "sha256": "166ce3a782383f4aa034ab3337e1fbac13f1ec577a44ce4b761d105cf7a3716f",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-10-15T05:32:13.470535+00:00"
+      "fetched_at_utc": "2026-10-16T05:23:05.155865+00:00"
     }
   },
   "notes": [
