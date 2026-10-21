@@ -1,0 +1,12 @@
+{
+  "ETF_Ticker": "JEPI",
+  "fund_name": "JPMorgan Equity Premium Income ETF",
+  "provider": "J.P. Morgan Asset Management",
+  "as_of_date": "2026-10-20",
+  "fetched_at": "2026-10-21T13:07:06.809318-04:00",
+  "source_url": "https://am.jpmorgan.com/FundsMarketingHandler/excel?country=us&cusip=46641Q332&locale=en-US&role=adv&type=dailyETFHoldings",
+  "raw_filename": "JPMorgan-Equity-Premium-Income-ETF-ETF-Shares-Holdings-10-20-2026.xlsx",
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8",
+  "sha256": "7d9d22ace48d8e2d0740c2420abf5380fc2f8d275dfd4d752212b25f83a915d5",
+  "normalized_rows": 121
+}
