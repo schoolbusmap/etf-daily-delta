@@ -1,0 +1,48 @@
+date,fund,company,ticker,cusip,shares,market value ($),weight (%)
+10/23/2026,ARKK,TESLA INC,TSLA,88160R101,"1,667,810","$624,728,269.80",10.43%
+10/23/2026,ARKK,SPACE EXPLORATION TECHN-CL A,SPCX,84615Q103,"2,671,801","$386,743,194.75",6.46%
+10/23/2026,ARKK,CIRCLE INTERNET GROUP INC,CRCL,172573107,"3,627,195","$314,187,630.90",5.25%
+10/23/2026,ARKK,TEMPUS AI INC-CL A,TEM,88023B103,"4,692,465","$299,426,191.65",5.00%
+10/23/2026,ARKK,OPENAI GROUP PBC SERIES C,,PPOPENAIC,"254,476","$272,900,367.77",4.56%
+10/23/2026,ARKK,COINBASE GLOBAL INC -CLASS A,COIN,19260Q107,"1,539,544","$260,321,494.96",4.35%
+10/23/2026,ARKK,CRISPR THERAPEUTICS AG,CRSP,H17182108,"5,193,563","$259,626,214.37",4.34%
+10/23/2026,ARKK,SHOPIFY INC - CLASS A,SHOP,82509L107,"1,188,988","$200,713,064.28",3.35%
+10/23/2026,ARKK,ROBINHOOD MARKETS INC - A,HOOD,770700102,"1,908,218","$184,295,694.44",3.08%
+10/23/2026,ARKK,NVIDIA CORP,NVDA,67066G104,"860,918","$182,695,408.78",3.05%
+10/23/2026,ARKK,TWIST BIOSCIENCE CORP,TWST,90184D100,"1,339,971","$181,525,871.37",3.03%
+10/23/2026,ARKK,PALANTIR TECHNOLOGIES INC-A,PLTR,69608A108,"856,122","$167,962,575.18",2.80%
+10/23/2026,ARKK,10X GENOMICS INC-CLASS A,TXG,88025U109,"2,174,007","$151,636,988.25",2.53%
+10/23/2026,ARKK,BLOCK INC,XYZ,852234103,"1,879,429","$148,512,479.58",2.48%
+10/23/2026,ARKK,BEAM THERAPEUTICS INC,BEAM,07373V105,"5,989,867","$147,111,133.52",2.46%
+10/23/2026,ARKK,COREWEAVE INC-CL A,CRWV,21873S108,"2,594,001","$144,226,455.60",2.41%
+10/23/2026,ARKK,AMAZON.COM INC,AMZN,023135106,"561,904","$140,689,523.52",2.35%
+10/23/2026,ARKK,META PLATFORMS INC-CLASS A,META,30303M102,"209,331","$135,824,419.35",2.27%
+10/23/2026,ARKK,INTELLIA THERAPEUTICS INC,NTLA,45826J105,"10,675,559","$119,139,238.44",1.99%
+10/23/2026,ARKK,BROADCOM INC,AVGO,11135F101,"345,678","$111,736,956.72",1.87%
+10/23/2026,ARKK,BULLISH,BLSH,G16910120,"3,775,770","$110,214,726.30",1.84%
+10/23/2026,ARKK,BITMINE IMMERSION TECHNOLOGI,BMNR,09175A206,"4,877,091","$109,734,547.50",1.83%
+10/23/2026,ARKK,ADVANCED MICRO DEVICES,AMD,007903107,"201,091","$102,140,151.63",1.71%
+10/23/2026,ARKK,CEREBRAS SYSTEMS INC - A,CBRS,15675D103,"935,639","$101,928,512.66",1.70%
+10/23/2026,ARKK,KALSHI INC.,,PPKALSHIC,"90,024","$95,999,805.72",1.60%
+10/23/2026,ARKK,RECURSION PHARMACEUTICALS-A,RXRX,75629V104,"23,459,378","$83,984,573.24",1.40%
+10/23/2026,ARKK,ALPHABET INC-CL C,GOOG,02079K107,"244,580","$78,451,480.80",1.31%
+10/23/2026,ARKK,CLOUDFLARE INC - CLASS A,NET,18915M107,"236,507","$71,805,890.27",1.20%
+10/23/2026,ARKK,ROCKET LAB,RKLB UQ,773121108,"1,394,955","$71,449,595.10",1.19%
+10/23/2026,ARKK,NATERA INC,NTRA,632307104,"175,445","$70,418,359.65",1.18%
+10/23/2026,ARKK,VERACYTE INC,VCYT,92337F107,"1,446,046","$66,575,957.84",1.11%
+10/23/2026,ARKK,KRATOS DEFENSE & SECURITY,KTOS,50077B207,"1,643,874","$62,911,057.98",1.05%
+10/23/2026,ARKK,BWX TECHNOLOGIES INC,BWXT,05605H100,"472,501","$60,149,377.30",1.00%
+10/23/2026,ARKK,GENEDX HOLDINGS CORP,WGS,81663L200,"892,198","$59,902,173.72",1.00%
+10/23/2026,ARKK,TAIWAN SEMICONDUCTOR-SP ADR,TSM,874039100,"145,050","$59,811,367.50",1.00%
+10/23/2026,ARKK,ARCHER AVIATION INC-A,ACHR,03945R102,"15,120,387","$57,457,470.60",0.96%
+10/23/2026,ARKK,ILLUMINA INC,ILMN,452327109,"214,399","$57,759,090.60",0.96%
+10/23/2026,ARKK,X-ENERGY INC,XE,98386P102,"4,587,977","$48,770,195.51",0.81%
+10/23/2026,ARKK,ARK ACTIVE AUTOCALL INC ETF,ARKY,00214Q724,"1,963,534","$38,760,161.16",0.65%
+10/23/2026,ARKK,ELI LILLY & CO,LLY,532457108,"26,598","$34,755,340.62",0.58%
+10/23/2026,ARKK,TERADYNE INC,TER,880770102,"103,229","$31,871,953.75",0.53%
+10/23/2026,ARKK,SOFI TECHNOLOGIES INC,SOFI,83406F102,"2,086,855","$30,822,848.35",0.51%
+10/23/2026,ARKK,PACIFIC BIOSCIENCES OF CALIF,PACB,69404D108,"12,673,501","$26,107,412.06",0.44%
+10/23/2026,ARKK,CERUS CORP,CERS,157085101,"8,500,095","$19,635,219.45",0.33%
+10/23/2026,ARKK,GOLDMAN FS TRSY OBLIG INST 468,,X9USDGSFT,"2,309,708","$2,309,707.72",0.04%
+10/23/2026,ARKK,BRERA HOLDINGS PLC WTS,,BREADUMMY,"431,626","$483,420.78",0.01%
+"Investors should carefully consider the investment objectives and risks as well as charges and expenses of an ARK ETF before investing. This and other information are contained in the ARK ETFs' prospectuses, which may be obtained on ark-funds.com. The prospectus should be read carefully before investing. An investment in an ARK ETF is subject to risks and you can lose money on your investment in an ARK ETF. There can be no assurance that the ARK ETFs will achieve their investment objectives. The ARK ETFs’ portfolios are more volatile than broad market averages. The ARK ETFs also have specific risks, which are described in the ARK ETFs' prospectuses.Shares of the ARK ETFs may be bought or sold throughout the day at their market price on the exchange on which they are listed. The market price of an ARK ETF's shares may be at, above, or below the ARK ETF’s net asset value (""NAV"") and will fluctuate with changes in the NAV as well as supply and demand in the market for the shares. The market price of ARK ETF shares may differ significantly from their NAV during periods of market volatility. Shares of the ARK ETFs may only be redeemed directly with the ARK ETFs at NAV by Authorized Participants, in very large creation units. There can be no guarantee that an active trading market for ARK ETF shares will develop or be maintained, or that their listing will continue or remain unchanged. Buying or selling ARK ETF shares on an exchange may require the payment of brokerage commissions, and frequent trading may incur brokerage costs that detract significantly from investment returns. Not FDIC Insured – No Bank Guarantee – May Lose ValueAll statements made regarding companies, securities, or other financial information are strictly beliefs and points of view held by ARK Investment Management LLC and/or ARK ETF Trust and are not endorsements by ARK of any company or security or recommendations by ARK to buy, sell or hold any security. Holdings are subject to change without notice.Foreside Fund Services, LLC, distributor.© 2026. ARK ETF Trust. No part of this material may be reproduced in any form or referred to in any other publication without written permission."
