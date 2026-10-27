@@ -1,0 +1,12 @@
+{
+  "ETF_Ticker": "BLOK",
+  "fund_name": "Amplify Transformational Data Sharing ETF",
+  "provider": "Amplify ETFs",
+  "as_of_date": "2026-10-27",
+  "fetched_at": "2026-10-27T13:57:45.106356-04:00",
+  "source_url": "https://amplifyetfs.com/blok-holdings/",
+  "raw_filename": "blok-browser.html",
+  "content_type": "text/html",
+  "sha256": "b8737e4957a5bdaada63762afd8ee88617c7c243a7ba269635c874ed6dd0792f",
+  "normalized_rows": 50
+}
