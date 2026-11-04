@@ -1,0 +1,11 @@
+{
+  "fund": "ARKX",
+  "reported_date": "2026-11-04",
+  "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_SPACE_&_DEFENSE_INNOVATION_ETF_ARKX_HOLDINGS.csv",
+  "source_tier": "ARK official Full Holdings CSV",
+  "content_type": "application/octet-stream",
+  "sha256": "b0972048e46c6b5b5dcd97f078732dbd6772b90a4de25153c032030a6f7edeb7",
+  "row_count": 32,
+  "fetched_at_utc": "2026-11-04T07:35:27.317843+00:00",
+  "date_alignment_note": "ARK states the holdings document date is the next trading day; align to the prior trading session when reconciling with Daily Trade Notifications."
+}

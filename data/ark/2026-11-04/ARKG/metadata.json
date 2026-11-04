@@ -1,0 +1,11 @@
+{
+  "fund": "ARKG",
+  "reported_date": "2026-11-04",
+  "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv",
+  "source_tier": "ARK official Full Holdings CSV",
+  "content_type": "application/octet-stream",
+  "sha256": "760fb5086860e3942af936d822550f6d90be47a0fa5254c1eaadeed4bb6b5aa2",
+  "row_count": 34,
+  "fetched_at_utc": "2026-11-04T07:35:27.047379+00:00",
+  "date_alignment_note": "ARK states the holdings document date is the next trading day; align to the prior trading session when reconciling with Daily Trade Notifications."
+}
