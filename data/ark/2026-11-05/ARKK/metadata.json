@@ -1,0 +1,11 @@
+{
+  "fund": "ARKK",
+  "reported_date": "2026-11-05",
+  "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv",
+  "source_tier": "ARK official Full Holdings CSV",
+  "content_type": "application/octet-stream",
+  "sha256": "ec53edbacadbbfeae3f72ae23632347127128d93ea493bcad906b49359cf0cf7",
+  "row_count": 42,
+  "fetched_at_utc": "2026-11-05T07:58:14.508788+00:00",
+  "date_alignment_note": "ARK states the holdings document date is the next trading day; align to the prior trading session when reconciling with Daily Trade Notifications."
+}
