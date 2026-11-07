@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-06T08:40:05.305064+00:00",
+  "generated_at_utc": "2026-11-07T07:58:29.000207+00:00",
   "source": "ARK official Full Holdings CSV",
   "funds": {
     "ARKK": {
@@ -11,7 +11,7 @@
       "saved": false,
       "sha256": "8bbeddffcf34a072d1181bb2e2daa1751a837851159fdbbd65d0c35a5f539e21",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-06T08:40:04.355028+00:00"
+      "fetched_at_utc": "2026-11-07T07:58:27.300532+00:00"
     },
     "ARKQ": {
       "fund": "ARKQ",
@@ -22,7 +22,7 @@
       "saved": false,
       "sha256": "cee7aec2b6c12a4c5c8230464813a08cfbfb2561100e1c76e09dfa8ebd91bcbc",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-06T08:40:04.565554+00:00"
+      "fetched_at_utc": "2026-11-07T07:58:27.511875+00:00"
     },
     "ARKW": {
       "fund": "ARKW",
@@ -33,7 +33,7 @@
       "saved": false,
       "sha256": "5841809321c54e519c2aa08f97436c4db2a1a9636efd7748e9bb8d724ef993e3",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-06T08:40:04.742879+00:00"
+      "fetched_at_utc": "2026-11-07T07:58:28.312362+00:00"
     },
     "ARKG": {
       "fund": "ARKG",
@@ -44,7 +44,7 @@
       "saved": false,
       "sha256": "34596ab03a371903b3d63d41db9d397deb0df6953d3d3d9ddb1691ec068910fe",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-06T08:40:04.932873+00:00"
+      "fetched_at_utc": "2026-11-07T07:58:28.504690+00:00"
     },
     "ARKF": {
       "fund": "ARKF",
@@ -55,7 +55,7 @@
       "saved": false,
       "sha256": "7aead29bc30bccac2cf40a9a5aad9dacd734a368bb8f8af313008aa9ddca1f94",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-06T08:40:05.125398+00:00"
+      "fetched_at_utc": "2026-11-07T07:58:28.727502+00:00"
     },
     "ARKX": {
       "fund": "ARKX",
@@ -66,7 +66,7 @@
       "saved": false,
       "sha256": "08a2016eb867df9bba6ea45c8323d8b0ff101f43403b45de8ea3f942b0f7a48d",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-06T08:40:05.305010+00:00"
+      "fetched_at_utc": "2026-11-07T07:58:29.000147+00:00"
     }
   },
   "notes": [
