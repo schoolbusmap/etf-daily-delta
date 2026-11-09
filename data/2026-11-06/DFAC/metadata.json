@@ -1,0 +1,12 @@
+{
+  "ETF_Ticker": "DFAC",
+  "fund_name": "Dimensional U.S. Core Equity 2 ETF",
+  "provider": "Dimensional Fund Advisors",
+  "as_of_date": "2026-11-06",
+  "fetched_at": "2026-11-09T17:58:31.788698-05:00",
+  "source_url": "https://tools-blob.dimensional.com/etf/20261106/DFAC.csv",
+  "raw_filename": "DFAC.csv",
+  "content_type": "application/octet-stream",
+  "sha256": "b67cabfcbf85b048ee2d4d08a3910f96967e69655d474464d541b54baf4eddcd",
+  "normalized_rows": 2541
+}
