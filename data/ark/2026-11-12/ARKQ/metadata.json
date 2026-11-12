@@ -1,0 +1,11 @@
+{
+  "fund": "ARKQ",
+  "reported_date": "2026-11-12",
+  "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_AUTONOMOUS_TECH._&_ROBOTICS_ETF_ARKQ_HOLDINGS.csv",
+  "source_tier": "ARK official Full Holdings CSV",
+  "content_type": "application/octet-stream",
+  "sha256": "19e258c6c69c61d21ad255f36f8ad9056a162711ccbc516de4769818c53ece15",
+  "row_count": 36,
+  "fetched_at_utc": "2026-11-12T08:25:42.603373+00:00",
+  "date_alignment_note": "ARK states the holdings document date is the next trading day; align to the prior trading session when reconciling with Daily Trade Notifications."
+}
