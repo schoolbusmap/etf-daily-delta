@@ -1,0 +1,46 @@
+date,fund,company,ticker,cusip,shares,market value ($),weight (%)
+11/20/2026,ARKK,TESLA INC,TSLA,88160R101,"6,179,930","$2,313,827,591.30",12.90%
+11/20/2026,ARKK,SPACE EXPLORATION TECHN-CL A,SPCX,84615Q103,"12,224,678","$1,692,262,175.54",9.43%
+11/20/2026,ARKK,GOLDMAN FS TRSY OBLIG INST 468,,X9USDGSFT,"1,158,702,366","$1,158,702,365.88",6.46%
+11/20/2026,ARKK,TEMPUS AI INC-CL A,TEM,88023B103,"16,628,669","$991,234,959.09",5.52%
+11/20/2026,ARKK,CIRCLE INTERNET GROUP INC,CRCL,172573107,"14,061,052","$729,487,377.76",4.07%
+11/20/2026,ARKK,COINBASE GLOBAL INC -CLASS A,COIN,19260Q107,"5,935,835","$646,234,356.45",3.60%
+11/20/2026,ARKK,SHOPIFY INC - CLASS A,SHOP,82509L107,"4,682,882","$617,999,937.54",3.44%
+11/20/2026,ARKK,TWIST BIOSCIENCE CORP,TWST,90184D100,"5,269,928","$588,229,363.36",3.28%
+11/20/2026,ARKK,BLOCK INC,XYZ,852234103,"7,020,279","$521,115,310.17",2.90%
+11/20/2026,ARKK,AMAZON.COM INC,AMZN,023135106,"2,000,077","$514,759,817.49",2.87%
+11/20/2026,ARKK,ROBINHOOD MARKETS INC - A,HOOD,770700102,"7,323,102","$502,730,952.30",2.80%
+11/20/2026,ARKK,NVIDIA CORP,NVDA,67066G104,"3,361,872","$490,766,074.56",2.74%
+11/20/2026,ARKK,PALANTIR TECHNOLOGIES INC-A,PLTR,69608A108,"3,085,512","$474,181,484.16",2.64%
+11/20/2026,ARKK,10X GENOMICS INC-CLASS A,TXG,88025U109,"8,195,364","$470,249,986.32",2.62%
+11/20/2026,ARKK,META PLATFORMS INC-CLASS A,META,30303M102,"775,325","$462,264,271.50",2.58%
+11/20/2026,ARKK,ADVANCED MICRO DEVICES,AMD,007903107,"895,741","$438,187,539.79",2.44%
+11/20/2026,ARKK,COREWEAVE INC-CL A,CRWV,21873S108,"8,928,504","$400,979,114.64",2.23%
+11/20/2026,ARKK,CRISPR THERAPEUTICS AG,CRSP,H17182108,"9,969,870","$388,127,039.10",2.16%
+11/20/2026,ARKK,CEREBRAS SYSTEMS INC - A,CBRS,15675D103,"4,141,315","$360,128,752.40",2.01%
+11/20/2026,ARKK,ROCKET LAB CORP,RKLB,773121108,"5,941,981","$302,981,611.19",1.69%
+11/20/2026,ARKK,BITMINE IMMERSION TECHNOLOGI,BMNR,09175A206,"18,077,021","$272,420,706.47",1.52%
+11/20/2026,ARKK,BULLISH,BLSH,G16910120,"12,724,292","$253,976,868.32",1.42%
+11/20/2026,ARKK,CLOUDFLARE INC - CLASS A,NET,18915M107,"840,146","$255,135,537.28",1.42%
+11/20/2026,ARKK,OPENAI GROUP PBC SERIES C,,PPOPENAIC,"254,476","$252,456,045.85",1.41%
+11/20/2026,ARKK,BEAM THERAPEUTICS INC,BEAM,07373V105,"11,499,043","$240,789,960.42",1.34%
+11/20/2026,ARKK,NATERA INC,NTRA,632307104,"809,024","$234,552,238.08",1.31%
+11/20/2026,ARKK,BWX TECHNOLOGIES INC,BWXT,05605H100,"1,750,935","$204,964,451.10",1.14%
+11/20/2026,ARKK,KRATOS DEFENSE & SECURITY,KTOS,50077B207,"6,672,437","$197,837,757.05",1.10%
+11/20/2026,ARKK,ARCHER AVIATION INC-A,ACHR,03945R102,"60,353,327","$193,130,646.40",1.08%
+11/20/2026,ARKK,ALPHABET INC-CL C,GOOG,02079K107,"704,911","$191,044,979.22",1.06%
+11/20/2026,ARKK,ILLUMINA INC,ILMN,452327109,"948,642","$190,349,760.51",1.06%
+11/20/2026,ARKK,TAIWAN SEMICONDUCTOR-SP ADR,TSM,874039100,"536,892","$189,034,304.28",1.05%
+11/20/2026,ARKK,GENEDX HOLDINGS CORP,WGS,81663L200,"3,351,003","$165,003,387.72",0.92%
+11/20/2026,ARKK,VERACYTE INC,VCYT,92337F107,"6,580,987","$164,787,914.48",0.92%
+11/20/2026,ARKK,X-ENERGY INC,XE,98386P102,"17,008,181","$164,979,355.70",0.92%
+11/20/2026,ARKK,RECURSION PHARMACEUTICALS-A,RXRX,75629V104,"56,659,607","$154,114,131.04",0.86%
+11/20/2026,ARKK,INTELLIA THERAPEUTICS INC,NTLA,45826J105,"14,063,687","$133,886,300.24",0.75%
+11/20/2026,ARKK,SOFI TECHNOLOGIES INC,SOFI,83406F102,"9,003,880","$121,822,496.40",0.68%
+11/20/2026,ARKK,KALSHI INC.,,PPKALSHIC,"90,024","$95,999,805.72",0.54%
+11/20/2026,ARKK,ARK ACTIVE AUTOCALL INC ETF,ARKY,00214Q724,"3,897,454","$69,569,553.90",0.39%
+11/20/2026,ARKK,ANTHROPIC PBC-CL A,,03703U107,"556,777","$54,102,021.09",0.30%
+11/20/2026,ARKK,PACIFIC BIOSCIENCES OF CALIF,PACB,69404D108,"26,754,224","$47,087,434.24",0.26%
+11/20/2026,ARKK,CERUS CORP,CERS,157085101,"16,318,042","$31,004,279.80",0.17%
+11/20/2026,ARKK,BRERA HOLDINGS PLC WTS,,BREADUMMY,"431,626","$345,300.56",0.00%
+"Investors should carefully consider the investment objectives and risks as well as charges and expenses of an ARK ETF before investing. This and other information are contained in the ARK ETFs' prospectuses, which may be obtained on ark-funds.com. The prospectus should be read carefully before investing. An investment in an ARK ETF is subject to risks and you can lose money on your investment in an ARK ETF. There can be no assurance that the ARK ETFs will achieve their investment objectives. The ARK ETFs’ portfolios are more volatile than broad market averages. The ARK ETFs also have specific risks, which are described in the ARK ETFs' prospectuses.Shares of the ARK ETFs may be bought or sold throughout the day at their market price on the exchange on which they are listed. The market price of an ARK ETF's shares may be at, above, or below the ARK ETF’s net asset value (""NAV"") and will fluctuate with changes in the NAV as well as supply and demand in the market for the shares. The market price of ARK ETF shares may differ significantly from their NAV during periods of market volatility. Shares of the ARK ETFs may only be redeemed directly with the ARK ETFs at NAV by Authorized Participants, in very large creation units. There can be no guarantee that an active trading market for ARK ETF shares will develop or be maintained, or that their listing will continue or remain unchanged. Buying or selling ARK ETF shares on an exchange may require the payment of brokerage commissions, and frequent trading may incur brokerage costs that detract significantly from investment returns. Not FDIC Insured – No Bank Guarantee – May Lose ValueAll statements made regarding companies, securities, or other financial information are strictly beliefs and points of view held by ARK Investment Management LLC and/or ARK ETF Trust and are not endorsements by ARK of any company or security or recommendations by ARK to buy, sell or hold any security. Holdings are subject to change without notice.Foreside Fund Services, LLC, distributor.© 2026. ARK ETF Trust. No part of this material may be reproduced in any form or referred to in any other publication without written permission."
