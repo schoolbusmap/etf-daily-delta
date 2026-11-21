@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-20T09:20:48.946907+00:00",
+  "generated_at_utc": "2026-11-21T09:01:44.202249+00:00",
   "source": "ARK official Full Holdings CSV",
   "funds": {
     "ARKK": {
@@ -11,7 +11,7 @@
       "saved": false,
       "sha256": "3fd2faaf72c606d7f9a1dc25f78fc1224837e52076ef782946c2f7f695bd8e2b",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-20T09:20:47.190150+00:00"
+      "fetched_at_utc": "2026-11-21T09:01:43.329451+00:00"
     },
     "ARKQ": {
       "fund": "ARKQ",
@@ -22,7 +22,7 @@
       "saved": false,
       "sha256": "cd190686ab19a443c5f03ba8ca548441df97529a070da2423ed98f5b5a0765f5",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-20T09:20:48.018621+00:00"
+      "fetched_at_utc": "2026-11-21T09:01:43.504787+00:00"
     },
     "ARKW": {
       "fund": "ARKW",
@@ -33,7 +33,7 @@
       "saved": false,
       "sha256": "5841809321c54e519c2aa08f97436c4db2a1a9636efd7748e9bb8d724ef993e3",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-20T09:20:48.291618+00:00"
+      "fetched_at_utc": "2026-11-21T09:01:43.946889+00:00"
     },
     "ARKG": {
       "fund": "ARKG",
@@ -44,7 +44,7 @@
       "saved": false,
       "sha256": "f2cd6542bf2e68e067773737c2eb2f19cab72129f8a61d3e762d51d6e858a023",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-20T09:20:48.548515+00:00"
+      "fetched_at_utc": "2026-11-21T09:01:44.017312+00:00"
     },
     "ARKF": {
       "fund": "ARKF",
@@ -55,7 +55,7 @@
       "saved": false,
       "sha256": "b4f28cab8b3f9dc4271392ccb9802cc1c8746a4caf257057aae3aee4fa133a3e",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-20T09:20:48.745428+00:00"
+      "fetched_at_utc": "2026-11-21T09:01:44.147352+00:00"
     },
     "ARKX": {
       "fund": "ARKX",
@@ -66,7 +66,7 @@
       "saved": false,
       "sha256": "4e183bcbc6a6694fd30a639e71d1009fb6fd438eb686b5a1ec9b791d8d309e0b",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-20T09:20:48.946859+00:00"
+      "fetched_at_utc": "2026-11-21T09:01:44.202204+00:00"
     }
   },
   "notes": [
