@@ -1,28 +1,28 @@
 {
-  "generated_at_utc": "2026-11-21T09:01:44.202249+00:00",
+  "generated_at_utc": "2026-11-24T11:46:57.812191+00:00",
   "source": "ARK official Full Holdings CSV",
   "funds": {
     "ARKK": {
       "fund": "ARKK",
       "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_INNOVATION_ETF_ARKK_HOLDINGS.csv",
-      "reported_date": "2026-11-20",
-      "previous_reported_date": "2026-11-20",
+      "reported_date": "2026-11-24",
+      "previous_reported_date": "2026-11-24",
       "row_count": 39,
       "saved": false,
-      "sha256": "3fd2faaf72c606d7f9a1dc25f78fc1224837e52076ef782946c2f7f695bd8e2b",
+      "sha256": "c8943f3ed1db4a9c4e9b9e99e14af642692bc6bee04d390a78de990cb9c0976e",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-21T09:01:43.329451+00:00"
+      "fetched_at_utc": "2026-11-24T11:46:55.400970+00:00"
     },
     "ARKQ": {
       "fund": "ARKQ",
       "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_AUTONOMOUS_TECH._&_ROBOTICS_ETF_ARKQ_HOLDINGS.csv",
-      "reported_date": "2026-11-20",
-      "previous_reported_date": "2026-11-20",
+      "reported_date": "2026-11-24",
+      "previous_reported_date": "2026-11-24",
       "row_count": 36,
       "saved": false,
-      "sha256": "cd190686ab19a443c5f03ba8ca548441df97529a070da2423ed98f5b5a0765f5",
+      "sha256": "4a05e6d45b658388bf000ce6231a6b8799540efed78e0871bcbc18ad4af99cf8",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-21T09:01:43.504787+00:00"
+      "fetched_at_utc": "2026-11-24T11:46:55.910629+00:00"
     },
     "ARKW": {
       "fund": "ARKW",
@@ -33,40 +33,40 @@
       "saved": false,
       "sha256": "5841809321c54e519c2aa08f97436c4db2a1a9636efd7748e9bb8d724ef993e3",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-21T09:01:43.946889+00:00"
+      "fetched_at_utc": "2026-11-24T11:46:56.347920+00:00"
     },
     "ARKG": {
       "fund": "ARKG",
       "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_GENOMIC_REVOLUTION_ETF_ARKG_HOLDINGS.csv",
-      "reported_date": "2026-11-20",
-      "previous_reported_date": "2026-11-20",
+      "reported_date": "2026-11-24",
+      "previous_reported_date": "2026-11-24",
       "row_count": 33,
       "saved": false,
-      "sha256": "f2cd6542bf2e68e067773737c2eb2f19cab72129f8a61d3e762d51d6e858a023",
+      "sha256": "dd6b84a765ccad1a6ae600f580ed8c319506d7cf0b90ab32e6ce3a90d9c99d19",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-21T09:01:44.017312+00:00"
+      "fetched_at_utc": "2026-11-24T11:46:56.821005+00:00"
     },
     "ARKF": {
       "fund": "ARKF",
       "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_BLOCKCHAIN_&_FINTECH_INNOVATION_ETF_ARKF_HOLDINGS.csv",
-      "reported_date": "2026-11-20",
-      "previous_reported_date": "2026-11-20",
+      "reported_date": "2026-11-24",
+      "previous_reported_date": "2026-11-24",
       "row_count": 34,
       "saved": false,
-      "sha256": "b4f28cab8b3f9dc4271392ccb9802cc1c8746a4caf257057aae3aee4fa133a3e",
+      "sha256": "b0719b17f98764f877e6f6f6f51b776706f52f0fd15146c42e771791e194a78e",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-21T09:01:44.147352+00:00"
+      "fetched_at_utc": "2026-11-24T11:46:57.337146+00:00"
     },
     "ARKX": {
       "fund": "ARKX",
       "source_url": "https://assets.ark-funds.com/fund-documents/funds-etf-csv/ARK_SPACE_&_DEFENSE_INNOVATION_ETF_ARKX_HOLDINGS.csv",
-      "reported_date": "2026-11-20",
-      "previous_reported_date": "2026-11-20",
+      "reported_date": "2026-11-24",
+      "previous_reported_date": "2026-11-24",
       "row_count": 31,
       "saved": false,
-      "sha256": "4e183bcbc6a6694fd30a639e71d1009fb6fd438eb686b5a1ec9b791d8d309e0b",
+      "sha256": "3b18ce41607b216a8794db9b699281726e0267fb60aa84612c24cc3c7434fd48",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-21T09:01:44.202204+00:00"
+      "fetched_at_utc": "2026-11-24T11:46:57.812128+00:00"
     }
   },
   "notes": [
