@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-25T17:28:26.710290-05:00",
+  "generated_at": "2026-11-26T17:16:45.878697-05:00",
   "timezone": "America/New_York",
   "sources": {
     "JEPI": {
       "fetch": "ok",
       "provider": "J.P. Morgan Asset Management",
-      "as_of_date": "2026-11-24",
+      "as_of_date": "2026-11-25",
       "rows": 120,
       "source_url": "https://am.jpmorgan.com/FundsMarketingHandler/excel?country=us&cusip=46641Q332&locale=en-US&role=adv&type=dailyETFHoldings",
-      "sha256": "a2ff53dc75de38b628a9c95a5ca02aa922f208268fefb1a59ab94997ca66810c",
+      "sha256": "fa730a5dc3859a49cdada8f75ba4ca6501acd6cc015d2d918ed3acaf326d42d9",
       "state": "delta_ready",
-      "latest_as_of": "2026-11-24",
-      "previous_as_of": "2026-11-23",
+      "latest_as_of": "2026-11-25",
+      "previous_as_of": "2026-11-24",
       "trade_rows": 119
     },
     "DFAC": {
@@ -32,7 +32,7 @@
       "as_of_date": "2026-11-24",
       "rows": 98,
       "source_url": "https://www.capitalgroup.com/api/investments/investment-service/v1/etfs/cggr/download/daily-holdings?audience=advisor",
-      "sha256": "b272259431c1ec772c47112b60c9a6bf565373adf9cb8616fc745e91f173dd37",
+      "sha256": "c5731cfae9488a601a86ce3e791674c16dfc43ed25943350eab600882565c60f",
       "state": "delta_ready",
       "latest_as_of": "2026-11-24",
       "previous_as_of": "2026-11-23",
@@ -53,14 +53,14 @@
     "BLOK": {
       "fetch": "ok",
       "provider": "Amplify ETFs",
-      "as_of_date": "2026-11-25",
+      "as_of_date": "2026-11-27",
       "rows": 49,
       "source_url": "https://amplifyetfs.com/blok-holdings/",
-      "sha256": "e15bcae3b84d5210d4e327defc3217e2406e3bfd3cb262116b171f3a79f0903b",
+      "sha256": "6553c81aa2a7bf74dd7f56baf835fb2b5d80b1f1d47be4f71f6a9598f3ccfe46",
       "state": "delta_ready",
-      "latest_as_of": "2026-11-25",
-      "previous_as_of": "2026-11-24",
-      "trade_rows": 48
+      "latest_as_of": "2026-11-27",
+      "previous_as_of": "2026-11-25",
+      "trade_rows": 2
     }
   }
 }
