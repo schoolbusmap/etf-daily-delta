@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-27T10:25:20.303953+00:00",
+  "generated_at_utc": "2026-11-28T09:38:08.501844+00:00",
   "source": "ARK official Full Holdings CSV",
   "funds": {
     "ARKK": {
@@ -11,7 +11,7 @@
       "saved": false,
       "sha256": "9d3c21f5615e96f942e8e1e54b088bf83a5575fe549adea39d30dea3c0fde34c",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-27T10:25:19.052915+00:00"
+      "fetched_at_utc": "2026-11-28T09:38:07.566577+00:00"
     },
     "ARKQ": {
       "fund": "ARKQ",
@@ -22,7 +22,7 @@
       "saved": false,
       "sha256": "0f54995169276472ada9688a2f87eb3ecb58c627fa3203d17483b6941065da11",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-27T10:25:19.333675+00:00"
+      "fetched_at_utc": "2026-11-28T09:38:07.753377+00:00"
     },
     "ARKW": {
       "fund": "ARKW",
@@ -33,7 +33,7 @@
       "saved": false,
       "sha256": "5841809321c54e519c2aa08f97436c4db2a1a9636efd7748e9bb8d724ef993e3",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-27T10:25:19.446650+00:00"
+      "fetched_at_utc": "2026-11-28T09:38:07.948375+00:00"
     },
     "ARKG": {
       "fund": "ARKG",
@@ -44,7 +44,7 @@
       "saved": false,
       "sha256": "483b947934757b4519bbeeed86fea95ec21c8dc82507da6e7f42f28672b58c79",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-27T10:25:19.645009+00:00"
+      "fetched_at_utc": "2026-11-28T09:38:08.068091+00:00"
     },
     "ARKF": {
       "fund": "ARKF",
@@ -55,7 +55,7 @@
       "saved": false,
       "sha256": "7b863918e244be9b4f1f27f73882c903459dda2590c4e56e94ad7dc3e3d7018a",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-27T10:25:20.178632+00:00"
+      "fetched_at_utc": "2026-11-28T09:38:08.155880+00:00"
     },
     "ARKX": {
       "fund": "ARKX",
@@ -66,7 +66,7 @@
       "saved": false,
       "sha256": "a0aa41c8a9f87a6509eb893dd407d96de9cfada36274ee541a572892a3e934df",
       "content_type": "application/octet-stream",
-      "fetched_at_utc": "2026-11-27T10:25:20.303904+00:00"
+      "fetched_at_utc": "2026-11-28T09:38:08.501789+00:00"
     }
   },
   "notes": [
